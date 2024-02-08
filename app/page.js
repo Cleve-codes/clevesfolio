@@ -6,6 +6,11 @@ import { Separator } from "@radix-ui/react-separator";
 import HeroImg from "../public/assets/asset 20.jpeg"
 import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
+import { buttonVariants } from "@/components/ui/button";
+import Signature from "@/components/Signature/Signature";
+
+
+
 // import { cn } from "@/lib/utils";
 // public/assets/asset 1.jpeg
 
@@ -13,24 +18,39 @@ export default function Home() {
   return (
     <main className="px-24 bg-[#1d1b19]">
       <div id='home' className="min-h-screen w-full flex flex-row">
-        <div className="flex flex-col justify-center min-w-[1/2]">
+        <div className="flex flex-col mt-[15%] min-w-[1/2]">
           <div className="flex flex-col justify-center mx-[128px]">
 
-            <h3 className="h3 span">Introduction</h3>
-            <div>
+            <h3 className="h3 span">INTRODUCTION</h3>
+
+            {/* <Separator className="h-10 text-white font-white" /> */}
+
+            <div className="mt-[2.5em]">
               <h1 className="h1" >FrontEnd Developer</h1>
-              <Separator />
+              {/* <Separator orientation="horizontal" /> */}
+            <div className="separator"></div>
+
             </div>
             <div className="">
               <p className="p">
                 I design and develop for customers of all sizes,
-                specializing in creating styling, modern websites, web services
+                specializing in creating stylish, modern websites, web services
                 and online stores.
               </p>
             </div>
+            <Signature />
           </div>
         </div>
-        <Separator />
+
+        {/* <Separator /> */}
+
+      <div aria-hidden="true">
+        <svg className="svgdiv" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
+            <path className="pathdiv" d="M250,0 Q250,250 250,500" />
+        </svg>
+      </div>
+
+
         <div className="px-24 min-w-[1/2]">
           <div>
             <Navbar />
@@ -49,14 +69,20 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
-              <Link href="#contact">
+            <div className="text-center ">
+              <Link href="#contact" className={buttonVariants({
+                variant: 'link',
+                className: 'outline-none'
+              })}>
+                <p className='text-[#dddddd] underline'>
                 I&apos;m available for a freelance job. Hire me
+                </p>
               </Link>
             </div>
           </div>
         </div>
-      </div>
+        </div>
+
     </main>
   );
 }

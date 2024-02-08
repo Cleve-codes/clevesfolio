@@ -1,6 +1,11 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Source+Sans+3:wght@400;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap'); */
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 
 @layer base {
@@ -11,7 +16,7 @@
     --card-foreground: 20 14.3% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 20 14.3% 4.1%;
-    --primary: 24 9.8% 10%;
+    --primary: 24.6 95% 53.1%;
     --primary-foreground: 60 9.1% 97.8%;
     --secondary: 60 4.8% 95.9%;
     --secondary-foreground: 24 9.8% 10%;
@@ -23,7 +28,7 @@
     --destructive-foreground: 60 9.1% 97.8%;
     --border: 20 5.9% 90%;
     --input: 20 5.9% 90%;
-    --ring: 20 14.3% 4.1%;
+    --ring: 24.6 95% 53.1%;
     --radius: 0.3rem;
   }
 
@@ -34,21 +39,22 @@
     --card-foreground: 60 9.1% 97.8%;
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
-    --primary: 60 9.1% 97.8%;
-    --primary-foreground: 24 9.8% 10%;
+    --primary: 20.5 90.2% 48.2%;
+    --primary-foreground: 60 9.1% 97.8%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
     --muted-foreground: 24 5.4% 63.9%;
     --accent: 12 6.5% 15.1%;
     --accent-foreground: 60 9.1% 97.8%;
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 72.2% 50.6%;
     --destructive-foreground: 60 9.1% 97.8%;
     --border: 12 6.5% 15.1%;
     --input: 12 6.5% 15.1%;
-    --ring: 24 5.7% 82.9%;
+    --ring: 20.5 90.2% 48.2%;
   }
 }
+
 
 @layer base {
   * {
@@ -62,6 +68,7 @@
 
 .span {
   color: #987750;
+  font-size: 28px;
 }
 
 .h1 {
@@ -69,9 +76,6 @@
   color: #dddddd;
 }
 
-.h3 {
-  font-size: 18px;
-}
 
 .p {
   color: #888888;
@@ -82,9 +86,9 @@
   position: relative;
   height: 653px;
   width: 759px;
-  border: 1px solid #888888;
+  border: .25px solid #888888;
   transform: rotate(90deg);
-  margin-top: 10em;
+  margin-top: 2em;
   margin-bottom: 4em;
   /* padding: 2em; */
   /* z-index: 3; Set a lower z-index for the first frame */
@@ -94,7 +98,7 @@
   position: absolute;
   width: 743px;
   height: 679px;
-  border: 3px solid #888888;
+  border: .25px solid #888888;
   padding: 1em;
   /* z-index: 2; */
   /* margin-right: 2em; */
@@ -126,4 +130,32 @@
 
 .detail {
   margin-top: 2em;
+}
+
+.svgdiv {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: block;
+  pointer-events: none;
+}
+
+.pathdiv {
+  stroke: #888888;
+  width: 50px;
+  fill: none;
+  opacity: .5;
+}
+
+
+.separator {
+  height: 1px;
+  width: 180px;
+  background: #fff;
+  /* margin-top: 1em; */
+  margin-bottom: 1em;
 }

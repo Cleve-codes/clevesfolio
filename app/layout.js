@@ -1,7 +1,24 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
+// import { Jost } from "next/font/google";
+// import { League_Script } from "next/font/google";
+
+import { jost } from "./fonts";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+
+// const jost = Jost({
+//   subsets: ['latin'],
+//   weight: ['200', '300', '400'],
+//   display: 'swap'
+// })
+
+// const leagueScript = League_Script({
+//   subsets: ['latin'],
+//   weight: '400',
+//   display: 'swap'
+// })
+
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={jost.className}>{children}</body>
     </html>
   );
 }

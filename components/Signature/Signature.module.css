@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+.signature {
+  margin-top: 5em;
+}
+
+.p {
+  color: white;
+  font-family: 'Allura' ;
+  font-size: 60px;
+  color: gray;
+}
