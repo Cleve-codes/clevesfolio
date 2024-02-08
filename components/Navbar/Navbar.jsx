@@ -19,8 +19,8 @@ const Navbar = () => {
       className={style.nav}
       >
         <h1 className={style.h1}>
-          <span>Menu </span>
-          <Menu color="#ffffff" />
+          <span className="text-[20px]">Menu </span>
+          <Menu color="#ffffff" width={30} height={30} />
           {/* <CiMenuBurger /> */}
         </h1>
       </SheetTrigger>

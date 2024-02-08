@@ -1,8 +1,5 @@
 'use client'
 import Image from "next/image";
-// import { Button } from "../components/ui/button"
-import Asset1 from '../public/assets/asset 1.jpeg'
-import { Separator } from "@radix-ui/react-separator";
 import HeroImg from "../public/assets/asset 20.jpeg"
 import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
@@ -10,16 +7,15 @@ import { buttonVariants } from "@/components/ui/button";
 import Signature from "@/components/Signature/Signature";
 
 
-
-// import { cn } from "@/lib/utils";
-// public/assets/asset 1.jpeg
-
 export default function Home() {
   return (
-    <main className="px-24 bg-[#1d1b19]">
-      <div id='home' className="min-h-screen w-full flex flex-row">
-        <div className="flex flex-col mt-[15%] min-w-[1/2]">
-          <div className="flex flex-col justify-center mx-[128px]">
+    <main className="flex px-24 bg-[#1d1b19]">
+
+      {/* Leftt Section */}
+      <div className="flex flex-col min-w-[1/2]">
+      <div id='home' className="min-h-screen w-full flex flex-row ">
+        <div className="flex flex-col min-w-[1/2] mt-[5%]">
+          <div className="flex flex-col justify-center mx-[128px] mt-[20%]">
 
             <h3 className="h3 span">INTRODUCTION</h3>
 
@@ -34,24 +30,36 @@ export default function Home() {
             <div className="">
               <p className="p">
                 I design and develop for customers of all sizes,
-                specializing in creating stylish, modern websites, web services
+                <br />
+                specializing in creating stylish, modern websites,
+                <br /> web services
                 and online stores.
               </p>
             </div>
             <Signature />
           </div>
         </div>
+        </div>
+
+        {/* About Section */}
+        <div className="min-h-screen">
+          <div>
+            <h1 className="text-white" >About</h1>
+          </div>
+        </div>
+        </div>
 
         {/* <Separator /> */}
 
-      <div aria-hidden="true">
+      <div aria-hidden="true" className="flex items-center justify-center h-full" >
         <svg className="svgdiv" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
             <path className="pathdiv" d="M250,0 Q250,250 250,500" />
         </svg>
       </div>
 
 
-        <div className="px-24 min-w-[1/2]">
+      {/* Right section */ }
+        <div className="px-24 min-w-[1/2] fixed right-0">
           <div>
             <Navbar />
           </div>
@@ -80,7 +88,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
         </div>
 
     </main>
