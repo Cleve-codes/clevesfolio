@@ -1,0 +1,13 @@
+.nav {
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  outline: none;
+}
+
+.h1 {
+  color: #dddddd;
+  display: inline-flex;
+  gap: 1em;
+  margin-left: 90%;
+}
