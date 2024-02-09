@@ -115,12 +115,16 @@ const Portofolio = () => {
             />
           </TabsContent>
           <TabsContent value="skills" className="tab-content" >
+          <div className="skill">
+            <Label htmlFor="design" className="skill-label" >UI/UX DESIGN</Label>
+            <Slider className="slider" defaultValue={[95]} max={100} step={1}/>
+            </div>
             <div className="skill">
             <Label htmlFor="html" className="skill-label" >HTML5 & CSS3</Label>
             <Slider className="slider" defaultValue={[89]} max={100} step={1}/>
             </div>
             <div className="skill">
-            <Label htmlFor="javascript" className="skill-label" >JAVASCRIPT</Label>
+            <Label htmlFor="javascript" className="skill-label" >JAVASCRIPT (es6)</Label>
             <Slider className="slider" defaultValue={[90]} max={100} step={1}/>
             </div>
             <div className="skill">
