@@ -1,10 +1,11 @@
 import Signature from '@/components/Signature/Signature'
 import React from 'react'
+import './Home.css'
 
 const Home = () => {
   return (
-    <div id='home' className="min-h-screen w-full flex flex-row ">
-          <div className="flex flex-col min-w-[1/2] mt-[5%]">
+    <div id='home' className="">
+          <div className="home-section">
             <div className="flex flex-col justify-center mx-[128px] mt-[20%]">
 
               <h3 className="h3 span">INTRODUCTION</h3>

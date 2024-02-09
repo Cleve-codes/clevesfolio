@@ -1,0 +1,16 @@
+.right-section {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  position: fixed;
+  right: 0px;
+}
+
+.hero-img {
+  margin: 2.5rem;
+  transform: rotate(180deg);
+}
+
+.text {
+  color: #dddddd;
+  text-decoration-line: underline;
+}

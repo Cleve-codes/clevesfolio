@@ -2,14 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 // import downloadIcon from '/assets/asset 22.svg'
-
+// import './About.css'
 
 const About = () => {
   return (
     <div className="min-h-screen">
           <div>
             <h1 className="span" >About Me</h1>
-            <div className="mt-[2.5em]">
+            <div className="about-header">
               <h1 className="h1" >Biography</h1>
               <div className="separator"></div>
             </div>
@@ -33,7 +33,7 @@ const About = () => {
           </div>
 
           {/* About Me- Details */}
-          <div className="flex items-center justify-between">
+          <div className="flex items-center">
 
 
             <div className="credentials">

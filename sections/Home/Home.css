@@ -1,0 +1,6 @@
+.home-section {
+  margin-top: 45%;
+  min-width: 1/2;
+  display: flex;
+  flex-direction: column;
+}

@@ -190,6 +190,7 @@
   border: 1px solid #888888;
   margin-top: 5em;
   grid-gap: 0;
+  margin-left: 5em;
 }
 
 .cv > img {
@@ -215,4 +216,81 @@
 
 .cv:hover #arrow {
   transform: translate(0, -60);
+}
+
+/* About Section */
+.about-header {
+  margin-top: 2.75em;
+}
+
+/* .experiences-card {
+  width: 100%;
+  height: 180px;
+  color: #dddddd;
+  padding: 3em;
+  background-color: #181715;
+  margin-bottom: 1em;
+  border-left: .325em solid #888888;
+} */
+
+.experiences-card {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  color: #dddddd;
+  padding: 3em;
+  background-color: #181715;
+  margin-bottom: 1em;
+  border-left: .325em solid transparent; /* Set a transparent left border */
+}
+
+.experiences-card:before {
+  content: "";
+  position: absolute;
+  opacity: .3;
+  top: 50;
+  left: 0;
+  height: 50px;
+  width: .25em; /* Adjust the width of the styled section */
+  background: linear-gradient(#888888, #888888) no-repeat left center;
+  background-size: 100% 100%;
+}
+
+
+
+.experiences-card-h3 {
+  color: #dddddd;
+  font-size: 20px;
+}
+
+.experiences-card .date {
+  color: #888888;
+  margin-left: 1em;
+}
+
+.job-title {
+  font-size: 30px;
+}
+
+.job-description {
+  font-size: 18px;
+  color: #888888;
+}
+
+/* Horizontal Separator - Portofolio section */
+
+.horizontal-separator {
+  height: 1px;
+  width: 70px;
+  background: #fff;
+  /* margin-top: 1em; */
+  margin-bottom: 1em;
+  opacity: .3;
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.tab-content {
+  margin-top: 3em;
 }
