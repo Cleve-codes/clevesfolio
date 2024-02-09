@@ -5,6 +5,8 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import { buttonVariants } from "@/components/ui/button";
 import Signature from "@/components/Signature/Signature";
+import CV from '../public/assets/asset 21.svg'
+import downloadIcon from '../public/assets/asset 22.svg'
 
 
 export default function Home() {
@@ -68,17 +70,17 @@ export default function Home() {
             </>
           </div>
 
-          {/* About Me- Details */ }
-          <div className="flex">
+          {/* About Me- Details */}
+          <div className="flex items-center justify-between">
 
 
             <div className="credentials">
               <ul>
-                <li>Name</li>
+                <li>NAME</li>
                 <li>Cleve Momanyi</li>
               </ul>
               <ul>
-                <li>Birthday</li>
+                <li>BIRTHDAY</li>
                 <li>1st April 2003</li>
               </ul>
               <ul>
@@ -91,26 +93,31 @@ export default function Home() {
               </ul>
               <ul>
                 <li>PHONE</li>
-                <li>(+254) 700 164 733</li>
+                <li className="underline hover:cursor-pointer">(+254) 700 164 733</li>
               </ul>
               <ul>
                 <li>EMAIL</li>
-                <li>clevemomanyi@gmail.com</li>
+                <li className="underline hover:cursor-pointer" >clevemomanyi@gmail.com</li>
               </ul>
               <ul>
                 <li>GITHUB</li>
-                <li>
+                <li className="underline">
                   <Link href="https://github.com/cleve-codes/">
-                  @clevecodes
+                    clevecodes
                   </Link>
-                  </li>
+                </li>
               </ul>
 
 
             </div>
 
             {/* CV */}
-            <div></div>
+            <div className="cv">
+                <Image alt="download" src={downloadIcon} width={60} height={60} />
+                <p>DOWNLOAD CV</p>
+            </div>
+
+
           </div>
 
         </div>
