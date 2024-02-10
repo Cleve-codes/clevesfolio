@@ -26,6 +26,7 @@ const Carousel = React.forwardRef((
     plugins,
     className,
     children,
+    autoScrollInterval = 3000,
     ...props
   },
   ref
@@ -85,6 +86,15 @@ const Carousel = React.forwardRef((
       api?.off("select", onSelect)
     };
   }, [api, onSelect])
+
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      scrollNext();
+    }, autoScrollInterval)
+
+    return () => clearInterval(interval)
+  }, [scrollNext, autoScrollInterval])
 
   return (
     (<CarouselContext.Provider
@@ -157,7 +167,7 @@ const CarouselPrevious = React.forwardRef(({ className, variant = "outline", siz
       ref={ref}
       variant={variant}
       size={size}
-      className={cn("absolute  h-8 w-8 bg-transparent text-[#888888]", orientation === "horizontal"
+      className={cn("absolute  h-8 w-8 bg-transparent text-[rgb(136,136,136)]", orientation === "horizontal"
         ? "-left-12 top-1/2 -translate-y-1/2"
         : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
       disabled={!canScrollPrev}

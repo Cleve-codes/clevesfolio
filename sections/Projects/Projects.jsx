@@ -12,15 +12,20 @@ import Image2 from "/home/cleve/Documents/Javascript/React/clevefolio/public/ass
 import Image3 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/asset 11.jpeg";
 import Image4 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/asset 12.jpeg";
 import Image5 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/asset 13.jpeg";
+import CarouselImg from "@/components/ui/carouselImg";
 
 const Images = [Image1, Image2, Image3, Image4, Image5];
 
 const Projects = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-[3/4]">
       <Carousel
         opts={{
           align: "start",
+          loop: true,
+          dragFree: true,
+          dragThreshold: 2,
+          watchDrag: true,
         }}
         className="carousel"
       >
@@ -55,13 +60,7 @@ const Projects = () => {
               <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
                   <CarouselItem key={index} className="carousel-item">
-                    <div className="p-1">
-                      <Image
-                        alt="carousel"
-                        className="carousel-img"
-                        src={Images[index]}
-                      />
-                    </div>
+                    <CarouselImg img={Images[index]} tech="React, Tailwind" title="Expense Tracker" />
                   </CarouselItem>
                 ))}
               </CarouselContent>
