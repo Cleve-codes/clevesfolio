@@ -6,6 +6,7 @@ import SectionsSeparator from "@/components/SectionsSeparator/SectionsSeparator"
 import Portofolio from "@/sections/Portofolio/Portofolio";
 import Projects from "@/sections/Projects/Projects";
 import Services from "@/sections/Services/Services";
+import { Testimonials } from "@/sections/Testimonials/Testimonials";
 
 
 export default function Page() {
@@ -20,6 +21,7 @@ export default function Page() {
         <Portofolio />
         <Projects />
         <Services />
+        <Testimonials />
       </div>
 
       {/* <Separator /> */}
