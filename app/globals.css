@@ -428,3 +428,10 @@
   font-size: 18px;
   color: #888888;
 }
+
+
+/* Blog Section */
+.blog-section {
+  margin-top: 10em;
+  min-height: 100vh;
+}

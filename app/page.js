@@ -7,6 +7,7 @@ import Portofolio from "@/sections/Portofolio/Portofolio";
 import Projects from "@/sections/Projects/Projects";
 import Services from "@/sections/Services/Services";
 import { Testimonials } from "@/sections/Testimonials/Testimonials";
+import Blog from "@/sections/Blog/Blog";
 
 
 export default function Page() {
@@ -22,6 +23,7 @@ export default function Page() {
         <Projects />
         <Services />
         <Testimonials />
+        <Blog />
       </div>
 
       {/* <Separator /> */}

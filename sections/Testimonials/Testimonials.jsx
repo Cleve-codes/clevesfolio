@@ -43,7 +43,12 @@ import TestimonialsCard from "@/components/ui/TestimonialsCard";
 export function Testimonials() {
   return (
       <div className="testimonials-section">
-        <Carousel className="testimonials-carousel">
+        <Carousel
+        opts={{
+          loop: true,
+          dragFree: true,
+        }}
+         className="testimonials-carousel">
         <div className="testimonial-carousel-buttons">
             <CarouselPrevious usage="testimonials" />
             <CarouselNext usage="testimonials" />
