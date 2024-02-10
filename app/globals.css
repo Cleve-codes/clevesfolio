@@ -221,7 +221,7 @@
 
 /* About Section */
 .about-header {
-  margin-top: 2.75em;
+  margin-top: 2.5em;
 }
 
 /* .experiences-card {
@@ -362,4 +362,19 @@
 .carousel-img {
   width: 350px;
   height: 250px;
+}
+
+
+/* Services Section */
+.services-section {
+  min-height: 100vh;
+  margin-top: 19em;
+}
+
+.services-text {
+  margin-top: 2em;
+}
+
+.services-cards {
+  margin-top: 2em;
 }

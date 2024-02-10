@@ -5,6 +5,7 @@ import Right from "@/sections/RightSection/Right";
 import SectionsSeparator from "@/components/SectionsSeparator/SectionsSeparator";
 import Portofolio from "@/sections/Portofolio/Portofolio";
 import Projects from "@/sections/Projects/Projects";
+import Services from "@/sections/Services/Services";
 
 
 export default function Page() {
@@ -18,6 +19,7 @@ export default function Page() {
         <About />
         <Portofolio />
         <Projects />
+        <Services />
       </div>
 
       {/* <Separator /> */}
