@@ -41,8 +41,8 @@ const Projects = () => {
                 <div className="carousel-btn">
 
               <CarouselContent >
-                  <CarouselPrevious />
-                  <CarouselNext />
+                  <CarouselPrevious variant='ghost' />
+                  <CarouselNext variant="ghost" />
               </CarouselContent>
                 </div>
               </div>

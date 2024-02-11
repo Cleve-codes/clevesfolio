@@ -45,8 +45,11 @@ export function Testimonials() {
       <div className="testimonials-section">
         <Carousel
         opts={{
+          align: "start",
           loop: true,
           dragFree: true,
+          dragThreshold: 2,
+          watchDrag: true,
         }}
          className="testimonials-carousel">
         <div className="testimonial-carousel-buttons">
