@@ -10,6 +10,8 @@ import { Testimonials } from "@/sections/Testimonials/Testimonials";
 import Blog from "@/sections/Blog/Blog";
 import Contact from "@/sections/Contact/Contact";
 import { useEffect, useRef } from 'react';
+import Footer from "@/sections/Footer/Footer";
+// import Footer from "@/components/Footer/Footer";
 
 
 
@@ -72,9 +74,10 @@ export default function Page() {
   }, []);
 
   return (
-    <main className="flex px-24 bg-[#1d1b19]">
+    <main className="flex bg-[#1d1b19]">
       {/* Left Section */}
-      <div className="flex flex-col min-w-[1/2]">
+      <div className="border-red">
+      <div className="flex px-28 flex-col min-w-[1/2]">
         <div className="min-h-screen  w-full flex flex-row" >
           <Home />
         </div>
@@ -86,13 +89,19 @@ export default function Page() {
         <Blog />
         <Contact />
       </div>
-      <div ref={cursorRef} className="cursor"></div>
+      <Footer />
+
+      </div>
+
 
       {/* <Separator /> */}
-      <SectionsSeparator />
+      {/* <SectionsSeparator /> */}
 
       {/* Right section */}
       <Right />
+
+      {/* Cursor */}
+      <div ref={cursorRef} className="cursor"></div>
     </main>
   );
 }

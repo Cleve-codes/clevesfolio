@@ -1,0 +1,41 @@
+.footer-section {
+  position: relative;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  border-top: 1px solid rgba(128, 128, 128, .5);
+}
+
+
+.footer-btn {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  right: 15%;
+  background-color: #1d1d1d;
+  border: 1px solid #1d1b19;
+  padding: 1em;
+  margin-left: 1em;
+  font-size: 24px;
+}
+
+.footer-btn:hover {
+  border: 1px solid #987750;
+  transition: all ease 0.3s;
+}
+
+.footer-text {
+  color: #888888;
+  margin-left: 7rem;
+  font-size: 18px;
+  margin-top: 4em;
+}
+
+.footer-text > div > span {
+  color: #dddddd;
+  /* font-size: 18px; */
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(128, 128, 128, .5);
+  display: inline-block;
+  margin-bottom: 2em;
+}
