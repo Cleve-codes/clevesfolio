@@ -1,0 +1,10 @@
+.contact-section {
+  min-height: 100vh;
+  margin-top: 10em;
+}
+
+.contact-text {
+  margin-top: 2em;
+  font-size: 35px;
+  color: #888888;
+}
