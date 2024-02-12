@@ -8,3 +8,62 @@
   font-size: 35px;
   color: #888888;
 }
+
+.form {
+  max-width: 900px;
+  /* border: 1px solid red; */
+  margin-top: 4em;
+}
+
+.flexdiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  width: 100%;
+}
+
+.flexdiv > div {
+  flex: 1;
+}
+
+.input-contact {
+  background-color: inherit;
+  border: 1px solid rgba(128, 128, 128, .5);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  min-width: 100%;
+  margin-bottom: 2em;
+  font-size: 24px;
+}
+
+.input-contact::placeholder {
+  color: #888888;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  margin-top: 10em;
+  margin-bottom: 4em;
+}
+
+.address-detail > p {
+  color: #888888;
+  font-size: 18px;
+}
+
+.address-detail > h2 {
+  color: #dddddd;
+  font-size: 34px;
+}
+
+.address-detail > h6 {
+  color: #dddddd;
+  font-size: 18px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(128, 128, 128, .5);
+  display: inline-block;
+  /* text-decoration: underline; */
+}

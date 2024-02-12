@@ -539,6 +539,17 @@
   transition: ease;
 }
 
+.input-contact {
+  background-color: inherit;
+  border: 1px solid #888888;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: .5em;
+  min-width: 100%;
+  margin-bottom: 2em;
+  /* margin-bottom: 1em; */
+}
+
 @media (min-width: 768px) {
   .blog {
     grid-template-columns: 1fr 1fr;

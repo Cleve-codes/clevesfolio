@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact" >
       <div>
         <h1 className="span">CONTACT</h1>
         <div className="about-header">
@@ -19,21 +19,34 @@ const Contact = () => {
          <br /> and I will reply you shortly.
         </p>
       </div>
-      <form>
-        <div>
+      <form className="form" >
+        <div className="flexdiv" >
           <div>
-            <input placeholder="Name *" />
+            <input className="input-contact"  placeholder="Name *" />
           </div>
           <div>
-            <input placeholder="Email *" />
+            <input className="input-contact" placeholder="Email *" />
           </div>
         </div>
         <div>
-            <input placeholder="Phone *" />
-            <input placeholder="Message *" />
-            <Button>SEND A MESSAGE</Button>
+            <input className="input-contact" placeholder="Phone *" />
+            <input className="input-contact" placeholder="Message *" />
+            <Button className="input-contact" variant="ghost" >SEND MESSAGE</Button>
         </div>
       </form>
+      <div className="address" >
+        <div className="address-detail" >
+          <p>ADDRESS</p>
+          <h2>South B, Nairobi, <br/> Kenya </h2>
+        </div>
+        <div className="address-detail" >
+          <p>PHONE</p>
+          <h2>(+254) 700164733</h2>
+        </div>
+        <div className="address-detail" >
+          <h6>clevemomanyi@gmail.com</h6>
+        </div>
+      </div>
     </div>
   );
 };

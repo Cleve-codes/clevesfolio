@@ -55,14 +55,14 @@ const Blog = () => {
             </div>
           ))}
         </div>
-        <div className='articles-btn' >
+        {/* <div className='articles-btn' > */}
           <Button
-          className="w-full"
+          className="input-contact"
           variant="ghost"
           >
             Load More Articles
           </Button>
-        </div>
+        {/* </div> */}
     </div>
   )
 }
