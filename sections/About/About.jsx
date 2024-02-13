@@ -6,7 +6,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="min-h-screen">
+    <div className="about-section">
           <div>
             <h1 className="span" >About Me</h1>
             <div className="about-header">

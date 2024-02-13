@@ -8,6 +8,8 @@
 .hero-img {
   margin: 2.5rem;
   transform: rotate(180deg);
+  height: 487px;
+  width: 487px;
 }
 
 .text {

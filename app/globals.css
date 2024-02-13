@@ -124,12 +124,38 @@
   }
 }
 
-.body{
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+html{
   scroll-behavior: smooth;
+  /* transition: all ease .3s; */
 }
 
 .border-red {
   border-right: 1px solid rgba(128, 128, 128, .5);
+}
+
+.about-section {
+  min-height:100vh;
+  animation: scaleUp;
+  animation-timeline: view();
+}
+
+/* Animation to make the left section grow in size when the about section is in view */
+@keyframes scaleUp {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 120%;
+  }
 }
 
 .expand {

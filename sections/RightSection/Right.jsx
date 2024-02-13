@@ -16,7 +16,7 @@ const Right = () => {
           <div className="imgFrame1">
             <div className="imgFrame2">
               <div className="image">
-                <Image className="hero-img" src='/assets/asset 20.jpeg' width={487} height={487} alt="hero"></Image>
+                <Image className="hero-img" src='/assets/asset 20.jpg' width={487} height={487} alt="hero"></Image>
               </div>
               <div className="intro">
                 <p>Hi THERE! I AM</p>

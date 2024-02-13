@@ -59,6 +59,10 @@
   font-size: 34px;
 }
 
+.address-detail .phone:hover {
+  color: #987115;
+}
+
 .address-detail > h6 {
   color: #dddddd;
   font-size: 18px;
