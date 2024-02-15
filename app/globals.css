@@ -138,6 +138,8 @@ html{
   /* transition: all ease .3s; */
 }
 
+
+
 .border-red {
   border-right: 1px solid rgba(128, 128, 128, .5);
 }
@@ -180,47 +182,10 @@ html{
   font-size: 30px;
 }
 
-.imgFrame1 {
-  position: relative;
-  height: 653px;
-  width: 759px;
-  border: .25px solid #888888;
-  transform: rotate(90deg);
-  margin-top: 2em;
-  margin-bottom: 4em;
-  /* padding: 2em; */
-  /* z-index: 3; Set a lower z-index for the first frame */
-}
 
-.imgFrame2 {
-  position: absolute;
-  width: 743px;
-  height: 679px;
-  border: .25px solid #888888;
-  padding: 1em;
-  /* z-index: 2; */
-  /* margin-right: 2em; */
-  /* top: 20px;  */
-  /* left: 20px;  */
-  transform: rotate(90deg);
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  /* Rotate the second frame by -45 degrees */
-}
-
-.imgFrame2 .image {
-  /* position: relative; */
-  height: 487px;
-  width: 487px;
-  padding: 10px;
-  margin-right: 4em;
-  margin-bottom: 6em;
-}
 
 .intro {
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
   color: #dddddd;
   text-align: center;
   /* width: 100%; */
