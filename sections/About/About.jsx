@@ -2,19 +2,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 // import downloadIcon from '/assets/asset 22.svg'
-// import './About.css'
+import './About.css'
 
 const About = () => {
   return (
     <div className="about-section">
           <div>
-            <h1 className="span" >About Me</h1>
+            <h1 className="about-span" >ABOUT ME</h1>
             <div className="about-header">
               <h1 className="h1" >Biography</h1>
               <div className="separator"></div>
             </div>
           </div>
-          <div className="mt-[6em]">
+          <div className="about-text">
             <>
               <p className="p">
                 I&apos;m a Creative Front-end Developer based in Nairobi, Kenya
@@ -33,7 +33,7 @@ const About = () => {
           </div>
 
           {/* About Me- Details */}
-          <div className="flex items-center">
+          <div className="about-details">
 
 
             <div className="credentials">

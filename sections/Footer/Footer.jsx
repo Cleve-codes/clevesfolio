@@ -8,7 +8,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <div className='footer-section' >
-    <div aria-hidden="true" className="flex items-center justify-center w-full" >
+    <div aria-hidden="true" className="flex w-full" >
       <Link href="#home" >
         <Button variant="ghost" className="footer-btn" size={30} >
           <ArrowUp />

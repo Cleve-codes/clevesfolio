@@ -10,8 +10,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import React from "react";
 import { useState, useRef, useEffect } from "react";
 
+import './Portofolio.css'
+
 const Portofolio = () => {
   const [activeTab, setActiveTab] = useState("experience");
+  const [initialRender, setInitialRender] = useState(true);
   const tabRefs = {
     experience: useRef(null),
     education: useRef(null),
@@ -35,13 +38,18 @@ const Portofolio = () => {
   // Use useEffect to apply styles when the activeTab state changes
   useEffect(() => {
     const setTab = applyStylesToActiveTab();
-    //  setTab();
+    setInitialRender(false);
   }, [activeTab]);
 
+  useEffect(() => {
+    applyStylesToActiveTab();
+    setActiveTab("experience");
+  }, [])
+
   return (
-    <div className="min-h-screen">
+    <div className="portofolio-section">
       <div>
-        <Tabs className="w-[890px]">
+        <Tabs defaultValue="experience" className="w-[890px]">
           <TabsList className="flex items-center justify-between bg-inherit">
             <TabsTrigger
               ref={tabRefs.experience}
@@ -84,7 +92,7 @@ const Portofolio = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="experience" className="tab-content">
-            {activeTab === "experience" && (
+            {(initialRender || activeTab === "experience") && (
               <>
                 <ExperiencesCard
                   company="PENDEZA ONLINE STORE"
@@ -147,6 +155,7 @@ const Portofolio = () => {
           <TabsContent value="skills" className="tab-content">
             {activeTab === "skills" && (
               <>
+              <div className="skills" >
                 <div className="skill">
               <Label htmlFor="design" className="skill-label">
                 UI/UX DESIGN
@@ -213,6 +222,7 @@ const Portofolio = () => {
                 step={1}
               />
             </div>
+            </div>
 
             <div className="skill-desc">
               <p className="p">
@@ -235,6 +245,7 @@ const Portofolio = () => {
           </TabsContent>
         </Tabs>
       </div>
+
     </div>
   );
 };

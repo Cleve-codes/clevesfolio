@@ -18,16 +18,18 @@ const Right = () => {
 
   useGSAP(() => {
 
-    const tl = gsap.timeline({})
+    const tl = gsap.timeline({duration: 1})
 
     tl.fromTo('.image', {
       scale: 1,
+      x: 0,
     }, {
       scale: 0.8,
+      x: 100,
       scrollTrigger: {
-        trigger: '#about',
-        start: "top center",
-        end: "bottom center",
+        trigger: '#home',
+        start: "bottom +=1050",
+        end: "bottom +=850",
         scrub: true,
       }
     })

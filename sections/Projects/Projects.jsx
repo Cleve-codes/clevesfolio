@@ -13,12 +13,13 @@ import Image3 from "/home/cleve/Documents/Javascript/React/clevefolio/public/ass
 import Image4 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/asset 12.jpeg";
 import Image5 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/asset 13.jpeg";
 import CarouselImg from "@/components/ui/carouselImg";
+import "./Projects.css";
 
 const Images = [Image1, Image2, Image3, Image4, Image5];
 
 const Projects = () => {
   return (
-    <div className="min-h-[3/4]">
+    <div className="projects-section">
       <Carousel
         opts={{
           align: "start",

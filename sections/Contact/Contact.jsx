@@ -6,17 +6,16 @@ const Contact = () => {
   return (
     <div className="contact-section" id="contact" >
       <div>
-        <h1 className="span">CONTACT</h1>
-        <div className="about-header">
+        <h1 className="contact-span">CONTACT</h1>
+        <div className="contact-header">
           <h1 className="h1">Get In Touch</h1>
           <div className="separator"></div>
         </div>
       </div>
       <div className="contact-text">
         <p className="contact-text" >
-        If you have any suggestion, project or even you want to <br /> say “hello”,
-         please fill out the form below
-         <br /> and I will reply you shortly.
+        If you have any suggestion, project or even you want to say “hello”,
+         please fill <br />  out the form below and I will reply you shortly.
         </p>
       </div>
       <form className="form" >
@@ -30,7 +29,10 @@ const Contact = () => {
         </div>
         <div>
             <input className="input-contact" placeholder="Phone *" />
-            <input className="input-contact" placeholder="Message *" />
+            <div className="input-container">
+            <label for="message" className="input-label" >Message *</label>
+            <input className="input-contact" type="text" id="message" />
+            </div>
             <Button className="input-contact" variant="ghost" >SEND MESSAGE</Button>
         </div>
       </form>

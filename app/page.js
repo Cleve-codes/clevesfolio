@@ -31,11 +31,11 @@ export default function Page() {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: '#about',
-        start: "top +=1000",
-        end: "bottom top",
+        trigger: '#home',
+        start: "bottom +=1050",
+        end: "bottom +=850",
         scrub: true,
-        markers: true,
+        // markers: true,
         toggleActions: "play none none reverse"
       }
     });
@@ -50,7 +50,7 @@ export default function Page() {
     <main className="flex bg-[#1d1b19]">
       <div className="border-red" id="left-section"  >
         <div className="flex px-28 flex-col min-w-[1/2]" >
-          <div className="min-h-screen w-full flex flex-row">
+          <div className="min-h-screen w-full flex flex-row" id="home" >
             <Home />
           </div>
           <div id="about" >
@@ -68,6 +68,7 @@ export default function Page() {
         <Footer />
       </div>
       <Right />
+      {/* <div className="cursor" ></div> */}
     </main>
   );
 }

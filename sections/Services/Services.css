@@ -1,0 +1,23 @@
+.services-section {
+  min-height: 100vh;
+  padding-inline: 7em;
+}
+
+.services-header {
+  margin-top: 1.5em;
+}
+
+.services-header h1 {
+  font-size: 3em;
+}
+
+.services-span {
+  color: #987750;
+  font-size: 18px;
+}
+
+.services-text {
+  font-size: 11px;
+  margin-top: 5em ;
+  /* line-height; */
+}

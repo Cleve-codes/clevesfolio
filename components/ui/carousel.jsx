@@ -133,7 +133,7 @@ const CarouselContent = React.forwardRef(({ className, ...props }, ref) => {
         ref={ref}
         className={cn(
           "flex",
-          orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
+          orientation === "horizontal" ? "ml-0" : "-mt-4 flex-col",
           className
         )}
         {...props} />
@@ -160,7 +160,7 @@ const CarouselItem = React.forwardRef(({ className, ...props }, ref) => {
 })
 CarouselItem.displayName = "CarouselItem"
 
-const CarouselPrevious = React.forwardRef(({ className, variant = "outline", size = "icon", usage,...props }, ref) => {
+const CarouselPrevious = React.forwardRef(({ className, variant = "ghost", size = "icon", usage,...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
@@ -169,7 +169,7 @@ const CarouselPrevious = React.forwardRef(({ className, variant = "outline", siz
       variant={variant}
       size={size}
       className={cn("absolute  h-8 w-8 bg-transparent text-[rgb(136,136,136)] border-none ", usage === "testimonials"
-        ? "left-0 translate-x-0 rotate-0"
+        ? "left-[0%] translate-x-0 rotate-0"
         : "left-3/4  -translate-y-2", className)}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
@@ -181,7 +181,7 @@ const CarouselPrevious = React.forwardRef(({ className, variant = "outline", siz
 })
 CarouselPrevious.displayName = "CarouselPrevious"
 
-const CarouselNext = React.forwardRef(({ className, variant = "outline", size = "icon", usage, ...props }, ref) => {
+const CarouselNext = React.forwardRef(({ className, variant = "ghost", size = "icon", usage, ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel()
 
   return (
@@ -190,7 +190,7 @@ const CarouselNext = React.forwardRef(({ className, variant = "outline", size = 
       variant={variant}
       size={size}
       className={cn("absolute h-8 w-8 bg-transparent text-[#888888] border-none ", usage === "testimonials"
-        ? "left-[4%] translate-x-0"
+        ? "left-[10%] translate-x-0"
         : "right-[15%] -translate-y-2", className)}
       disabled={!canScrollNext}
       onClick={scrollNext}

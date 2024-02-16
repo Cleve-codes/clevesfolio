@@ -5,6 +5,7 @@ import img2 from '@/public/assets/asset 15.jpeg'
 import img3 from '@/public/assets/asset 16.jpeg'
 import img4 from '@/public/assets/asset 17.jpeg'
 import { Button } from '@/components/ui/button';
+import './Blog.css'
 
 
 const blogs = [
