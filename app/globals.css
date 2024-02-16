@@ -184,17 +184,6 @@ html{
 
 
 
-.intro {
-  /* transform: rotate(180deg); */
-  color: #dddddd;
-  text-align: center;
-  /* width: 100%; */
-}
-
-.detail {
-  margin-top: 2em;
-}
-
 .svgdiv {
   height: 100%;
   width: 100%;

@@ -14,7 +14,26 @@ import "./Right.css";
 const Right = () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  /* GSAP ANimation to scale down the image and its 2 frames when the about section is reached  */
+  /* GSAP ANimation to scale down the .image class when the about section is reached  */
+
+  useGSAP(() => {
+
+    const tl = gsap.timeline({})
+
+    tl.fromTo('.image', {
+      scale: 1,
+    }, {
+      scale: 0.8,
+      scrollTrigger: {
+        trigger: '#about',
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+      }
+    })
+
+
+  }, []);
 
   return (
     <div className="right-section">
@@ -22,21 +41,24 @@ const Right = () => {
         <Navbar />
       </div>
       <div className="detail">
-        {/* <div className="imgFrame1"> */}
-          {/* <div className="imgFrame2"> */}
-          <div
-          className="image"
-           >
-
+          <div className="image">
             <div >
               <Image
                 className="hero-img"
                 // src="/assets/asset 20.jpg"
                 src={mask}
-                width={487}
-                height={487}
                 alt="hero"
                 ></Image>
+            </div>
+
+            <div>
+              <Image
+                className="personal-img"
+                src="/assets/asset 20.jpg"
+                width={480}
+                height={480}
+                alt="hero"
+              />
             </div>
 
             <div className="intro">
@@ -47,10 +69,7 @@ const Right = () => {
               </h2>
         </div>
 
-            </div>
-
-
-        <div className="text-center ">
+        <div className="text-center" id="to-contact" >
           <Link
             href="#contact"
             className={buttonVariants({
@@ -63,6 +82,11 @@ const Right = () => {
             </p>
           </Link>
         </div>
+
+            </div>
+
+
+
       </div>
     </div>
   );

@@ -1,24 +1,52 @@
 .right-section {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  /* padding-left: 6rem;
+  padding-right: 3rem; */
   position: fixed;
   right: 0px;
+  /* border: 1px solid blue; */
+  max-width: 50%;
+  margin: 0 auto;
+  /* display: grid;
+  place-items: right; */
 }
 
 .hero-img {
   margin: 2.5rem;
   /* transform: rotate(180deg); */
-  height: 487px;
-  width: 487px;
+  width: 100%;
+  height: 100%;
 }
 
 .image {
-  border: 1px solid red;
-  background-image: url('/public/assets/mask.svg');
-  background-size: cover;
-  background-position: center;
-  width: 600px;
-  height: 600px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+
+}
+
+.personal-img {
+  position: absolute;
+  top: 7%;
+  left: 0;
+  transform: translate(50%);
+  padding: 1em;
+}
+
+.intro {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  color: #dddddd;
+}
+
+#to-contact{
+  position: absolute;
+  top: 95%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .text {

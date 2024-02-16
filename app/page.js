@@ -32,15 +32,16 @@ export default function Page() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#about',
-        start: "top center",
-        end: "bottom center",
+        start: "top +=1000",
+        end: "bottom top",
         scrub: true,
-        // markers: true,
+        markers: true,
         toggleActions: "play none none reverse"
       }
     });
 
     tl.fromTo('#left-section', { scale: 1 }, { scale: 1.2, duration: 1 })
+    .fromTo('#left-section *', { scale: 1 }, { scale: 1 });
 
   }, [])
 
