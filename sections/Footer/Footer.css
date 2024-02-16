@@ -7,16 +7,20 @@
   /* background-color: #1d1d1d; */
 }
 
-.footer-btn {
+.button-container {
   position: absolute;
+  top: 50%;
+  right: 7%;
   transform: translateY(-50%);
-  top: 0;
-  right: 0;
+  z-index: 1000;
+}
+
+.footer-btn {
   background-color: #1d1d1d;
-  border: 1px solid red;
+  border: 1px solid #1d1d1d;
   padding: 1em;
-  /* margin-left: 10em; */
   font-size: 24px;
+  z-index: 1000;
 }
 
 .footer-btn:hover {
@@ -29,6 +33,7 @@
   margin-left: 7rem;
   font-size: 18px;
   margin-top: 4em;
+  position: relative;
 }
 
 .footer-text > div > span {

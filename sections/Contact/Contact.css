@@ -81,8 +81,10 @@
   font-size: 34px;
 }
 
-.address-detail .phone:hover {
-  color: #987115;
+.address-detail > h2:hover {
+  color: #987750;
+  cursor: pointer;
+  transition: all ease 0.3s;
 }
 
 .address-detail > h6 {
@@ -92,6 +94,11 @@
   border-bottom: 1px solid rgba(128, 128, 128, .5);
   display: inline-block;
   /* text-decoration: underline; */
+}
+
+.address-detail > h6:hover {
+  cursor: pointer;
+  transition: all ease 0.3s;
 }
 
 .input-container {
@@ -105,4 +112,9 @@
   color: #888888;
   font-size: 24px;
   transition: all ease 0.3s;
+}
+
+#phone:hover {
+  color: #987115;
+  cursor: pointer;
 }

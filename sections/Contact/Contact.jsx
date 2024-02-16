@@ -41,7 +41,7 @@ const Contact = () => {
           <p>ADDRESS</p>
           <h2>South B, Nairobi, <br/> Kenya </h2>
         </div>
-        <div className="address-detail phone" >
+        <div className="address-detail" id="phone" >
           <p>PHONE</p>
           <h2>(+254) 700164733</h2>
         </div>
