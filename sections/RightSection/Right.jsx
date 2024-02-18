@@ -23,9 +23,11 @@ const Right = () => {
     tl.fromTo('.image', {
       scale: 1,
       x: 0,
+      y: 0
     }, {
       scale: 0.8,
-      x: 100,
+      x: 80,
+      y: -100,
       scrollTrigger: {
         trigger: '#home',
         start: "bottom +=1050",

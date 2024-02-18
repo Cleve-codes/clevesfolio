@@ -17,6 +17,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import { useGSAP } from '@gsap/react'
+import { Scale } from "lucide-react";
 
 
 // import { useEffect, useRef } from 'react';
@@ -40,8 +41,8 @@ export default function Page() {
       }
     });
 
-    tl.fromTo('#left-section', { scale: 1 }, { scale: 1.2, duration: 1 })
-    .fromTo('#left-section *', { scale: 1 }, { scale: 1 });
+    tl.fromTo('#left-section', { width: '56%' }, { width: '68%', duration: 1 })
+    // .fromTo('#left-section *', { scale: 1 }, { scale: 1.2, duration: 1 }, 0)
 
   }, [])
 
@@ -49,7 +50,7 @@ export default function Page() {
   return (
     <main className="flex bg-[#1d1b19]">
       <div className="border-red" id="left-section"  >
-        <div className="flex px-28 flex-col min-w-[1/2]" >
+        <div className="flex flex-col min-w-full" >
           <div className="min-h-screen w-full flex flex-row" id="home" >
             <Home />
           </div>

@@ -18,8 +18,8 @@ const Slider = React.forwardRef(({ className, ...props }, ref) => {
     className={cn("relative flex w-full touch-none select-none items-center", className)}
     {...props}>
     <SliderPrimitive.Track
-      className="relative h-[1px] opacity-[.6] w-full grow overflow-hidden rounded-full bg-primary/20">
-      <SliderPrimitive.Range className="absolute h-full bg-primary" />
+      className="relative h-[1px] opacity-[.5] w-full grow overflow-hidden rounded-full bg-[#888888]">
+      <SliderPrimitive.Range className="absolute h-full bg-[#e89b3b]" />
     </SliderPrimitive.Track>
   </SliderPrimitive.Root>
   )

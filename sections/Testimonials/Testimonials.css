@@ -1,15 +1,24 @@
 /* Testimonials Section */
-.testiominials-section {
+/* .testiominials-section {
   margin-top: 5em;
   padding-inline: 7em;
-}
+  margin-inline: 7em;
+  border: 1px solid red;
+} */
 
 .testimonials-carousel {
   margin-top: 5em;
-  max-width: 800px;
+  margin-inline: 8em;
+  /* padding-inline: 7em; */
+  width: 100%;
   display: flex;
   flex: column;
-  margin: 0 auto;
+  overflow: hidden;
+  /* margin: 0 auto; */
+}
+
+.testimonials-carousel-text {
+  margin-top: 2em;
 }
 
 .testimonial-carousel-buttons {

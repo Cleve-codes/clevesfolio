@@ -57,7 +57,7 @@ export function Testimonials() {
             <CarouselPrevious usage="testimonials" />
             <CarouselNext usage="testimonials" />
           </div>
-          <div>
+          <div className="testimonials-carousel-text" >
             <CarouselContent>
               {Array.from({ length: 5 }).map((_, index) => (
                 <CarouselItem key={index}>

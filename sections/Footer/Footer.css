@@ -9,14 +9,14 @@
 
 .button-container {
   position: absolute;
-  top: 50%;
-  right: 7%;
+  top: 0%;
+  right: 11%;
   transform: translateY(-50%);
   z-index: 1000;
 }
 
 .footer-btn {
-  background-color: #1d1d1d;
+  background-color: #1d1d17;
   border: 1px solid #1d1d1d;
   padding: 1em;
   font-size: 24px;

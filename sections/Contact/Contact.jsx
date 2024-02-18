@@ -15,7 +15,7 @@ const Contact = () => {
       <div className="contact-text">
         <p className="contact-text" >
         If you have any suggestion, project or even you want to say “hello”,
-         please fill <br />  out the form below and I will reply you shortly.
+         please fill  out the form below and I will reply you shortly.
         </p>
       </div>
       <form className="form" >
@@ -41,9 +41,9 @@ const Contact = () => {
           <p>ADDRESS</p>
           <h2>South B, Nairobi, <br/> Kenya </h2>
         </div>
-        <div className="address-detail" id="phone" >
+        <div className="address-detail" >
           <p>PHONE</p>
-          <h2>(+254) 700164733</h2>
+          <h2 className="phone">(+254) 700164733</h2>
         </div>
         <div className="address-detail" >
           <h6>clevemomanyi@gmail.com</h6>

@@ -2,7 +2,8 @@
 .blog-section {
   margin-top: 10em;
   min-height: 100vh;
-  padding-left: 5em;
+  margin-inline-start: 7em;
+  padding-inline: 5em;
   /* max-width: 800px; */
 }
 

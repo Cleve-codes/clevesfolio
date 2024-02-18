@@ -22,13 +22,13 @@ const Projects = () => {
     <div className="projects-section">
       <Carousel
         opts={{
-          align: "start",
+          // align: "start",
           loop: true,
           dragFree: true,
           dragThreshold: 2,
           watchDrag: true,
         }}
-        className="carousel"
+        className="projects-carousel"
       >
         <div>
           <h1 className="span">Portofolio</h1>

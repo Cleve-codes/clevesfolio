@@ -69,6 +69,11 @@ body {
   background-color: #1d1b17;
 }
 
+#left-section {
+  width: 56%;
+  max-width: 75%;
+}
+
 
 /* Cursor */
 
@@ -208,12 +213,12 @@ html{
 
 .experiences-card {
   position: relative;
-  max-width: 820px;
-  min-height: 180px;
+  max-width: 100%;
+  min-height: 200px;
   color: #dddddd;
   padding: 3em;
   background-color: #181715;
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
   border-left: .325em solid transparent; /* Set a transparent left border */
 }
 
@@ -245,6 +250,7 @@ html{
 .experiences-card-h3 {
   color: #dddddd;
   font-size: 20px;
+  margin-bottom: .75em;
 }
 
 .experiences-card .date {
@@ -254,6 +260,7 @@ html{
 
 .job-title {
   font-size: 30px;
+  margin-bottom: .35em;
 }
 
 .job-description {

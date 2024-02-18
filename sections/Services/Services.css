@@ -1,6 +1,8 @@
 .services-section {
   min-height: 100vh;
+  margin-inline: 7em;
   padding-inline: 7em;
+  /* border: 1px solid red; */
 }
 
 .services-header {

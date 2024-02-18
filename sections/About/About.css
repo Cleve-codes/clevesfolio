@@ -1,27 +1,31 @@
 /* About Section */
 .about-section {
   min-height:90vh;
-  padding-left: 7rem;
-  padding-right: 7rem;
+  /* padding-left: 7rem;
+  padding-right: 7rem; */
+  margin-inline-end: 12em;
+  margin-inline-start: 10em;
+  max-width: fit-content;
+  /* border: 1px solid red; */
 }
 
 .about-header {
-  margin-top: 1.5em;
+  margin-top: 2.25em;
 }
 
 .about-header h1 {
-  font-size: 3em;
+  font-size: 3.25em;
 }
 
 .about-text {
-  font-size: 11px;
-  margin-top: 5em ;
+  font-size: 30px;
+  margin-top: 1.5em ;
   /* line-height; */
 }
 
 .about-span {
   color: #987750;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .credentials {
@@ -32,8 +36,8 @@
   display: flex;
   grid-template-columns: auto 1fr;
   color: white;
-  font-size: 1em;
-  gap: 5em;
+  font-size: 1.25em;
+  gap: 8em;
   /* justify-content: space-between; */
   align-items: center;
 }
@@ -42,17 +46,18 @@
   width: 100px;
   justify-content: flex-start;
   color:#888888;
-  font-size: 1em;
+  font-size: 1.25em;
   margin-bottom: .5em;
 }
 
 .cv {
-  height: 180px;
-  width: 270px;
+  height: 220px;
+  width: 340px;
   display: grid;
   place-content: center;
-  border: 1px solid #888888;
+  border: 1px solid rgba(128, 128, 128, .5);
   margin-top: 6em;
+  margin-right: 5em;
 }
 
 .cv > img {
@@ -69,7 +74,7 @@
 .cv:hover {
   cursor: pointer;
   border: 1px solid #987750;
-  transition: ease;
+  transition: all ease 0.3s;
 }
 
 #arrow {
@@ -84,4 +89,9 @@
 .about-details {
   display: flex;
   justify-content: space-between;
+}
+
+.about-link {
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(128, 128, 128, .5);
 }

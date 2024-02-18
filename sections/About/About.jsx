@@ -17,16 +17,10 @@ const About = () => {
           <div className="about-text">
             <>
               <p className="p">
-                I&apos;m a Creative Front-end Developer based in Nairobi, Kenya
-                <br />
-                with love for
+                I&apos;m a Creative Front-end Developer based in Nairobi, Kenya with love for
                 crafting web elements for a global audience.
-                {/* crafted web elements that resonate globally. */}
-                <br />
                 I thrive on collaborating with new individuals, finding inspiration in
-                <br />
                 diverse perspectives. Let&apos;s embark on a journey of creativity
-                <br />
                 and bring your digital vision to life!
               </p>
             </>
@@ -55,16 +49,36 @@ const About = () => {
               </ul>
               <ul>
                 <li>PHONE</li>
-                <li className="underline hover:cursor-pointer">(+254) 700 164 733</li>
+                <li className="underline hover:cursor-pointer">
+                  <Link
+                  className='about-link'
+                  href="tel:+254700164733"
+                  target="_blank"
+                   >
+                  (+254) 700 164 733
+                  </Link>
+                  </li>
               </ul>
               <ul>
                 <li>EMAIL</li>
-                <li className="underline hover:cursor-pointer" >clevemomanyi@gmail.com</li>
+                <li className="underline hover:cursor-pointer" >
+                  <Link
+                  href="mailto:clevemomanyi@gmail.com?subject=Collaboration%20Opportunity!"
+                  className='about-link'
+                  target="_blank"
+                   >
+                  clevemomanyi@gmail.com
+                </Link>
+                </li>
               </ul>
               <ul>
                 <li>GITHUB</li>
                 <li className="underline">
-                  <Link href="https://github.com/cleve-codes/">
+                  <Link
+                    href="https://github.com/cleve-codes/"
+                    className='about-link'
+                    target="_blank"
+                     >
                     clevecodes
                   </Link>
                 </li>

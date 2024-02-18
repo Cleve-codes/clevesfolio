@@ -2,11 +2,12 @@
   min-height: 100vh;
   margin-top: 10em;
   padding-inline: 7em;
+  margin-inline: 7em;
 }
 
 .contact-text {
   margin-top: 2em;
-  font-size: 28px;
+  font-size: 26px;
   color: #888888;
 }
 
@@ -26,7 +27,7 @@
 .form {
   min-width: 600px;
   /* border: 1px solid red; */
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 .flexdiv {
@@ -43,11 +44,11 @@
 .input-contact {
   background-color: inherit;
   border: 1px solid rgba(128, 128, 128, .5);
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: .625em;
+  padding-bottom: .625em;
   padding-left: 1em;
   min-width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-size: 24px;
 }
 
@@ -56,7 +57,7 @@
 }
 
 #message {
-  height: 10em;
+  height: 8em;
 }
 
 .input-contact:nth-child(2)::placeholder {
@@ -81,7 +82,7 @@
   font-size: 34px;
 }
 
-.address-detail > h2:hover {
+.address-detail .phone:hover {
   color: #987750;
   cursor: pointer;
   transition: all ease 0.3s;
