@@ -1,18 +1,12 @@
 .right-section {
-  /* padding-left: 6rem;
-  padding-right: 3rem; */
   position: fixed;
   right: 0px;
-  /* border: 1px solid blue; */
-  max-width: 50%;
+  /* max-width: 50%; */
   margin: 0 auto;
-  /* display: grid;
-  place-items: right; */
 }
 
 .hero-img {
   margin: 2.5rem;
-  /* transform: rotate(180deg); */
   width: 100%;
   height: 100%;
 }
@@ -21,17 +15,14 @@
   position: relative;
   width: 100%;
   height: 100%;
-  /* border: 1px solid red; */
-
 }
+
 
 .personal-img {
-  position: absolute;
-  top: 7%;
-  left: 0;
-  transform: translate(50%);
-  padding: 1em;
+  position: fixed;
 }
+
+
 
 .intro {
   position: absolute;
@@ -52,4 +43,30 @@
 .text {
   color: #dddddd;
   text-decoration-line: underline;
+}
+
+@media (min-width: 1280px) {
+  .personal-img {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 1em;
+  }
+}
+
+@media (max-width: 1280px) {
+  /* .right-section {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  } */
+
+  .personal-img {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    transform: translate(0, 0);
+  }
+
 }

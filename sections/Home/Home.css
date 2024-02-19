@@ -1,8 +1,22 @@
 .home-section {
-  margin-top: 45%;
-  min-width: 1/2;
+  min-height:100vh;
+  width: 100%;
+  margin-inline: 0 auto;
   display: flex;
-  flex-direction: column;
-  margin-inline: 10em;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.home-container {
+  min-width: 100%;
   /* border: 1px solid red; */
+
+}
+
+
+/* Responsiveness */
+@media (min-width: 1280px) {
+  .home-container {
+    margin-inline: 10em;
+  }
 }

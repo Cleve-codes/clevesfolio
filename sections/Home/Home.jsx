@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div id='home' className="">
           <div className="home-section">
-            <div className="flex flex-col justify-center mx-[128px] mt-[20%]">
+            <div className="home-container">
 
               <h3 className="h3 span">INTRODUCTION</h3>
 

@@ -48,10 +48,10 @@ export default function Page() {
 
 
   return (
-    <main className="flex bg-[#1d1b19]">
+    <main className="main-page">
       <div className="border-red" id="left-section"  >
-        <div className="flex flex-col min-w-full" >
-          <div className="min-h-screen w-full flex flex-row" id="home" >
+        <div>
+          <div className="" id="home" >
             <Home />
           </div>
           <div id="about" >
@@ -68,7 +68,9 @@ export default function Page() {
         </div>
         <Footer />
       </div>
+
       <Right />
+
       {/* <div className="cursor" ></div> */}
     </main>
   );

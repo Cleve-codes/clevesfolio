@@ -30,7 +30,7 @@ const Contact = () => {
         <div>
             <input className="input-contact" placeholder="Phone *" />
             <div className="input-container">
-            <label for="message" className="input-label" >Message *</label>
+            <label htmlFor="message" className="input-label" >Message *</label>
             <input className="input-contact" type="text" id="message" />
             </div>
             <Button className="input-contact" variant="ghost" >SEND MESSAGE</Button>
