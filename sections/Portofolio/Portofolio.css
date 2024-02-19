@@ -14,6 +14,27 @@
   margin-top: 3em;
 }
 
+@media (max-width: 1180px) {
+  .portofolio-section {
+    max-width: fit-content;
+    margin-inline: 2em;
+    margin-top: 4em;
+  }
+
+  .p{
+    font-size: 1.5em;
+  }
+
+  .skill-desc{
+    margin-top: 0;
+    width: 60%;
+  }
+
+  .skills {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .portofolio-section {
     margin-inline: 1.25em;

@@ -30,9 +30,9 @@ const Services = () => {
       <div className="services-text">
         <p className="p">
           I help ambitious businesses like yours generate more profits
-          <br />
+          {/* <br /> */}
           by building awareness, driving web traffic, connecting with
-          <br />
+          {/* <br /> */}
           customers and growing overall sales.
         </p>
       </div>

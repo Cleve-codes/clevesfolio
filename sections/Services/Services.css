@@ -17,12 +17,33 @@
 
 .services-text {
   font-size: 11px;
-  margin-top: 5em ;
+  /* margin-top: 5em ; */
+}
+
+@media (max-width: 1180px) {
+  .services-section {
+    margin-top: 10em;
+    padding-inline: 2em;
+  }
+
+  .services-header h1 {
+    font-size: 2em;
+  }
+
+  .services-text {
+    font-size: 1.35em;
+    margin-bottom: 2em;
+  }
 }
 
 @media (max-width: 600px) {
   .services-section {
     margin-top: 4em;
     padding-inline: 1.25em;
+  }
+
+  .services-text {
+    font-size: 1em;
+    margin-bottom: 6em;
   }
 }

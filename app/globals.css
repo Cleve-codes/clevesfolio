@@ -308,22 +308,6 @@ body {
   margin-top: 2em;
 }
 
-
-.articles-btn {
-  border: 1px solid #888888;
-  font-size: larger;
-  margin-bottom: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: .5em;
-  padding-bottom: .5em;
-}
-
-.articles-btn:hover {
-  border: 1px solid #987750;
-  transition: ease;
-}
-
 .input-contact {
   background-color: inherit;
   border: 1px solid #888888;
@@ -337,7 +321,7 @@ body {
 
 
 /* Responsive design */
-@media (max-width: 600px) {
+@media (max-width: 1180px) {
   .main-page {
     flex-direction: column-reverse;
   }
@@ -355,9 +339,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-height: 60vh;
+    /* min-height: auto; */
+    /* height: 10%; */
+    height: 60vh;
     padding-inline: 2em;
+    /* border: 1px solid red; */
   }
+}
+
+
+
+@media (max-width: 600px) {
+
 
   #home-title h1 {
     font-size: 2.875em;
@@ -388,8 +381,8 @@ body {
   }
 
   .credentials {
-    margin-top: 4em;
-    margin-bottom: 4em;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
 
   .carousel-item {

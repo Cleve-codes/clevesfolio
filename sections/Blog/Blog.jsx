@@ -60,6 +60,7 @@ const Blog = () => {
           <Button
           className="input-contact"
           variant="ghost"
+          id="articles-btn"
           >
             Load More Articles
           </Button>

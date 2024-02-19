@@ -4,7 +4,7 @@ const TestimonialsCard = ({text, name, job}) => {
   return (
     <div className='testimonials-card'>
       <div>
-        <p className='testimonial-text'>{text}</p>
+        <p className='p'>{text}</p>
       </div>
       <div className='testimonial-detail'>
         <h1>{name}</h1>
