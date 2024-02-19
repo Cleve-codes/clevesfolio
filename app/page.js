@@ -18,33 +18,53 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import { useGSAP } from '@gsap/react'
 import { Scale } from "lucide-react";
+import { useState } from "react";
 
 
 // import { useEffect, useRef } from 'react';
 export default function Page() {
+
+  const [windowWidth, setWindowWidth] = useState(0)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, [])
+
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
   /* GSAP Animation to make the left section scale up and the right section scale down when the About section
   comes into view */
 
 
-  useGSAP(() => {
+  // useGSAP(() => {
+  //   if (windowWidth > 1459) {
+  //     const tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: '#home',
+  //         start: "bottom +=1050",
+  //         end: "bottom +=850",
+  //         scrub: true,
+  //         // markers: true,
+  //         toggleActions: "play none none reverse"
+  //       }
+  //     });
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '#home',
-        start: "bottom +=1050",
-        end: "bottom +=850",
-        scrub: true,
-        // markers: true,
-        toggleActions: "play none none reverse"
-      }
-    });
-
-    tl.fromTo('#left-section', { width: '56%' }, { width: '68%', duration: 1 })
-    // .fromTo('#left-section *', { scale: 1 }, { scale: 1.2, duration: 1 }, 0)
-
-  }, [])
+  //     tl.to('#left-section',{ width: '68%', duration: 1 })
+  //     // .fromTo('#left-section *', { scale: 1 }, { scale: 1.2, duration: 1 }, 0)
+  //   }
+  // }, [windowWidth])
 
 
   return (

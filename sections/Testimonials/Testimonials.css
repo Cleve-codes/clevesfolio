@@ -1,24 +1,24 @@
 /* Testimonials Section */
-/* .testiominials-section {
+.testimonials-section {
   margin-top: 5em;
-  padding-inline: 7em;
-  margin-inline: 7em;
-  border: 1px solid red;
-} */
+  /* border: 1px solid red; */
+
+}
 
 .testimonials-carousel {
-  margin-top: 5em;
-  margin-inline: 8em;
-  /* padding-inline: 7em; */
   width: 100%;
   display: flex;
   flex: column;
   overflow: hidden;
-  /* margin: 0 auto; */
 }
 
 .testimonials-carousel-text {
   margin-top: 2em;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .testimonial-carousel-buttons {
@@ -26,21 +26,48 @@
   justify-content: space-between;
   margin-top: 1em;
   margin: 1em;
-  /* border: 1px solid re; */
+}
+
+.testimonials-card {
+  position: relative;
+  width: 100%;
+  min-height: 180px;
+  color: #dddddd;
+  padding: 3em;
+  /* background-color: red; */
+  margin-bottom: 1em;
+  overflow: hidden;
+  /* border-left: .325em solid transparent; Set a transparent left border */
 }
 
 .testimonial-text{
-  font-size: 32px;
+  font-size: 2em;
   color: #888888;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.testimonial-detail h1,
+.testimonial-detail h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .testimonial-detail h1 {
-  font-size: 24px;
+  font-size: 1.25em;
   color: #dddddd;
   margin-top: 1em;
 }
 
 .testimonial-detail h3 {
-  font-size: 18px;
+  font-size: 1.125em;
   color: #888888;
+}
+
+@media (max-width) {
+  .testimonial-text {
+    font-size: 1em;
+  }
 }

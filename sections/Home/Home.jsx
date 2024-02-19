@@ -31,12 +31,13 @@ const Home = () => {
                 <div className="separator"></div>
 
               </div>
-              <div id="home-text">
+              <div id="home-text" className='about-text' >
                 <p className="p">
                   I design and develop for customers of all sizes,
-                  <br />
+                  {/* <br /> */}
                   specializing in creating stylish, modern websites,
-                  <br /> web services
+                  {/* <br />  */}
+                  web services
                   and online stores.
                 </p>
               </div>

@@ -1,8 +1,5 @@
 .services-section {
   min-height: 100vh;
-  margin-inline: 7em;
-  padding-inline: 7em;
-  /* border: 1px solid red; */
 }
 
 .services-header {
@@ -15,11 +12,17 @@
 
 .services-span {
   color: #987750;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .services-text {
   font-size: 11px;
   margin-top: 5em ;
-  /* line-height; */
+}
+
+@media (max-width: 600px) {
+  .services-section {
+    margin-top: 4em;
+    padding-inline: 1.25em;
+  }
 }

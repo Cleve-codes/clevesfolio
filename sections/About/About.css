@@ -2,30 +2,25 @@
 .about-section {
   min-height:90vh;
   width: 100%;
-  margin-inline: 10em;
+  /* margin-inline: 10em; */
 }
 
 .about-header {
   margin-top: 2.25em;
 }
 
-.about-header h1 {
+/* .about-header h1 {
   font-size: 3.25em;
-}
+} */
 
-.about-text {
-  font-size: 30px;
-  margin-top: 1.5em ;
-  /* line-height; */
-}
 
 .about-span {
   color: #987750;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 .credentials {
-  margin-top: 5em;
+  /* margin-top: 5em; */
 }
 
 .credentials ul {
@@ -52,7 +47,7 @@
   display: grid;
   place-content: center;
   border: 1px solid rgba(128, 128, 128, .5);
-  margin-top: 6em;
+  /* margin-top: 6em; */
   margin-bottom: 6em\;
 }
 

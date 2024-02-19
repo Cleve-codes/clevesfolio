@@ -45,28 +45,3 @@
   text-decoration-line: underline;
 }
 
-@media (min-width: 1280px) {
-  .personal-img {
-    position: absolute;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    padding: 1em;
-  }
-}
-
-@media (max-width: 1280px) {
-  /* .right-section {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-  } */
-
-  .personal-img {
-    position: absolute;
-    top: 10%;
-    left: 35%;
-    transform: translate(0, 0);
-  }
-
-}

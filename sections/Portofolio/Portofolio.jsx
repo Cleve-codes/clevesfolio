@@ -230,16 +230,16 @@ const Portofolio = () => {
 
                 <div className="skill-desc">
                   <p className="p">
-                    A freelance creative designer with a love for
-                    <br />
+                    A creative frontend developer with a love for
+                    {/* <br /> */}
                     minimal design, clean typography and well-written code,
-                    <br />
+                    {/* <br /> */}
                     located in Nairobi, Kenya. Provide high quality and cost
-                    <br />
+                    {/* <br /> */}
                     effective offshore web and software development services.
-                    <br />
+                    {/* <br /> */}
                     Wide range of web and software development services
-                    <br />
+                    {/* <br /> */}
                     across the world.
                   </p>
                 </div>

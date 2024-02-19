@@ -157,40 +157,14 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  /* max-width: 100vw; */
-
-  /* border: 1px solid red; */
-  /* display: flex; */
 }
 
 
-@media (min-width: 1280px) {
-  .border-red {
+
+#left-section {
   border-right: 1px solid rgba(128, 128, 128, .5);
-
-  }
-
-.main-page {
-  /* display: flex;
-  flex-direction: column-reverse; */
-  /* border: 1px solid red; */
-  }
-
+  width: 56%;
 }
-
-@media (max-width: 1280px) {
-
-  .main-page {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-
-
-}
-
-
-
 
 
 
@@ -202,11 +176,11 @@ body {
 
 .span {
   color: #987750;
-  font-size: 28px;
+  font-size: 1.25em;
 }
 
 .h1 {
-  font-size: 48px;
+  font-size: 3.5em;
   color: #dddddd;
 }
 
@@ -239,15 +213,10 @@ body {
   border-left: .325em solid transparent; /* Set a transparent left border */
 }
 
-.testimonials-card {
-  position: relative;
-  max-width: 800px;
-  min-height: 180px;
-  color: #dddddd;
-  padding: 3em;
-  /* background-color: red; */
-  margin-bottom: 1em;
-  border-left: .325em solid transparent; /* Set a transparent left border */
+
+
+.testimonials-text {
+  font-size: 1.125em;
 }
 
 .experiences-card:before {
@@ -317,7 +286,7 @@ body {
 
 .skill-desc {
   margin-top: 5em;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .slider {
@@ -364,4 +333,69 @@ body {
   min-width: 100%;
   margin-bottom: 2em;
   /* margin-bottom: 1em; */
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .main-page {
+    flex-direction: column-reverse;
+  }
+
+  #left-section, .right-section {
+    width: 100%;
+  }
+
+  .right-section {
+    position: static;
+  }
+
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 60vh;
+    padding-inline: 2em;
+  }
+
+  #home-title h1 {
+    font-size: 2.875em;
+  }
+
+  .about-section {
+    padding-inline: 2em;
+  }
+
+  .portofolio-section {
+    padding-top: 6em;
+  }
+
+  .p {
+    font-size: 1.5em;
+  }
+
+  .skill-desc {
+    margin-top: 2.5em;
+  }
+
+  .about-text {
+    margin-top: 2em;
+  }
+
+  .about-text .p {
+    font-size: 1.25em;
+  }
+
+  .credentials {
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+
+  .carousel-item {
+    display: flex;
+    flex-basis: 50%;
+    gap: 1em;
+  }
+
 }

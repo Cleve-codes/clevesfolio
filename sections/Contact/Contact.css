@@ -1,13 +1,13 @@
 .contact-section {
   min-height: 100vh;
   margin-top: 10em;
-  padding-inline: 7em;
-  margin-inline: 7em;
+  padding-inline: 2em;
+  /* margin-inline: 7em; */
 }
 
 .contact-text {
   margin-top: 2em;
-  font-size: 26px;
+  font-size: 1.25em;
   color: #888888;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .form {
-  min-width: 600px;
+  width: 100%;
   /* border: 1px solid red; */
   margin-top: 3em;
 }
@@ -111,11 +111,17 @@
   top: 1em;
   left: 1em;
   color: #888888;
-  font-size: 24px;
+  font-size: 1.25em;
   transition: all ease 0.3s;
 }
 
 #phone:hover {
   color: #987115;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .flexdiv {
+    flex-direction: column;
+  }
 }

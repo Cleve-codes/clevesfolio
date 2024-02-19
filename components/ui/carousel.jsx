@@ -124,7 +124,7 @@ const Carousel = React.forwardRef((
 })
 Carousel.displayName = "Carousel"
 
-const CarouselContent = React.forwardRef(({ className, ...props }, ref) => {
+const CarouselContent = React.forwardRef(({ className, usage,...props }, ref) => {
   const { carouselRef, orientation } = useCarousel()
 
   return (
@@ -142,7 +142,7 @@ const CarouselContent = React.forwardRef(({ className, ...props }, ref) => {
 })
 CarouselContent.displayName = "CarouselContent"
 
-const CarouselItem = React.forwardRef(({ className, ...props }, ref) => {
+const CarouselItem = React.forwardRef(({ className, usage,...props }, ref) => {
   const { orientation } = useCarousel()
 
   return (
@@ -152,7 +152,7 @@ const CarouselItem = React.forwardRef(({ className, ...props }, ref) => {
       aria-roledescription="slide"
       className={cn(
         "min-w-0 shrink-0 grow-0 basis-full",
-        orientation === "horizontal" ? "pl-4" : "pt-4",
+        usage === "testimonials" ? "mx-0" : "",
         className
       )}
       {...props} />)
@@ -169,8 +169,8 @@ const CarouselPrevious = React.forwardRef(({ className, variant = "ghost", size 
       variant={variant}
       size={size}
       className={cn("absolute  h-8 w-8 bg-transparent text-[rgb(136,136,136)] border-none ", usage === "testimonials"
-        ? "left-[8%] translate-x-0 rotate-0"
-        : "left-3/4  -translate-y-2", className)}
+        ? "left-0 translate-x-0  sm:left-[8%] sm:translate-x-0 rotate-0"
+        : "left-[85%] sm:left-3/4  sm:-translate-y-2", className)}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}>
@@ -190,8 +190,8 @@ const CarouselNext = React.forwardRef(({ className, variant = "ghost", size = "i
       variant={variant}
       size={size}
       className={cn("absolute h-8 w-8 bg-transparent text-[#888888] border-none ", usage === "testimonials"
-        ? "left-[12%] translate-x-0"
-        : "right-[15%] -translate-y-2", className)}
+        ? "left-[10%] sm:left-[12%] sm:translate-x-0"
+        : "right-[3%]  sm:right-[15%] sm:-translate-y-2", className)}
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}>

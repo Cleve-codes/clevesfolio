@@ -8,10 +8,32 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import dynamic from "next/dynamic";
 import mask from "@/public/assets/mask.svg";
+import { useEffect, useState } from "react";
 
 import "./Right.css";
 
 const Right = () => {
+
+  const [dimensions, setDimensions] = useState({
+    width: Math.floor(window.innerWidth * 0.5),
+    height: Math.floor(window.innerHeight * 0.5)
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        width: Math.floor(window.innerWidth * 0.5),
+        height: Math.floor(window.innerHeight * 0.5)
+      });
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   gsap.registerPlugin(ScrollTrigger);
 
   /* GSAP ANimation to scale down the .image class when the about section is reached  */
@@ -62,8 +84,8 @@ const Right = () => {
             <Image
               className="personal-img"
               // src="/assets/asset 20.jpg"
-              width={480}
-              height={480}
+              width={dimensions.width}
+              height={dimensions.height}
               alt="hero"
             />
           </div>

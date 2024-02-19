@@ -1,9 +1,5 @@
 .portofolio-section {
   min-height: 100vh;
-  /* padding-left: 7em;
-  padding-right: 7em; */
-  margin-inline-start: 8em;
-  /* padding-inline-start: 4em; */
 }
 
 .skills {
@@ -12,11 +8,18 @@
 
 .tab {
   width: 100%;
-  /* border: 1px solid #ccc; */
-  padding-inline-end: 10em;
-  padding-inline-start: 2em;
 }
 
 .tab-content {
   margin-top: 3em;
+}
+
+@media (max-width: 600px) {
+  .portofolio-section {
+    margin-inline: 1.25em;
+  }
+
+  .skills {
+    max-width: 100%;
+  }
 }
