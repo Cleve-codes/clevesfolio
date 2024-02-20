@@ -1,5 +1,5 @@
 .services-section {
-  min-height: 100vh;
+  height: max-content;
   /* margin-inline: 3em; */
 }
 

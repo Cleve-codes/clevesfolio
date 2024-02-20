@@ -322,6 +322,13 @@ body {
 
 
 /* Responsive design */
+/* @media (min-width: 1280px) {
+  .home-section {
+    padding-inline: 5em;
+  } */
+
+
+
 @media (max-width: 1180px) {
   .main-page {
     flex-direction: column-reverse;
@@ -334,6 +341,7 @@ body {
 
   #left-section {
     order: 2;
+    border: none;
   }
 
   .right-section {

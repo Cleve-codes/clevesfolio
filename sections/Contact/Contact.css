@@ -118,7 +118,13 @@
   cursor: pointer;
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1280px) {
+  .contact-section {
+    padding-inline: 5em;
+  }
+}
+
+@media (max-width: 1280px) {
   .contact-section {
     padding-inline-start: 2em;
   }

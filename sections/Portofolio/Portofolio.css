@@ -1,5 +1,6 @@
 .portofolio-section {
-  min-height: 100vh;
+  height: max-content;
+  margin-bottom: 5em;
 }
 
 .skills {
