@@ -41,15 +41,14 @@
   margin-bottom: .5em;
 }
 
-.cv {
+/* .cv {
   min-height: 200px;
   width: 100%;
   display: grid;
   place-content: center;
   border: 1px solid rgba(128, 128, 128, .5);
-  /* margin-top: 6em; */
-  margin-bottom: 6em\;
-}
+  margin-bottom: 6em;
+} */
 
 .cv p {
   color: #888888;

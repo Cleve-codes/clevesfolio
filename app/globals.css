@@ -322,94 +322,88 @@ body {
 
 
 /* Responsive design */
-/* @media (min-width: 1280px) {
-  .home-section {
-    padding-inline: 5em;
-  } */
-
-
-
-@media (max-width: 1180px) {
+/* Mobile Devices */
+@media (min-width: 320px) and (max-width: 480px) {
   .main-page {
     flex-direction: column-reverse;
-    gap: 2em;
-  }
-
-  #left-section, .right-section {
-    width: 100%;
   }
 
   #left-section {
-    order: 2;
-    border: none;
+    width: 100%;
+    border-right: none;
   }
 
   .right-section {
-    position: relative;
-    margin-bottom: 2em;
-    right: auto;
-    left: 0;
-    order: 1;
-  }
-
-  .personal-img {
-    position: absolute;
-  }
-
-  .home-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* margin-top: 80vh; */
-    height: 60vh;
-    padding-inline: 2em;
-    /* border: 1px solid red; */
+    min-width: 100%;
   }
 }
 
 
-
-@media (max-width: 600px) {
-
-
-  #home-title h1 {
-    font-size: 2.875em;
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-page {
+    flex-direction: column-reverse;
   }
 
-  .about-section {
-    padding-inline: 2em;
+  #left-section {
+    width: 100%;
+    border-right: none;
   }
 
-  .portofolio-section {
-    padding-top: 6em;
+  .right-section {
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1039px) {
+  .main-page {
+    flex-direction: column-reverse;
   }
 
-  .p {
-    font-size: 1.5em;
+  #left-section {
+    width: 100%;
+    border-right: none;
   }
 
-  .skill-desc {
-    margin-top: 2.5em;
+  .right-section {
+    min-width: 100%;
   }
 
-  .about-text {
-    margin-top: 2em;
+}
+
+/* Small screens & Laptops */
+@media (min-width: 1040px) and (max-width: 1200px) {
+  /* .main-page {
+    flex-direction: column-reverse;
+  } */
+
+  #left-section {
+    max-width: 68%;
+    border-right: none;
+    border: 1px solid red;
   }
 
-  .about-text .p {
-    font-size: 1.25em;
+  .right-section {
+    /* min-width: 100%; */
   }
+}
 
-  .credentials {
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
 
-  .carousel-item {
+/* Large Screens */
+/* @media (min-width: 1025px) and (max-width: 1200px) {
+  .main-page {
     display: flex;
-    flex-basis: 50%;
-    gap: 1em;
+  }
+} */
+
+@media (min-width: 1201px) {
+
+  #left-section {
+    max-width: 68%;
+    border-right: 1px solid rgba(128, 128, 128, .5);
   }
 
+  .right-section {
+    max-width: 50%;
+  }
 }
