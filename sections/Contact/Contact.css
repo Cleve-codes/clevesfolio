@@ -1,8 +1,6 @@
 .contact-section {
   min-height: 100vh;
   margin-top: 10em;
-  padding-inline: 2em;
-  /* margin-inline: 7em; */
 }
 
 .contact-text {
@@ -25,7 +23,7 @@
 }
 
 .form {
-  width: 100%;
+  width: 95%;
   /* border: 1px solid red; */
   margin-top: 3em;
 }
@@ -47,7 +45,7 @@
   padding-top: .625em;
   padding-bottom: .625em;
   padding-left: 1em;
-  min-width: 100%;
+  width: 100%;
   margin-bottom: 1em;
   font-size: 24px;
 }
@@ -118,6 +116,12 @@
 #phone:hover {
   color: #987115;
   cursor: pointer;
+}
+
+@media (min-width: 1180px) {
+  .contact-section {
+    padding-inline-start: 2em;
+  }
 }
 
 @media (max-width: 600px) {

@@ -11,3 +11,9 @@
   width: 100%;
   /* border: 1px solid red; */
 }
+
+@media (min-width: 1181px) {
+  .home-section, .about-section {
+    margin-inline: 4em;
+  }
+}

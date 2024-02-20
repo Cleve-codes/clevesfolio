@@ -13,56 +13,35 @@ import { useEffect, useState } from "react";
 import "./Right.css";
 
 const Right = () => {
-
-  const [dimensions, setDimensions] = useState({
-    width: Math.floor(window.innerWidth * 0.5),
-    height: Math.floor(window.innerHeight * 0.5)
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setDimensions({
-        width: Math.floor(window.innerWidth * 0.5),
-        height: Math.floor(window.innerHeight * 0.5)
-      });
-    }
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   gsap.registerPlugin(ScrollTrigger);
 
   /* GSAP ANimation to scale down the .image class when the about section is reached  */
 
-  useGSAP(() => {
-    const tl = gsap.timeline({ duration: 1 });
+  // useGSAP(() => {
+  //   const tl = gsap.timeline({ duration: 1 });
 
-    tl.fromTo(
-      ".image",
-      {
-        scale: 1,
-        x: 60,
-        y: 0,
-      },
-      {
-        scale: 0.8,
-        x: 80,
-        y: -100,
-        scrollTrigger: {
-          trigger: "#home",
-          start: "bottom +=1050",
-          end: "bottom +=850",
-          scrub: true,
-        },
-      }
-    );
+  //   tl.fromTo(
+  //     ".image",
+  //     {
+  //       scale: 1,
+  //       x: 60,
+  //       y: 0,
+  //     },
+  //     {
+  //       scale: 0.8,
+  //       x: 80,
+  //       y: -100,
+  //       scrollTrigger: {
+  //         trigger: "#home",
+  //         start: "bottom +=1050",
+  //         end: "bottom +=850",
+  //         scrub: true,
+  //       },
+  //     }
+  //   );
 
 
-  }, []);
+  // }, []);
 
   return (
     <div className="right-section">
@@ -84,8 +63,8 @@ const Right = () => {
             <Image
               className="personal-img"
               // src="/assets/asset 20.jpg"
-              width={dimensions.width}
-              height={dimensions.height}
+              width={480}
+              height={480}
               alt="hero"
             />
           </div>

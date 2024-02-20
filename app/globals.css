@@ -164,6 +164,7 @@ body {
 #left-section {
   border-right: 1px solid rgba(128, 128, 128, .5);
   width: 56%;
+  order: 1;
 }
 
 
@@ -187,7 +188,7 @@ body {
 
 .p {
   color: #888888;
-  font-size: 30px;
+  font-size: 1.875em;
 }
 
 
@@ -324,14 +325,27 @@ body {
 @media (max-width: 1180px) {
   .main-page {
     flex-direction: column-reverse;
+    gap: 2em;
   }
 
   #left-section, .right-section {
     width: 100%;
   }
 
+  #left-section {
+    order: 2;
+  }
+
   .right-section {
-    position: static;
+    position: relative;
+    margin-bottom: 2em;
+    right: auto;
+    left: 0;
+    order: 1;
+  }
+
+  .personal-img {
+    position: absolute;
   }
 
   .home-section {
@@ -339,8 +353,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* min-height: auto; */
-    /* height: 10%; */
+    /* margin-top: 80vh; */
     height: 60vh;
     padding-inline: 2em;
     /* border: 1px solid red; */

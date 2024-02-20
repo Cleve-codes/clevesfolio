@@ -26,21 +26,21 @@ export default function Page() {
 
   const [windowWidth, setWindowWidth] = useState(0)
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setWindowWidth(window.innerWidth);
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     setWindowWidth(window.innerWidth);
 
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
+  //     const handleResize = () => {
+  //       setWindowWidth(window.innerWidth);
+  //     };
 
-      window.addEventListener('resize', handleResize);
+  //     window.addEventListener('resize', handleResize);
 
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }
-  }, [])
+  //     return () => {
+  //       window.removeEventListener('resize', handleResize);
+  //     };
+  //   }
+  // }, [])
 
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 

@@ -1,5 +1,6 @@
 .services-section {
   min-height: 100vh;
+  /* margin-inline: 3em; */
 }
 
 .services-header {
@@ -18,6 +19,14 @@
 .services-text {
   font-size: 11px;
   /* margin-top: 5em ; */
+}
+
+@media (min-width: 1181px) {
+  .services-section {
+    padding-inline: 3em;
+    margin-top: 10em;
+    /* border: 1px solid red; */
+  }
 }
 
 @media (max-width: 1180px) {

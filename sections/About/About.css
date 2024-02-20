@@ -127,6 +127,29 @@
   }
 }
 
+@media (min-width: 1181px) {
+  .about-section {
+    width: 80%;
+    margin-inline: 3em;
+  }
+
+  .credentials {
+    margin-top: 4em;
+    margin-bottom: 6em;
+  }
+
+  .credentials ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8em;
+  }
+
+  .cv {
+    margin-bottom: 8em;
+  }
+
+}
+
 
 @media (max-width: 600px) {
   .about-section {

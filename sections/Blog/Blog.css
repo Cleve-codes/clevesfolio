@@ -34,6 +34,14 @@
 
 }
 
+@media (min-width: 1181px) {
+  .blog-section {
+    margin-inline-start: 1.25em;
+    width: 90%;
+  }
+
+}
+
 @media screen and (min-width: 768px) {
   .blog {
     grid-template-columns: repeat(2, 1fr);

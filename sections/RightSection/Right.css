@@ -1,8 +1,10 @@
 .right-section {
-  position: fixed;
+  /* position: fixed; */
   right: 0px;
   /* max-width: 50%; */
   margin: 0 auto;
+  order: 2;
+  /* background-color: black; */
 }
 
 .hero-img {
@@ -19,7 +21,11 @@
 
 
 .personal-img {
-  position: fixed;
+  position: absolute;
+  top: 8%;
+  left: 26%;
+  min-width: fit-content;
+  min-height: fit-content;
 }
 
 
@@ -45,3 +51,23 @@
   text-decoration-line: underline;
 }
 
+
+@media (min-width: 1181px) {
+  .right-section {
+    position: fixed;
+    /* border: 1px solid red; */
+    right: 0;
+    max-width: 50%;
+  }
+
+  #left-section {
+    max-width: 68%;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .personal-img {
+   max-width: 200px;
+    height: min-content;
+  }
+} */

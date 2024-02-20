@@ -7,7 +7,7 @@
 /* Carousel */
 .projects-carousel {
   /* margin-top: 4em; */
-  min-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +28,7 @@
 }
 
 .carousel-img {
-  height: 300px;
+  height: 270px;
   min-width: 150px;
   max-width: 100%;
   object-fit: cover;
@@ -40,9 +40,14 @@
   text-align: center;
 }
 
-@media (max-width: 1180px) {
+@media (min-width: 1180px) {
   .projects-section {
     padding-inline: 2em;
+  }
+
+  .projects-carousel {
+    /* border: 1px solid red; */
+    overflow-x: hidden
   }
 }
 
