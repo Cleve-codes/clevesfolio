@@ -59,12 +59,14 @@ const Right = () => {
             ></Image>
           </div>
 
-          <div>
+          <div className="right-image" >
             <Image
               className="personal-img"
-              // src="/assets/asset 20.jpg"
-              width={480}
-              height={480}
+              src="/assets/asset 20.jpg"
+              // width={480}
+              // height={480}
+              fill
+              priority
               alt="hero"
             />
           </div>

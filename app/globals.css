@@ -326,24 +326,12 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   .main-page {
     flex-direction: column-reverse;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     overflow-x: hidden;
   }
 
 
-  .testimonials-carousel {
-    /* border: 1px solid red; */
-    /* max-width: 90% */
-  }
 
-  .testimonials-carousel-text {
-    /* border: 1px solid red; */
-    margin: 0;
-  }
-
-  .testimonial-detail {
-    border: 1px solid red;
-  }
 
 }
 

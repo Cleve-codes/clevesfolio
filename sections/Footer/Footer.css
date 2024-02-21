@@ -44,3 +44,13 @@
   display: inline-block;
   margin-bottom: 2em;
 }
+
+/* Media Queries */
+/* Mobile Devices */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .footer-text {
+    margin-left: .875em;
+    margin-top: 2em;
+  }
+}

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const TestimonialsCard = ({text, name, job}) => {
   return (
     <div className='testimonials-card'>
-      <div>
+      <div className='testimonials-card-text'>
         <p className='p'>{text}</p>
       </div>
       <div className='testimonial-detail'>
