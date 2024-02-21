@@ -50,7 +50,7 @@ const Portofolio = () => {
     <div className="portofolio-section">
       <div>
         <Tabs defaultValue="experience" className="tab">
-          <TabsList className="flex items-center justify-between bg-inherit">
+          <TabsList className="tablist">
             <TabsTrigger
               ref={tabRefs.experience}
               value="experience"

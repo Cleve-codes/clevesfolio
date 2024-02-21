@@ -11,8 +11,47 @@
   width: 100%;
 }
 
+.tablist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: inherit;
+  /* border: 1px solid red; */
+  margin-bottom: 1em;
+}
+
 .tab-content {
   margin-top: 3em;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .horizontal-separator {
+    /* margin-left: .25em; */
+    margin-inline: 1px;
+    width: 20px;
+  }
+
+  .experiences-card-h3 {
+    color: #dddddd;
+    font-size: 1em;
+    margin-bottom: .75em;
+  }
+
+  .job-title {
+    font-size: 1.5em;
+    margin-block: .5em;
+  }
+
+  .job-description {
+    font-size: .975em;
+  }
+
+  .skill-desc {
+    min-width: 90%;
+    font-size: .755em;
+    margin-top: 2em;
+  }
 }
 
 @media (max-width: 1180px) {

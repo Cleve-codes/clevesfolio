@@ -40,6 +40,57 @@
   text-align: center;
 }
 
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsiveness */
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  .projects-section {
+    min-height: 70vh;
+  }
+
+
+  .btn-prev {
+    position: absolute;
+    top: 18%;
+    left: 84%;
+    transform: translateY(-50%);
+  }
+
+  .btn-next {
+    position: absolute;
+    top: 18%;
+    left: 91%;
+    transform: translateY(-50%);
+  }
+
+  .head .h1 {
+    font-size: 2.5em;
+    width: 100%;
+  }
+
+  .projects-carousel {
+    overflow-x: hidden;
+  }
+
+  .carousel-item {
+    display: flex;
+    flex-basis: 50%;
+    flex-shrink: 0;
+    align-items: flex-start;
+  }
+
+  .carousel-img {
+    height: 270px;
+    min-width: 100%;
+    object-fit: cover;
+  }
+}
+
 @media (min-width: 1180px) {
   .projects-section {
     padding-inline: 2em;

@@ -22,7 +22,7 @@ const Projects = () => {
     <div className="projects-section">
       <Carousel
         opts={{
-          // align: "start",
+          align: "start",
           loop: true,
           dragFree: true,
           dragThreshold: 2,
@@ -35,13 +35,13 @@ const Projects = () => {
           <div className="about-header">
             <div className="portofolio-header">
 
-              <div className="head flex justify-between items-center">
+              <div className="head">
                 <div>
                   <h1 className="h1">Featured Projects</h1>
                 </div>
-                <div className="carousel-btn">
+                <div>
 
-              <CarouselContent >
+              <CarouselContent className="carousel-btn">
                   <CarouselPrevious variant='ghost' />
                   <CarouselNext variant="ghost" />
               </CarouselContent>

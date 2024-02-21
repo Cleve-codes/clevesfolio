@@ -154,9 +154,9 @@ body {
 /* Main Page */
 .main-page {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 
@@ -224,7 +224,7 @@ body {
   content: "";
   position: absolute;
   opacity: .3;
-  top: 70;
+  top: 35%;
   left: 0;
   height: 70px;
   width: .25em; /* Adjust the width of the styled section */
@@ -236,7 +236,7 @@ body {
 
 .experiences-card-h3 {
   color: #dddddd;
-  font-size: 20px;
+  font-size: 1.25em;
   margin-bottom: .75em;
 }
 
@@ -246,12 +246,12 @@ body {
 }
 
 .job-title {
-  font-size: 30px;
+  font-size: 1.875em;
   margin-bottom: .35em;
 }
 
 .job-description {
-  font-size: 18px;
+  font-size: 1.125em;
   color: #888888;
 }
 
@@ -326,16 +326,25 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   .main-page {
     flex-direction: column-reverse;
+    border: 1px solid red;
+    overflow-x: hidden;
   }
 
-  #left-section {
-    width: 100%;
-    border-right: none;
+
+  .testimonials-carousel {
+    /* border: 1px solid red; */
+    /* max-width: 90% */
   }
 
-  .right-section {
-    min-width: 100%;
+  .testimonials-carousel-text {
+    /* border: 1px solid red; */
+    margin: 0;
   }
+
+  .testimonial-detail {
+    border: 1px solid red;
+  }
+
 }
 
 
@@ -353,9 +362,56 @@ body {
   .right-section {
     min-width: 100%;
   }
+
+  .about-section {
+    width: 100%;
+  }
+
+  .about-header h1 {
+    font-size: 2.875em;
+  }
+
+  .about-span {
+    font-size: 1.25em;
+  }
+
+  .credentials {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+
+  .credentials ul {
+    display: flex;
+    /* flex-direction: column; */
+    border: 1px solid red;
+    gap: 0;
+  }
+
+  .credentials ul li {
+    width: 100%;
+
+  }
+
+  .cv {
+    height: 200px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    border: 1px solid rgba(128, 128, 128, .5);
+    margin-top: 6em;
+    margin-bottom: 6em;
+  }
+
+  .cv p {
+    color: #888888;
+    font-size: 20px;
+    margin-top: 1em;
+  }
+
 }
 
-@media (min-width: 769px) and (max-width: 1039px) {
+@media (min-width: 769px) and (max-width: 1240px) {
   .main-page {
     flex-direction: column-reverse;
   }
@@ -367,24 +423,25 @@ body {
 
   .right-section {
     min-width: 100%;
+    border: 1px solid red;
   }
 
 }
 
 /* Small screens & Laptops */
-@media (min-width: 1040px) and (max-width: 1200px) {
-  /* .main-page {
-    flex-direction: column-reverse;
-  } */
+@media (min-width: 1240px) and (max-width: 1400px) {
+  .main-page {
+    display: flex;
+  }
 
   #left-section {
     max-width: 68%;
-    border-right: none;
-    border: 1px solid red;
+    border-right: 1px solid rgba(128, 128, 128, .5);
+    border: 1px solid blue;
   }
 
   .right-section {
-    /* min-width: 100%; */
+    max-width: 50%;
   }
 }
 
@@ -405,5 +462,6 @@ body {
 
   .right-section {
     max-width: 50%;
+    position: fixed;
   }
 }

@@ -1,16 +1,13 @@
 .right-section {
-  /* position: fixed; */
   right: 0px;
-  /* max-width: 50%; */
   margin: 0 auto;
   order: 2;
-  /* background-color: black; */
 }
 
 .hero-img {
-  margin: 2.5rem;
-  width: 100%;
-  height: 100%;
+  /* margin: 2.5rem; */
+  width: fit-content;
+  height: fit-content;
 }
 
 .image {
@@ -18,7 +15,6 @@
   width: 100%;
   height: 100%;
 }
-
 
 .personal-img {
   position: absolute;
@@ -28,8 +24,6 @@
   min-height: fit-content;
 }
 
-
-
 .intro {
   position: absolute;
   top: 75%;
@@ -38,7 +32,7 @@
   color: #dddddd;
 }
 
-#to-contact{
+#to-contact {
   position: absolute;
   top: 95%;
   left: 55%;
@@ -51,16 +45,54 @@
   text-decoration-line: underline;
 }
 
-
-@media (min-width: 1181px) {
+/* Responsive Design */
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
   .right-section {
-    position: fixed;
+    width: 100%;
+    min-height: 95vh;
     /* border: 1px solid red; */
-    right: 0;
-    max-width: 50%;
   }
 
-  #left-section {
-    max-width: 68%;
+  .image {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+  }
+
+  .hero-img {
+    min-height: 500px;
+    min-width: 300px;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .intro {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #dddddd;
+    text-align: center;
+  }
+
+  .intro p {
+    font-size: 0.5em;
+  }
+
+  .text {
+    font-size: 0.85em;
+    margin-top: 3em;
+  }
+
+  #to-contact {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.45em;
   }
 }

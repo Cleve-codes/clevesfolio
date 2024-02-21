@@ -61,7 +61,7 @@ export function Testimonials() {
             <CarouselContent>
               {Array.from({ length: 5 }).map((_, index) => (
                 <CarouselItem key={index} usage="testimonials">
-                  <div className="">
+                  <div className="testimonials-content">
                     <TestimonialsCard
                       text={testimonials[index].text}
                       name={testimonials[index].name}

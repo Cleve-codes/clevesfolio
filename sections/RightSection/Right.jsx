@@ -71,7 +71,7 @@ const Right = () => {
 
           <div className="intro">
             <p>Hi THERE! I AM</p>
-            <br />
+            {/* <br /> */}
             <h2>
               [<span>Web Developer</span>]
             </h2>
