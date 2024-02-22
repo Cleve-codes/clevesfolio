@@ -182,6 +182,34 @@
   }
 }
 
+/* Small screen laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-section {
+    margin-inline: 1.25em;
+    max-width: 100%;
+  }
+
+  .contact-header .h1 {
+    font-size: 3em;
+  }
+
+  .contact-text {
+    font-size: 1.25em;
+  }
+
+  .form {
+    margin-top: 4em;
+  }
+
+  .address {
+    margin-top: 6em;
+  }
+
+  .address-detail > h2 {
+    font-size: 2.5em;
+  }
+}
+
 /* @media (max-width: 1280px) {
   .contact-section {
     padding-inline-start: 2em;

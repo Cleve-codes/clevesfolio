@@ -1,7 +1,7 @@
 /* Projects Section */
-.projects-section {
+/* .projects-section {
   margin-top: 0;
-}
+} */
 
 /* Projects Carousel */
 /* Carousel */
@@ -127,6 +127,29 @@
     overflow-x: hidden
   }
 }
+
+/* laptops and small screes */
+@media (min-width: 769px) and (max-width: 1179px) {
+  .projects-section {
+    padding-inline: 1em;
+  }
+
+  .projects-carousel {
+    overflow-x: hidden;
+  }
+
+  .carousel-item {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  .carousel-img {
+    height: 270px;
+    min-width: 100%;
+    object-fit: cover;
+  }
+}
+
 
 /* @media (max-width: 600px) {
 

@@ -87,8 +87,31 @@
   }
 }
 
-@media (max-width: 1180px) {
+@media (min-width: 769px) and (max-width: 1180px) {
+  .portofolio-section {
+    padding-inline: 2em;
+  }
 
+  .skills {
+    max-width: 100%;
+  }
+
+  .skill-desc {
+    max-width: 80%;
+  }
+
+  .skill-desc .p {
+    font-size: 1.5em;
+
+  }
+
+  .tablist {
+    gap: 1em;
+  }
+
+  .tab-content {
+    margin-top: 3em;
+  }
 }
 
 @media (min-width: 1181px) {

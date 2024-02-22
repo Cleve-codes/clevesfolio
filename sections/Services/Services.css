@@ -21,6 +21,29 @@
   /* margin-top: 5em ; */
 }
 
+@media (min-width: 769px) and (max-width: 1180px) {
+  .services-section {
+    padding-inline: 3em;
+    margin-top: 10em;
+    /* border: 1px solid red; */
+  }
+
+  .services-span {
+    font-size: 1.25em;
+  }
+
+  .services-header .h1 {
+    font-size: 2.5em;
+    margin-top: 1.35em;
+  }
+
+  .services-text .p {
+    font-size: 1.45em;
+    margin-bottom: 2.5em;
+  }
+
+}
+
 @media (min-width: 1181px) {
   .services-section {
     padding-inline: 3em;

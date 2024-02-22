@@ -57,7 +57,14 @@
 
 /* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
+ .footer-text {
+    margin-left: 1.25em;
+    margin-top: 2em;
+  }
+}
 
+/* Small screen laptops */
+@media (min-width: 769px) and (max-width: 1040px) {
   .footer-text {
     margin-left: 1.25em;
     margin-top: 2em;

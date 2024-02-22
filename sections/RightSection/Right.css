@@ -122,3 +122,16 @@
     max-height: min-content;
   }
 }
+
+/* Small screen laptops */
+@media (min-width: 769px) and (max-width: 1040px) {
+  #to-contact {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.45em;
+  }
+
+}

@@ -63,6 +63,24 @@
 
 }
 
+/* Small screen laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blog-section {
+    margin-inline: 1.25em;
+    max-width: 100%;
+  }
+
+  .blog {
+    margin-top: 4em;
+  }
+
+  .blog-image {
+    min-height: 270px;
+    /* border: 1px solid red; */
+  }
+
+}
+
 
 /* @media (max-width: 1180px) {
   .blog-section {
@@ -83,7 +101,7 @@
 @media screen and (min-width: 768px) {
   .blog {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
+    gap: 1.95em;
   }
 }
 /*
