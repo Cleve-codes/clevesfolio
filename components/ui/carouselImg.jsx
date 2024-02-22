@@ -6,7 +6,7 @@ const CarouselImg = ({img, tech, title, usage}) => {
   return (
     <div>
       <div>
-          <Image alt="img" src={img} className={cn('carousel-img', usage === "blog" ? "blog-image" : "" )} />
+          <Image alt="img" src={img} className={cn('carousel-img', usage === "blog" && "blog-image")} />
       </div>
       <div>
         <h4 className='text-[#888888] text-[18px] mt-[1em]' >{tech}</h4>

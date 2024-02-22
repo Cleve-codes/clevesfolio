@@ -5,8 +5,25 @@ import React from 'react'
 import './About.css'
 
 const About = () => {
+
+  const handleDownloadClick = () => {
+    const link = document.createElement('a');
+
+    link.href = './assets/Cleve Momanyi.pdf';
+    link.download = 'Cleve_Momanyi_CV.pdf';
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to initiate the download
+    link.click();
+
+    // Remove the link from the document to clean up
+    document.body.removeChild(link);
+  };
+
   return (
-    <div className="about-section">
+    <div className="about-section" id="about-section">
           <div>
             <h1 className="about-span" >ABOUT ME</h1>
             <div className="about-header">
@@ -88,7 +105,7 @@ const About = () => {
             </div>
 
             {/* CV */}
-            <div className="cv">
+            <div className="cv" onClick={handleDownloadClick} >
                 <Image alt="download" src='/assets/asset 22.svg' width={60} height={60} />
                 <p>DOWNLOAD CV</p>
             </div>

@@ -47,7 +47,7 @@ const Portofolio = () => {
   }, []);
 
   return (
-    <div className="portofolio-section">
+    <div className="portofolio-section" id="portofolio">
       <div>
         <Tabs defaultValue="experience" className="tab">
           <TabsList className="tablist">

@@ -12,11 +12,14 @@
 
 }
 
-.blog img {
-  width: 450px;
-  height: 300px;
-  object-fit: cover;
+.blog-post:hover {
+  cursor: pointer;
 }
+
+.blog-post:hover h2 {
+  color: #987150;
+}
+
 
 .blog-post {
   margin-bottom: 2em;

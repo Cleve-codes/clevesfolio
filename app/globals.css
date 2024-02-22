@@ -82,6 +82,7 @@ body {
   transition-duration: 200ms;
   transition-timing-function: ease-out;
   pointer-events: none;
+  z-index: 1000;
 }
 
 .cursor::after {
@@ -292,6 +293,12 @@ body {
 
 .slider {
   margin-top: .5em;
+}
+
+.blog img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
 }
 
 

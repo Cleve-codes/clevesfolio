@@ -19,7 +19,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <div className="services-section">
+    <div className="services-section" id="services" >
       <div>
         <h1 className="services-span">SERVICES</h1>
         <div className="services-header">

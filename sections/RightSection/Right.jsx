@@ -41,7 +41,7 @@ const Right = () => {
     const tl = gsap.timeline({ duration: 1, scrollTrigger: {
       trigger: "#about",
       start: "top bottom",
-      end: "top bottom-=300",
+      end: "top bottom-=200",
       scrub: true,
     }});
 

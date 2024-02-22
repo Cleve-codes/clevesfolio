@@ -55,7 +55,7 @@ export default function Page() {
         scrollTrigger: {
           trigger: "#about",
           start: "top bottom",
-          end: "top bottom-=300",
+          end: "top bottom-=200",
           scrub: true,
           // markers: true,
           toggleActions: "play none none reverse"
@@ -92,7 +92,7 @@ export default function Page() {
 
       <Right />
 
-      {/* <div className="cursor" ></div> */}
+      <div className="cursor" ></div>
     </main>
   );
 }

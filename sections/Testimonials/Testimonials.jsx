@@ -43,7 +43,7 @@ import TestimonialsCard from "@/components/ui/TestimonialsCard";
 
 export function Testimonials() {
   return (
-      <div className="testimonials-section">
+      <div className="testimonials-section" id="testimonials" >
         <Carousel
         opts={{
           align: "start",

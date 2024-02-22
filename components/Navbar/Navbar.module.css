@@ -15,6 +15,87 @@
   margin-left: 90%;
 }
 
+/* .sheetContent {
+  border: 1px solid red;
+} */
+
+.sheetTitle {
+  color: #888888;
+  font-size: 2em;
+  margin-block: 1em;
+  margin-left: 1.25em;
+}
+
+
+.sheetDesc {
+  color: #dddddd;
+  font-size: 1.5em;
+  margin-block: 2em;
+}
+
+.sheetDesc ul li {
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+.sheetDesc li:hover {
+  color: #987750;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+.sheetClose {
+  color: #dddddd;
+  font-size: 1.5em;
+  margin-block: 2em;
+  margin-left: 1.25em;
+
+}
+
+
+
+.sheetFooter {
+  position: relative;
+  top: 30%;
+  left: 0;
+  /* display: flex; */
+  /* flex-direction: column-reverse; */
+}
+
+.icons {
+  position: absolute;
+  left: 0;
+  display: flex;
+  gap: .5em;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* flex-direction: row; */
+  /* border: 1px solid red; */
+
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  color: #888888;
+  /* fill: #888888; */
+  background-color: rgba(128, 128, 128, .5);
+}
+
+/* .footerText {
+  color: #888888;
+  font-size: 18px;
+  border: 1px solid red;
+}
+
+.footerText > div > span {
+  color: #dddddd;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(128, 128, 128, .5);
+  margin-bottom: 2em;
+  margin-right: 50%;
+} */
+
 /* Mobile devices */
 @media (min-width: 320px) and (max-width: 480px) {
   .nav {
