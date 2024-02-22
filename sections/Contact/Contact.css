@@ -150,7 +150,7 @@
 
 @media (min-width: 1280px) {
   .contact-section {
-    padding-inline: 5em;
+    padding-inline: 9em;
   }
 }
 
@@ -183,7 +183,7 @@
 }
 
 /* Small screen laptops */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1039px) {
   .contact-section {
     margin-inline: 1.25em;
     max-width: 100%;
@@ -209,6 +209,15 @@
     font-size: 2.5em;
   }
 }
+
+
+/* Medium sized Laptops */
+@media (min-width: 1040px) and (max-width: 1279px) {
+  .contact-section {
+    padding-inline: 1.875em;
+  }
+}
+
 
 /* @media (max-width: 1280px) {
   .contact-section {

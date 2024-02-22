@@ -124,7 +124,7 @@
 }
 
 /* Small screen laptops */
-@media (min-width: 769px) and (max-width: 1040px) {
+@media (min-width: 769px) and (max-width: 1039px) {
   #to-contact {
     position: absolute;
     top: 95%;
@@ -133,5 +133,20 @@
     text-align: center;
     font-size: 0.45em;
   }
+}
 
+/* Large screen laptops */
+@media (min-width: 1041px) and (max-width: 1440px) {
+  /* .personal-img {
+    min-width: 480px;
+    min-height: 480px;
+  } */
+}
+
+/* Larger screens */
+@media (min-width: 1441px) {
+  .personal-img {
+    min-width: 450px;
+    min-height: 520px;
+  }
 }

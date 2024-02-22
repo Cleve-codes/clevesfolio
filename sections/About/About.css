@@ -162,7 +162,7 @@
 
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1039px) {
   .about-section {
     margin-inline-start: 2em;
     max-width: 85%;
@@ -211,25 +211,137 @@
   }
 }
 
-/* @media (min-width: 1400px) {
+/* small screen laptops */
+@media (min-width: 1040px) and (max-width: 1279px) {
   .about-section {
-    margin-inline: 5em;
-    width: 90%;
+    margin-inline-start: 2em;
+    max-width: 85%;
+  }
+
+  .about-text .p {
+    font-size: 1.5em;
+    margin-block: 2em;
+  }
+
+  .credentials {
+    margin-block: 5em ;
+    font-size: 1.125em;
+  }
+
+  .credentials ul {
+    /* display: flex; */
+    grid-template-columns: auto 1fr;
+    color: white;
+    font-size: 1em;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 40%;
+    /* border: 1px solid green; */
+  }
+
+  .credentials ul li:first-child {
+    width: 100px;
+    justify-content: flex-start;
+    color:#888888;
+    font-size: 1.5em;
+    margin-bottom: .25em;
+  }
+
+  .cv {
+    height: 200px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    border: 1px solid rgba(128, 128, 128, .5);
+    margin-bottom: 8em;
+  }
+
+  .cv img {
+    margin-left: 25%;
+  }
+}
+
+/* Large screen laptops */
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .about-section {
+    margin-inline-start: 3em;
+    max-width: 85%;
+  }
+
+  .about-text .p {
+    font-size: 1.5em;
+    margin-block: 2em;
+  }
+
+  .credentials {
+    margin-block: 5em ;
+    font-size: 1.125em;
+  }
+
+  .credentials ul {
+    /* display: flex; */
+    grid-template-columns: auto 1fr;
+    color: white;
+    font-size: 1em;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 40%;
+    /* border: 1px solid green; */
+  }
+
+  .credentials ul li:first-child {
+    width: 100px;
+    justify-content: flex-start;
+    color:#888888;
+    font-size: 1.5em;
+    margin-bottom: .25em;
+  }
+
+  .cv {
+    height: 200px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    border: 1px solid rgba(128, 128, 128, .5);
+    margin-bottom: 8em;
+  }
+
+  .cv img {
+    margin-left: 25%;
+  }
+
+}
+
+/* Larger screens */
+@media (min-width: 1400px) {
+  .about-section {
+    margin-inline: 8em;
+    max-width: 80%;
   }
 
   .about-details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2em;
+    gap: 8em;
+  }
+
+  .about-text .p {
+    /* font-size: 1.5em; */
+    margin-top: 2em;
   }
 
   .credentials {
-    margin-top: 5em;
+    margin-block: 5em ;
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .credentials ul {
     display: flex;
+    gap: 20%;
   }
 
   .cv {
@@ -247,91 +359,9 @@
     font-size: 20px;
     margin-top: 1em;
   }
-}
 
-
-@media (max-width: 1400px) {
-
-  .about-section {
-    margin-inline: 5em;
-    width: 80%;
-  }
-
-  .cv {
-    height: 200px;
-    width: 100%;
-    border: 1px solid rgba(128, 128, 128, .5);
-  }
-
-  .credentials {
-    width: 100%;
-  }
-
-}
-
-
-@media (max-width: 1180px) {
-  .about-section {
-  max-width: fit-content;
-  margin-inline: 2em;
-  }
-
-  .credentials {
-    margin-top: 4em;
-  }
-
-  .credentials ul {
-    display: flex;
-    justify-content: flex-start;
-    gap: 8em;
-  }
-
-  .cv {
-    height: 220px;
-    width: 100%;
-    display: grid;
-    place-content: center;
-    border: 1px solid rgba(128, 128, 128, .5);
-    margin-top: 6em;
-    margin-right: 5em;
-    margin-bottom: 5em;
-  }
-
-  .cv > img {
-    justify-self: center;
-    align-self: flex-end;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .cv p {
-    color: #888888;
-    font-size: 20px;
-    margin-top: 1em;
+  .cv img {
+    margin-left: 25%;
   }
 }
 
-@media (max-width: 1281px) {
-  .about-section {
-    width: 80%;
-    margin-inline: 3em;
-  }
-
-
-  .credentials {
-    margin-top: 4em;
-    margin-bottom: 6em;
-  }
-
-  .credentials ul {
-    display: flex;
-    justify-content: flex-start;
-    gap: 8em;
-  }
-
-  .cv {
-    margin-bottom: 8em;
-  }
-
-} */

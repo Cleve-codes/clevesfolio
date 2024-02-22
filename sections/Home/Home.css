@@ -61,7 +61,7 @@
 }
 
 /* Laptops */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1039px) {
   .home-section {
     margin-inline: 2em;
     max-width: 95%;
@@ -75,8 +75,61 @@
     font-size: 3.5em;
     margin-top: 1em;
   }
+}
+
+/* Large screen laptops */
+@media (min-width: 1040px) and (max-width: 1279px) {
+  .home-section {
+    margin-inline: 2em;
+    max-width: 85%;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    min-height: 80vh;
+  }
+
+  #home-title h1 {
+    font-size: 4em;
+    margin-top: 1em;
+  }
+
+  #home-text p {
+    margin-top: 3em;
+    font-size: 1.5em;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .home-section {
+    margin-inline: 2.5em;
+    max-width: 85%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    min-height: 80vh;
+  }
+
+  #home-title h1 {
+    font-size: 4em;
+    margin-top: 1em;
+  }
 
 }
+
+/* Large Desktops */
+@media (min-width: 1400px) {
+  .home-section {
+    margin-inline: 8em;
+    width: 70%;
+    margin-top: 25%;
+    margin-bottom: 20%;
+  }
+
+  #home-title h1 {
+    font-size: 5em;
+    margin-top: 1em;
+  }
+}
+
 
 /* @media (min-width: 1280px) {
   .home-section {

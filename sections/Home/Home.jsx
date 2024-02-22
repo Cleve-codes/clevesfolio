@@ -34,9 +34,7 @@ const Home = () => {
               <div id="home-text" className='about-text' >
                 <p className="p">
                   I design and develop for customers of all sizes,
-                  {/* <br /> */}
                   specializing in creating stylish, modern websites,
-                  {/* <br />  */}
                   web services
                   and online stores.
                 </p>

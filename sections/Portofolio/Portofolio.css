@@ -114,9 +114,22 @@
   }
 }
 
-@media (min-width: 1181px) {
+@media (min-width: 1181px) and (max-width: 1399px) {
   .portofolio-section {
-    padding-inline: 3em;
+    margin-inline: 4em;
   }
 
+  .skill-desc {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .portofolio-section {
+    padding-inline: 7em;
+  }
+
+  .skill-desc {
+    max-width: 75%;
+  }
 }

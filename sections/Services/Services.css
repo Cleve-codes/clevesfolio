@@ -21,6 +21,22 @@
   /* margin-top: 5em ; */
 }
 
+/* Responsiveness */
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  .services-section {
+    margin-top: 8em;
+    padding-inline: 1.25em;
+  }
+
+  .services-text .p{
+    font-size: 1.85em;
+    margin-block-start: 2em;
+    margin-block-end: 3.5em;
+  }
+}
+
+/* Small screens */
 @media (min-width: 769px) and (max-width: 1180px) {
   .services-section {
     padding-inline: 3em;
@@ -44,31 +60,47 @@
 
 }
 
-@media (min-width: 1181px) {
+/* Large screens */
+@media (min-width: 1180px) and (max-width: 1400px) {
   .services-section {
-    padding-inline: 3em;
+    padding-inline: 1.875em;
     margin-top: 10em;
-    /* border: 1px solid red; */
+  }
+
+  .services-header .h1 {
+    font-size: 3em;
+    margin-top: 1.35em;
+  }
+
+  .services-text .p {
+    font-size: 1.75em;
+    margin-bottom: 2.5em;
   }
 }
 
-@media (max-width: 1180px) {
+
+
+/* X Large screens */
+@media (min-width: 1401px) {
   .services-section {
-    margin-top: 10em;
-    padding-inline: 2em;
+    padding-inline: 8em;
+    margin-top: 14em;
   }
 
-  .services-header h1 {
-    font-size: 2em;
+  .services-header .h1 {
+    font-size: 4em;
+    margin-top: .875em;
   }
 
-  .services-text {
-    font-size: 1.35em;
-    margin-bottom: 2em;
+  .services-text .p {
+    font-size: 3em;
+    margin-block: 1.875em;
   }
+
 }
 
-@media (max-width: 600px) {
+
+/* @media (max-width: 600px) {
   .services-section {
     margin-top: 4em;
     padding-inline: 1.25em;
@@ -78,4 +110,4 @@
     font-size: 1em;
     margin-bottom: 6em;
   }
-}
+} */

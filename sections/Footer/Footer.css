@@ -64,9 +64,25 @@
 }
 
 /* Small screen laptops */
-@media (min-width: 769px) and (max-width: 1040px) {
+@media (min-width: 769px) and (max-width: 1039px) {
   .footer-text {
     margin-left: 1.25em;
+    margin-top: 2em;
+  }
+}
+
+/* Large screen laptops */
+@media (min-width: 1040px) and (max-width: 1279px) {
+  .footer-text {
+    margin-left: 1.25em;
+    margin-top: 2em;
+  }
+}
+
+/* Extra large screen laptops */
+@media (min-width: 1280px) {
+  .footer-text {
+    margin-left: 8em;
     margin-top: 2em;
   }
 }

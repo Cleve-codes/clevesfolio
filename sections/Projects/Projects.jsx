@@ -36,7 +36,7 @@ const Projects = () => {
             <div className="portofolio-header">
 
               <div className="head">
-                <div>
+                <div className="projects-header">
                   <h1 className="h1">Featured Projects</h1>
                 </div>
                 <div>

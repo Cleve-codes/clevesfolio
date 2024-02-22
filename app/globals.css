@@ -351,7 +351,7 @@ body {
 
 }
 
-@media (min-width: 769px) and (max-width: 1040px) {
+@media (min-width: 769px) and (max-width: 1039px) {
   .main-page {
     flex-direction: column-reverse;
     overflow-x: hidden;
@@ -364,7 +364,7 @@ body {
 
   .right-section {
     min-width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .personal-img {
@@ -387,7 +387,7 @@ body {
 }
 
 /* Small screens & Laptops */
-@media (min-width: 1240px) and (max-width: 1400px) {
+@media (min-width: 1040px) and (max-width: 1400px) {
   .main-page {
     display: flex;
   }
@@ -395,10 +395,10 @@ body {
   #left-section {
     max-width: 68%;
     border-right: 1px solid rgba(128, 128, 128, .5);
-    border: 1px solid blue;
   }
 
   .right-section {
+    position: fixed;
     max-width: 50%;
   }
 }
