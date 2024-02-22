@@ -71,20 +71,19 @@ body {
 
 
 /* Cursor */
-.cursor {
+/* .cursor {
   width: 30px;
   height: 30px;
   border: 3px solid #888888;
   border-radius: 50%;
-  /* position: fixed; */
   position: absolute;
   transition-duration: 200ms;
   transition-timing-function: ease-out;
   pointer-events: none;
   z-index: 1000;
-}
+} */
 
-.cursor::after {
+/* .cursor::after {
   content: "";
   width: 5px;
   height: 5px;
@@ -96,7 +95,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .brace {
   color: #44993b;

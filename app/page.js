@@ -2,7 +2,6 @@
 import Home from "@/sections/Home/Home";
 import About from "@/sections/About/About";
 import Right from "@/sections/RightSection/Right";
-import SectionsSeparator from "@/components/SectionsSeparator/SectionsSeparator";
 import Portofolio from "@/sections/Portofolio/Portofolio";
 import Projects from "@/sections/Projects/Projects";
 import Services from "@/sections/Services/Services";
@@ -11,17 +10,15 @@ import Blog from "@/sections/Blog/Blog";
 import Contact from "@/sections/Contact/Contact";
 import { useEffect, useRef } from 'react';
 import Footer from "@/sections/Footer/Footer";
-// import Footer from "@/components/Footer/Footer";
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import { useGSAP } from '@gsap/react'
-import { Scale } from "lucide-react";
 import { useState } from "react";
+import Cursor from "@/components/Cursor/Cursor";
 
 
-// import { useEffect, useRef } from 'react';
 export default function Page() {
 
   const [windowWidth, setWindowWidth] = useState(0)
@@ -92,7 +89,7 @@ export default function Page() {
 
       <Right />
 
-      <div className="cursor" ></div>
+      {/* <Cursor /> */}
     </main>
   );
 }
