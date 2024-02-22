@@ -121,6 +121,11 @@
     max-width: min-content;
     max-height: min-content;
   }
+
+  #left-section {
+    /* border: 1px solid red; */
+    min-width: 100%;
+  }
 }
 
 /* Small screen laptops */
@@ -133,6 +138,16 @@
     text-align: center;
     font-size: 0.45em;
   }
+
+  /* .right-section {
+    border: 1px solid red;
+  } */
+
+  #left-section {
+    /* border: 1px solid red; */
+    min-width: 100%;
+  }
+
 }
 
 /* Large screen laptops */
@@ -141,10 +156,23 @@
     min-width: 480px;
     min-height: 480px;
   } */
+
+
+
 }
 
 /* Larger screens */
 @media (min-width: 1441px) {
+
+  .hero-img {
+    margin-top: 3em;
+    margin-right: 3em;
+    min-width: 100%;
+    min-height: 100%;
+    background-position: cover;
+    /* border: 1px solid red; */
+  }
+
   .personal-img {
     min-width: 450px;
     min-height: 520px;

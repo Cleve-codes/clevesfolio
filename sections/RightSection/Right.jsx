@@ -13,35 +13,55 @@ import { useEffect, useState } from "react";
 import "./Right.css";
 
 const Right = () => {
+
+  const [windowWidth, setWindowWidth] = useState(0)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, [windowWidth])
+
   gsap.registerPlugin(ScrollTrigger);
 
   /* GSAP ANimation to scale down the .image class when the about section is reached  */
 
-  // useGSAP(() => {
-  //   const tl = gsap.timeline({ duration: 1 });
+  useGSAP(() => {
+    if (windowWidth > 1039) {
+    const tl = gsap.timeline({ duration: 1, scrollTrigger: {
+      trigger: "#about",
+      start: "top bottom",
+      end: "top bottom-=300",
+      scrub: true,
+    }});
 
-  //   tl.fromTo(
-  //     ".image",
-  //     {
-  //       scale: 1,
-  //       x: 60,
-  //       y: 0,
-  //     },
-  //     {
-  //       scale: 0.8,
-  //       x: 80,
-  //       y: -100,
-  //       scrollTrigger: {
-  //         trigger: "#home",
-  //         start: "bottom +=1050",
-  //         end: "bottom +=850",
-  //         scrub: true,
-  //       },
-  //     }
-  //   );
+    tl.fromTo(
+      ".image",
+      {
+        scale: 1,
+        x: 0,
+        y: 0,
+      },
+      {
+        scale: 0.8,
+        x: 100,
+        y: -50,
+      }
+    );
 
 
-  // }, []);
+  }
+}, [windowWidth]);
 
   return (
     <div className="right-section">

@@ -26,21 +26,21 @@ export default function Page() {
 
   const [windowWidth, setWindowWidth] = useState(0)
 
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     setWindowWidth(window.innerWidth);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
 
-  //     const handleResize = () => {
-  //       setWindowWidth(window.innerWidth);
-  //     };
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
 
-  //     window.addEventListener('resize', handleResize);
+      window.addEventListener('resize', handleResize);
 
-  //     return () => {
-  //       window.removeEventListener('resize', handleResize);
-  //     };
-  //   }
-  // }, [])
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, [])
 
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -48,23 +48,24 @@ export default function Page() {
   comes into view */
 
 
-  // useGSAP(() => {
-  //   if (windowWidth > 1459) {
-  //     const tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: '#home',
-  //         start: "bottom +=1050",
-  //         end: "bottom +=850",
-  //         scrub: true,
-  //         // markers: true,
-  //         toggleActions: "play none none reverse"
-  //       }
-  //     });
+  useGSAP(() => {
+    if (windowWidth > 1039) {
+      const tl = gsap.timeline({
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top bottom",
+          end: "top bottom-=300",
+          scrub: true,
+          // markers: true,
+          toggleActions: "play none none reverse"
+        }
+      });
 
-  //     tl.to('#left-section',{ width: '68%', duration: 1 })
-  //     // .fromTo('#left-section *', { scale: 1 }, { scale: 1.2, duration: 1 }, 0)
-  //   }
-  // }, [windowWidth])
+      tl.fromTo('#left-section', { width: '56%' }, { width: '68%', ease: 'power2.out' })
+      // .fromTo('#left-section *', { scale: 1 }, { scale: 1.2, duration: 1 }, 0)
+    }
+  }, [windowWidth])
 
 
   return (

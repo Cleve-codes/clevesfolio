@@ -393,7 +393,7 @@ body {
   }
 
   #left-section {
-    max-width: 68%;
+    /* max-width: 68%; */
     border-right: 1px solid rgba(128, 128, 128, .5);
   }
 
