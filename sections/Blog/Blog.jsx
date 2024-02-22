@@ -52,6 +52,7 @@ const Blog = () => {
                 img={blog.img}
                 title={blog.title}
                 tech={blog.date}
+                usage="blog"
                />
             </div>
           ))}

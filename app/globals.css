@@ -326,12 +326,8 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   .main-page {
     flex-direction: column-reverse;
-    /* border: 1px solid red; */
     overflow-x: hidden;
   }
-
-
-
 
 }
 
@@ -340,68 +336,25 @@ body {
 @media (min-width: 481px) and (max-width: 768px) {
   .main-page {
     flex-direction: column-reverse;
+    overflow-x: hidden;
   }
 
   #left-section {
-    width: 100%;
-    border-right: none;
+    min-width: 100%;
+    /* border: 1px solid red; */
+
   }
 
   .right-section {
     min-width: 100%;
-  }
-
-  .about-section {
-    width: 100%;
-  }
-
-  .about-header h1 {
-    font-size: 2.875em;
-  }
-
-  .about-span {
-    font-size: 1.25em;
-  }
-
-  .credentials {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid red;
-  }
-
-  .credentials ul {
-    display: flex;
-    /* flex-direction: column; */
-    border: 1px solid red;
-    gap: 0;
-  }
-
-  .credentials ul li {
-    width: 100%;
-
-  }
-
-  .cv {
-    height: 200px;
-    width: 100%;
-    display: grid;
-    place-content: center;
-    border: 1px solid rgba(128, 128, 128, .5);
-    margin-top: 6em;
-    margin-bottom: 6em;
-  }
-
-  .cv p {
-    color: #888888;
-    font-size: 20px;
-    margin-top: 1em;
   }
 
 }
 
-@media (min-width: 769px) and (max-width: 1240px) {
+@media (min-width: 769px) and (max-width: 1040px) {
   .main-page {
     flex-direction: column-reverse;
+    overflow-x: hidden;
   }
 
   #left-section {
@@ -414,6 +367,23 @@ body {
     border: 1px solid red;
   }
 
+  .personal-img {
+    max-width: fit-content;
+    width: 100%;
+  }
+
+  .image .intro {
+    position: absolute;
+    top: 75%;
+    left: 34%;
+    color: #dddddd;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+
+  .intro h2 {
+    font-size: 1.5em;
+  }
 }
 
 /* Small screens & Laptops */

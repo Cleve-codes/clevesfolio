@@ -54,3 +54,12 @@
     margin-top: 2em;
   }
 }
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .footer-text {
+    margin-left: 1.25em;
+    margin-top: 2em;
+  }
+}

@@ -13,12 +13,17 @@
 
 .tablist {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
   background-color: inherit;
   /* border: 1px solid red; */
   margin-bottom: 1em;
+  /* gap: 1em; */
+}
+
+.tablist > * {
+  flex-shrink: 1;
 }
 
 .tab-content {
@@ -26,6 +31,14 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  .portofolio-section {
+    max-width: 100%;
+    margin-inline: .875em;
+    margin-top: 4em;
+  }
+
+
   .horizontal-separator {
     /* margin-left: .25em; */
     margin-inline: 1px;
@@ -54,7 +67,7 @@
   }
 }
 
-@media (max-width: 1180px) {
+@media (min-width: 481px) and (max-width: 768px){
   .portofolio-section {
     max-width: fit-content;
     margin-inline: 2em;
@@ -66,29 +79,21 @@
   }
 
   .skill-desc{
-    margin-top: 0;
-    width: 60%;
+    width: 75%;
   }
 
   .skills {
     max-width: 100%;
   }
+}
+
+@media (max-width: 1180px) {
+
 }
 
 @media (min-width: 1181px) {
   .portofolio-section {
     padding-inline: 3em;
-    /* margin-top: 10em; */
   }
 
-}
-
-@media (max-width: 600px) {
-  .portofolio-section {
-    margin-inline: 1.25em;
-  }
-
-  .skills {
-    max-width: 100%;
-  }
 }

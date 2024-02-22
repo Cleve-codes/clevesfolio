@@ -95,6 +95,28 @@
   }
 }
 
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .projects-section {
+    padding-inline: 1em;
+  }
+
+  .projects-carousel {
+    overflow-x: hidden;
+  }
+
+  .carousel-item {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  .carousel-img {
+    height: 270px;
+    min-width: 100%;
+    object-fit: cover;
+  }
+}
+
 @media (min-width: 1180px) {
   .projects-section {
     padding-inline: 2em;
@@ -106,7 +128,7 @@
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 
   .projects-section {
     padding-inline: 1em;
@@ -119,7 +141,6 @@
   .carousel-item {
     display: flex;
     flex-basis: 50%;
-    /* gap: 3em; */
   }
 
-}
+} */
