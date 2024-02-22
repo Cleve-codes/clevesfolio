@@ -1,9 +1,9 @@
 import CarouselImg from '@/components/ui/carouselImg';
 import React from 'react'
-import img1 from '@/public/assets/asset 14.jpeg'
-import img2 from '@/public/assets/asset 15.jpeg'
-import img3 from '@/public/assets/asset 16.jpeg'
-import img4 from '@/public/assets/asset 17.jpeg'
+import img1 from '@/public/assets/seo.jpg'
+import img2 from '@/public/assets/vim.png'
+import img3 from '@/public/assets/hydration.jpg'
+import img4 from '@/public/assets/react.png'
 import { Button } from '@/components/ui/button';
 import './Blog.css'
 import Link from 'next/link';

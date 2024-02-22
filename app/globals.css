@@ -71,7 +71,6 @@ body {
 
 
 /* Cursor */
-
 .cursor {
   width: 30px;
   height: 30px;
@@ -97,6 +96,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.brace {
+  color: #44993b;
+  font-size: large;
+  margin-top: .5em;
 }
 
 @keyframes cursorAnim {
@@ -302,6 +307,15 @@ body {
 }
 
 
+
+#animated-text {
+  color: #dddddd;
+  margin-inline: 2em;
+  font-size: large;
+  margin-top: .5em;
+}
+
+
 /* Services Section */
 .services-section {
   min-height: 100vh;
@@ -428,5 +442,9 @@ body {
   .right-section {
     max-width: 50%;
     position: fixed;
+  }
+
+  .into h2 {
+    font-size: larger;
   }
 }

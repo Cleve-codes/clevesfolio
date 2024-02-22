@@ -97,7 +97,7 @@ const Portofolio = () => {
                 <ExperiencesCard
                   company="PENDEZA ONLINE STORE"
                   date="2023 November - Today"
-                  jobTitle="Sr. Frontend Developer"
+                  jobTitle="Frontend Developer"
                   description="I am currently working at Pendeza Online Store as the Lead Frontend Developer where
               I am responsible for the development of the company's website and also the company's mobile app"
                 />
