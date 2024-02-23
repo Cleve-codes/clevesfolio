@@ -14,6 +14,8 @@ import "./Right.css";
 import { useRef } from "react";
 import { forwardRef } from "react";
 
+import personalImg from "@/public/assets/asset 20.jpg";
+
 const words = [
   "Cleve Momanyi",
   "Web Developer",
@@ -132,7 +134,7 @@ const Right = forwardRef(function(props,ref){
           <div className="right-image">
             <Image
               className="personal-img"
-              src="/assets/asset 20.jpg"
+              src={personalImg}
               // width={480}
               // height={480}
               fill

@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import React from "react";
-import Image1 from "@/public/assets/seo.png";
+import Image1 from "@/public/assets/store.jpg";
 import Image2 from "@/public/assets/landing.png";
 import Image3 from "@/public/assets/seo.png";
 import Image4 from "@/public/assets/expense.png";
