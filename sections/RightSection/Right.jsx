@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 
 import "./Right.css";
 import { useRef } from "react";
+import { forwardRef } from "react";
 
 const words = [
   "Cleve Momanyi",
@@ -20,7 +21,7 @@ const words = [
   "Freelancer",
 ];
 
-const Right = () => {
+const Right = forwardRef(function(props,ref){
   const [windowWidth, setWindowWidth] = useState(0);
   const introTextRef = useRef(null);
 
@@ -37,7 +38,7 @@ const Right = () => {
         },
       });
       if (index < words.length - 1) {
-        tlText.to({}, { duration: 0.5 }); // Add a pause between words if needed
+        tlText.to({}, { duration: 1 }); // Add a pause between words if needed
       }
     });
 
@@ -115,7 +116,7 @@ const Right = () => {
   return (
     <div className="right-section">
       <div>
-        <Navbar />
+        <Navbar ref={ref} />
       </div>
       <div className="detail">
         <div className="image">
@@ -162,6 +163,7 @@ const Right = () => {
               })}
             >
               <p className="text">
+                <span className="blinker" />
                 I&apos;m available for a freelance job. Hire me
               </p>
             </Link>
@@ -170,7 +172,9 @@ const Right = () => {
       </div>
     </div>
   );
-};
+});
+
+Right.displayName = "Right"
 
 // export default Right;
 export default dynamic(() => Promise.resolve(Right), {

@@ -1,36 +1,48 @@
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./Cursor.css";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const Cursor = () => {
-  const [cursorStyle, setCursorStyle] = useState({ top: 0, left: 0 });
-  const [expand, setExpand] = useState(false);
+
+  const cursorSize = 30;
+
+  const mouse = {
+    x: useMotionValue(0),
+    y: useMotionValue(0),
+  };
+
+  const smoothOptions ={
+    stiffness: 300,
+    damping: 20,
+    mass: .1,
+  }
+
+  const smoothMouse = {
+    x: useSpring(mouse.x, smoothOptions),
+    y: useSpring(mouse.y, smoothOptions),
+  }
+
+  const manageMouseMove = (e) => {
+    const { clientX, clientY } = e;
+    mouse.x.set(clientX - cursorSize / 2);
+    mouse.y.set(clientY - cursorSize / 2);
+  }
+
 
   useEffect(() => {
-    const onMouseMove = (e) => {
-      setCursorStyle({ top: e.pageY - 10, left: e.pageX - 10 });
-    };
-
-    const onClick = () => {
-      setExpand(true);
-      setTimeout(() => {
-        setExpand(false);
-      }, 500);
-    };
-
-    document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("click", onClick);
-
+    window.addEventListener("mousemove", manageMouseMove);
     return () => {
-      document.removeEventListener("mousemove", onMouseMove);
-      document.removeEventListener("click", onClick);
+      window.removeEventListener("mousemove", manageMouseMove);
     };
-  }, []);
+  });
+
+
 
   return (
-    <div
-      className={`cursor ${expand ? "expand" : ""}`}
-      style={{ top: cursorStyle.top, left: cursorStyle.left }}
-    ></div>
+    <motion.div
+    style={{left: smoothMouse.x, top: smoothMouse.y}}
+    className="cursor"
+    ></motion.div>
   );
 };
 

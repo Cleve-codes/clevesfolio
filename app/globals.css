@@ -341,6 +341,22 @@ body {
 }
 
 
+.blinker {
+  width: 20px;
+  height: 20px;
+  /* border: 3px solid #888888; */
+  border-radius: 50%;
+  background: #44993b;
+  margin-right: .5em;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  pointer-events: none;
+  z-index: 1000;
+  animation: cursorAnim .5s infinite alternate;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Responsive design */
 /* Mobile Devices */
 @media (min-width: 320px) and (max-width: 480px) {

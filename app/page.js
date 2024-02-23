@@ -8,20 +8,20 @@ import Services from "@/sections/Services/Services";
 import { Testimonials } from "@/sections/Testimonials/Testimonials";
 import Blog from "@/sections/Blog/Blog";
 import Contact from "@/sections/Contact/Contact";
-import { useEffect, useRef } from 'react';
 import Footer from "@/sections/Footer/Footer";
+import Cursor from "@/components/Cursor/Cursor";
 
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import { useGSAP } from '@gsap/react'
 import { useState } from "react";
-import Cursor from "@/components/Cursor/Cursor";
 
 
 export default function Page() {
 
-  const [windowWidth, setWindowWidth] = useState(0)
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -89,7 +89,7 @@ export default function Page() {
 
       <Right />
 
-      {/* <Cursor /> */}
+      <Cursor/>
     </main>
   );
 }

@@ -2,8 +2,8 @@ import { jost } from "./fonts";
 import "./globals.css";
 
 export const metadata = {
-  title: "Cleve's Folio",
-  description: "Cleve Momanyi's Personal Portofolio",
+  title: "Cleve's | Personal Portofolio",
+  description: "Cleve Momanyi's is a creative Frontend developer based in Nairobi, Kenya and passionate about building beautiful and functional websites",
 
 };
 

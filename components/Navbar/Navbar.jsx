@@ -1,9 +1,9 @@
 // import React from 'react'
 import style from "./Navbar.module.css";
 import { Menu } from "lucide-react";
-import img1 from '@/public/assets/twitter.svg'
-import img2 from '@/public/assets/instagram.svg'
-import img3 from '@/public/assets/github.svg'
+import img1 from "@/public/assets/twitter.svg";
+import img2 from "@/public/assets/instagram.svg";
+import img3 from "@/public/assets/github.svg";
 // import { CiMenuBurger } from "react-icons/ci";
 
 import {
@@ -18,8 +18,7 @@ import {
 import { X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
-
+import { forwardRef } from "react";
 
 const socialMediaIcons = [
   {
@@ -33,16 +32,16 @@ const socialMediaIcons = [
   {
     name: "Github",
     icon: img3,
-  }
-]
+  },
+];
 
-const Navbar = () => {
+const Navbar = forwardRef((props, ref) => {
   return (
     <Sheet>
       <SheetTrigger className={style.nav}>
         <h1 className={style.h1}>
           <span className="sm:text-[20px]">Menu </span>
-          <Menu color="#ffffff" width={30} height={30} />
+          <Menu color="#ffffff" width={30} height={30} ref={ref} />
           {/* <CiMenuBurger /> */}
         </h1>
       </SheetTrigger>
@@ -79,27 +78,21 @@ const Navbar = () => {
             </li>
           </ul>
         </SheetDescription>
-        <SheetFooter >
-        {/* <div className={style.icons}>
-          {socialMediaIcons.map((icon, i) => (
-            <div key={i}>
-                <Image alt="social" src={icon.icon} className={style.socialIcon} />
-            </div>
-          ))}
-        </div> */}
-        {/* <div>
-          Developed by{" "}
-          <span>
-          <Link href="https://github.com/cleve-codes/" target='_blank' >
-          Cleve
-          </Link>
-          </span>
-      </div> */}
-      </SheetFooter>
+        <SheetFooter className={style.sheetFooter}>
+          <div>
+            Developed by{" "}
+            <span>
+              <Link href="https://github.com/cleve-codes/" target="_blank">
+                Cleve
+              </Link>
+            </span>
+          </div>
+        </SheetFooter>
       </SheetContent>
-
     </Sheet>
   );
-};
+});
+
+Navbar.displayName = "Navbar";
 
 export default Navbar;

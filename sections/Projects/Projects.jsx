@@ -7,11 +7,11 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import React from "react";
-import Image1 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/store.jpg";
-import Image2 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/landing.png";
-import Image3 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/seo.png";
-import Image4 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/expense.png";
-import Image5 from "/home/cleve/Documents/Javascript/React/clevefolio/public/assets/minimalist.png";
+import Image1 from "@/public/assets/seo.png";
+import Image2 from "@/public/assets/landing.png";
+import Image3 from "@/public/assets/seo.png";
+import Image4 from "@/public/assets/expense.png";
+import Image5 from "@/public/assets/minimalist.png";
 import CarouselImg from "@/components/ui/carouselImg";
 import "./Projects.css";
 import Link from "next/link";

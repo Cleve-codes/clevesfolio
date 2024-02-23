@@ -56,10 +56,21 @@
 
 .sheetFooter {
   position: relative;
-  top: 30%;
-  left: 0;
-  /* display: flex; */
-  /* flex-direction: column-reverse; */
+  top: 40%;
+  left: 0%;
+  margin-right: 30%;
+  color: #888888;
+  font-size: 1.5em;
+  /* border: 1px solid red; */
+  /* min-width: 100%; */
+}
+
+.sheetFooter > div > span {
+  color: #dddddd;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(128, 128, 128, .5);
+  display: inline-block;
+  margin-bottom: 2em;
 }
 
 .icons {
