@@ -111,10 +111,10 @@ const Portofolio = () => {
                 />
 
                 <ExperiencesCard
-                  company="ANDELA"
+                  company="NETSCALING TECHNOLOGIES"
                   date="2023 Apr - Oct "
                   jobTitle="Intern"
-                  description="Interned at Andela for 6 months where I worked on various projects and also
+                  description="Interned at NTD for 3 months where I worked on various projects and also
               learned a lot about web development and design and also got to work with a lot of experienced"
                 />
               </>

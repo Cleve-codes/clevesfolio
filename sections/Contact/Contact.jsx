@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -43,10 +44,18 @@ const Contact = () => {
         </div>
         <div className="address-detail" >
           <p>PHONE</p>
-          <h2 className="phone">(+254) 700164733</h2>
+          <h2 className="phone">
+          <Link href="tel:++254700164733" >
+            (+254) 700164733
+          </Link>
+            </h2>
         </div>
         <div className="address-detail" >
-          <h6>clevemomanyi@gmail.com</h6>
+          <h6>
+            <Link href="mailto:clevemomanyi@gmail.com?subject=Project Proposal" >
+            clevemomanyi@gmail.com
+            </Link>
+            </h6>
         </div>
       </div>
     </div>
