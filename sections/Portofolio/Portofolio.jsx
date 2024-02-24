@@ -98,16 +98,16 @@ const Portofolio = () => {
                   company="PENDEZA ONLINE STORE"
                   date="2023 November - Today"
                   jobTitle="Frontend Developer"
-                  description="I am currently working at Pendeza Online Store as the Lead Frontend Developer where
-              I am responsible for the development of the company's website and also the company's mobile app"
+                  description="I worked working at Pendeza Online Store as the Lead Frontend Developer where
+              I was responsible for the development of the company's website and also the company's mobile app"
                 />
 
                 <ExperiencesCard
                   company="SMS DIGITAL"
                   date="2024 Jan - Today "
                   jobTitle="Web Developer"
-                  description="I am currently working at SMS Digital as a web developer where I work on various projects
-              and also do the SEO as part of my job description"
+                  description="I was a part of the working at SMS Digital where I worked as a web developer on various projects
+              and also did some of the SEO as part of my job description"
                 />
 
                 <ExperiencesCard
