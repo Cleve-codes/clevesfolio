@@ -1,11 +1,9 @@
 .nav {
   position: static;
   width: 100%;
-  /* margin-bottom: 4em; */
   margin-top: 3em;
   padding-right: 3em;
   outline: none;
-  z-index: 100;
 }
 
 .h1 {
@@ -15,9 +13,6 @@
   margin-left: 90%;
 }
 
-/* .sheetContent {
-  border: 1px solid red;
-} */
 
 .sheetTitle {
   color: #888888;
@@ -31,6 +26,7 @@
   color: #dddddd;
   font-size: 1.5em;
   margin-block: 2em;
+  /* border: 1px solid red; */
 }
 
 .sheetDesc ul li {
@@ -61,8 +57,6 @@
   margin-right: 30%;
   color: #888888;
   font-size: 1.5em;
-  /* border: 1px solid red; */
-  /* min-width: 100%; */
 }
 
 .sheetFooter > div > span {
@@ -91,6 +85,10 @@
   color: #888888;
   /* fill: #888888; */
   background-color: rgba(128, 128, 128, .5);
+}
+
+.sheet {
+  border: 1px solid red;
 }
 
 /* .footerText {
@@ -122,4 +120,98 @@
     /* display: none; */
   }
 
+
+
+  .sheetTitle {
+    color: #888888;
+    font-size: 2em;
+    /* border: 1px solid  red; */
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: 0;
+  }
+
+  .sheetContent {
+    border: none;
+    padding: 0;
+  }
+
+  .sheetDesc {
+    color: #dddddd;
+    font-size: 1.5em;
+    margin-block: 2em;
+    /* border: 1px solid red; */
+    margin-left: 1.5em;
+  }
+
+  .sheetDesc ul li {
+    margin-bottom: 1em;
+    margin-left: 1.25em;
+  }
+
+  .sheetFooter {
+    position: relative;
+    top: 20%;
+    left: 0%;
+    /* margin-right: 30%; */
+    color: #888888;
+    font-size: 1em;
+    min-width: 100%;
+    border-top: .5px solid rgba(128, 128, 128, .5);
+    padding: 1em;
+    /* min-width: 100%; */
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* .nav {
+    position: fixed;
+    max-width: fit-content;
+    right: 10%;
+  } */
+
+  .sheetDesc {
+    font-size: 1.5em;
+    margin-block: 2em;
+    margin-left: 1.5em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav {
+    position: fixed;
+    /* border: 1px solid red; */
+    max-width: fit-content;
+    right: 10%;
+  }
+
+  .sheetDesc {
+    font-size: 1.5em;
+    margin-block: 2em;
+    margin-left: 1.5em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .sheetFooter {
+    position: relative;
+    top: 40%;
+    left: 0%;
+    margin-right: 30%;
+    color: #888888;
+    font-size: 1.5em;
+  }
+
+  .sheetDesc {
+    color: #dddddd;
+    font-size: 1.5em;
+    margin-block: 2em;
+    /* border: 1px solid red; */
+    margin-left: 1.5em;
+  }
+
+  .sheetDesc ul li {
+    margin-bottom: 1em;
+  }
 }

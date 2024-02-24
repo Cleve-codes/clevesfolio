@@ -15,39 +15,23 @@ import { useRef } from "react";
 import { forwardRef } from "react";
 
 import personalImg from "@/public/assets/asset 20.jpg";
+import SplitType from "split-type";
+
+import { TypeAnimation } from 'react-type-animation';
 
 const words = [
   "Cleve Momanyi",
+  1000,
   "Web Developer",
+  1000,
   "UI/UX Designer",
+  1000,
   "Freelancer",
+  1000,
 ];
 
-const Right = forwardRef(function(props,ref){
+const Right = forwardRef(function (props, ref) {
   const [windowWidth, setWindowWidth] = useState(0);
-  const introTextRef = useRef(null);
-
-  useEffect(() => {
-    const tlText = gsap.timeline({ repeat: -1 });
-
-    words.forEach((word, index) => {
-      tlText.to({}, {
-        duration: 1,
-        onStart: () => {
-          if (introTextRef.current) {
-            introTextRef.current.innerText = word;
-          }
-        },
-      });
-      if (index < words.length - 1) {
-        tlText.to({}, { duration: 1 }); // Add a pause between words if needed
-      }
-    });
-
-    // Ensure the ref is updated after the component has rendered
-    introTextRef.current = document.getElementById('animated-text');
-
-  }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -66,8 +50,6 @@ const Right = forwardRef(function(props,ref){
   }, [windowWidth]);
 
   gsap.registerPlugin(ScrollTrigger);
-
-  /* GSAP ANimation to scale down the .image class when the about section is reached  */
 
   useGSAP(() => {
     if (windowWidth > 1039) {
@@ -94,24 +76,6 @@ const Right = forwardRef(function(props,ref){
           y: -50,
         }
       );
-
-      /* Typewriter animation to hs in .intro */
-
-      gsap.to(".brace", {
-        opacity: 0,
-        repeat: -1,
-        yoyo: "true",
-        duration: 1,
-        ease: "power2.inOut",
-      });
-
-      const tlMaster = gsap.timeline({ repeat: -1 });
-
-      words.forEach((word) => {
-        let tlText = gsap.timeline({ repeat: 1, yoyo: true });
-        tlText.to("#animated-text", { duration: 1, text: word });
-        tlMaster.add(tlText);
-      });
     }
   }, [windowWidth]);
 
@@ -125,7 +89,6 @@ const Right = forwardRef(function(props,ref){
           <div>
             <Image
               className="hero-img"
-              // src="/assets/asset 20.jpg"
               src={mask}
               alt="hero"
             ></Image>
@@ -135,8 +98,6 @@ const Right = forwardRef(function(props,ref){
             <Image
               className="personal-img"
               src={personalImg}
-              // width={480}
-              // height={480}
               fill
               priority
               alt="hero"
@@ -144,14 +105,25 @@ const Right = forwardRef(function(props,ref){
           </div>
 
           <div className="intro">
-            <p>Hi THERE! I AM</p>
-            {/* <br /> */}
+            <div className="greet">
+                <p>Hi THERE! I AM</p>
+            </div>
             <div className="flex justify-between gap-[2em]">
               <div className="brace">[ </div>
-              <h2 id="animated-text" className="brace" ref={introTextRef}>
-                {" "}
-                Web Developer{" "}
-              </h2>
+              <div
+              style={{width: '200px'}}
+              >
+
+                <TypeAnimation
+                sequence={words}
+                wrapper="h2"
+                style={{ marginInline: "0.5em", paddingTop: ".8em"}}
+                speed={-10}
+                repeat={Infinity}
+                className="animated-text"
+                />
+
+                </div>
               <div className="brace"> ]</div>
             </div>
           </div>
@@ -176,9 +148,8 @@ const Right = forwardRef(function(props,ref){
   );
 });
 
-Right.displayName = "Right"
+Right.displayName = "Right";
 
-// export default Right;
 export default dynamic(() => Promise.resolve(Right), {
   ssr: false,
 });

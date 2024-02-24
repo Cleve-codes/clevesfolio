@@ -1,5 +1,5 @@
 .portofolio-section {
-  height: max-content;
+  /* height: max-content; */
   margin-bottom: 5em;
 }
 
@@ -62,9 +62,13 @@
 
   .skill-desc {
     min-width: 90%;
-    font-size: .755em;
     margin-top: 2em;
   }
+
+  .skill-desc .p {
+    font-size: 1em;
+  }
+
 }
 
 @media (min-width: 481px) and (max-width: 768px){
@@ -74,12 +78,22 @@
     margin-top: 4em;
   }
 
-  .p{
-    font-size: 1.5em;
+  .horizontal-separator {
+    width: 20px;
+  }
+
+  .tablist {
+    /* border: 1px solid red; */
+    max-width: 75%;
   }
 
   .skill-desc{
     width: 75%;
+    margin-top: 0;
+  }
+
+  .skill-desc .p {
+    font-size: 1em;
   }
 
   .skills {
@@ -127,9 +141,22 @@
 @media (min-width: 1400px) {
   .portofolio-section {
     padding-inline: 7em;
+    min-height: 30vh;
+  }
+
+  .skills {
+    max-width: 90%;
+    /* border: 1px solid red; */
   }
 
   .skill-desc {
-    max-width: 75%;
+    max-width: 50%;
+    margin-top: 0;
+    margin-bottom: 15%;
+  }
+
+  .skill-desc .p {
+    /* font-size: 1em; */
+    font-size: 1.25em;
   }
 }

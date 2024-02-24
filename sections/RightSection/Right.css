@@ -22,18 +22,11 @@
   left: 21%;
   width: 58%;
   height: 60%;
-  /* width: 10%; */
-  /* border: 1px solid red; */
 }
 
-/* .personal-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: fit-content;
-  min-height: fit-content;
-  width: 200px;
-  height: 200px; */
+#animated-text {
+  color: white;
+}
 
 
 .intro {
@@ -53,7 +46,7 @@
 }
 
 .text {
-  color: #dddddd;
+  color: #999999;
   text-decoration-line: underline;
 }
 
@@ -63,11 +56,9 @@
   .right-section {
     width: 100%;
     max-height: 100vh;
-    /* border: 1px solid red; */
   }
 
   .hero-img {
-    /* border: 1px solid red; */
     min-width: 100%;
     min-height: 100%;
     background-position: cover;
@@ -75,7 +66,6 @@
   }
 
   .image {
-    /* border: 1px solid red; */
     position: relative;
     width: 100%;
     height: 100%;
@@ -86,7 +76,6 @@
     min-height: 500px;
     min-width: 300px;
     width: 100%;
-    /* border: 1px solid red; */
     margin-top: 25%;
   }
 
@@ -123,13 +112,53 @@
   }
 
   #left-section {
-    /* border: 1px solid red; */
     min-width: 100%;
   }
+
+  .greet {
+    margin-left: 30%;
+    color: #999999;
+    font-size: x-large;
+  }
+
+  .animated-text {
+    font-size: 1em;
+    margin-top: 1em;
+  }
+
+  .brace:first-child {
+    position: fixed;
+    font-size: large;
+    margin-top: 1.5em;
+    left: 10%;
+  }
+
+  .brace:last-child {
+    position: fixed;
+    font-size: large;
+    left: 80%;
+    margin-top: 1.5em;
+  }
+
 }
 
-/* Small screen laptops */
-@media (min-width: 769px) and (max-width: 1039px) {
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .image {
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 15%;
+  }
+
+  .intro {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #dddddd;
+    text-align: center;
+  }
+
   #to-contact {
     position: absolute;
     top: 95%;
@@ -139,13 +168,102 @@
     font-size: 0.45em;
   }
 
+  .greet {
+    margin-left: 20%;
+    color: #999999;
+    font-size: large;
+  }
+
+  .animated-text {
+    font-size: 1em;
+    margin-top: 1.5em;
+  }
+
+  .brace:first-child {
+    position: fixed;
+    font-size: large;
+    margin-top: 2em;
+    left: 10%;
+  }
+
+  .brace:last-child {
+    position: fixed;
+    font-size: large;
+    left: 85%;
+    margin-top: 2em;
+  }
+}
+
+/* Small screen laptops */
+@media (min-width: 769px) and (max-width: 1039px) {
+
+  .image {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .intro {
+    position: relative;
+    color: #dddddd;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+
+  .hero-img {
+    min-height: max-content;
+    min-width: max-content;
+  }
+
+  .personal-img {
+    /* position: relative; */
+    /* left: 30%; */
+    min-height: 500px;
+    min-width: 300px;
+    width: 100%;
+  }
+
+  #to-contact {
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.45em;
+    /* border: 1px solid red; */
+  }
+
   /* .right-section {
-    border: 1px solid red;
   } */
 
   #left-section {
     /* border: 1px solid red; */
     min-width: 100%;
+  }
+
+  .greet {
+    margin-left: 5%;
+    color: #999999;
+    font-size: large;
+  }
+
+  .animated-text {
+    font-size: 1em;
+    margin-top: .5em;
+  }
+
+  .brace:first-child {
+    position: fixed;
+    font-size: large;
+    margin-top: 2em;
+    left: 30%;
+  }
+
+  .brace:last-child {
+    position: fixed;
+    font-size: large;
+    left: 60%;
+    margin-top: 2em;
   }
 
 }
@@ -157,6 +275,43 @@
     min-height: 480px;
   } */
 
+  .intro {
+    position: absolute;
+    top: 70%;
+    color: #dddddd;
+    text-align: center;
+  }
+
+  .animated-text {
+    /* border: 1px solid red; */
+    text-align: left;
+  }
+
+
+  .greet {
+    margin-left: 0%;
+    color: #999999;
+    /* font-size: large; */
+  }
+
+  .animated-text {
+    font-size: 1em;
+    margin-top: 1em;
+  }
+
+  .brace:first-child {
+    position: fixed;
+    font-size: large;
+    margin-top: 1.5em;
+    left: 35%;
+  }
+
+  .brace:last-child {
+    position: fixed;
+    font-size: large;
+    left: 70%;
+    margin-top: 1.5em;
+  }
 
 
 }
@@ -177,4 +332,67 @@
     min-width: 450px;
     min-height: 520px;
   }
+
+  .intro {
+    /* position: relative; */
+    color: #dddddd;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+
+  #animated-text {
+    color: white;
+    font-size: larger;
+  }
+
+  #to-contact {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.45em;
+  }
+
+  .greet {
+    position: fixed;
+    color: #999999;
+    text-align: center;
+    font-size: large;
+    /* border: 1px solid red; */
+    top: 73%;
+  }
+
+  .animated-text {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+
+  .brace:first-child {
+    position: fixed;
+    font-size: xx-large;
+    margin-top: 1em;
+    left: 30%;
+  }
+
+  .brace:last-child {
+    position: fixed;
+    font-size: xx-large;
+    left: 75%;
+    margin-top: 1em;
+  }
 }
+
+.greet {
+  position: fixed;
+}
+
+.hidden {
+  /* display: none; */
+  /* width: 100%; */
+  /* border: 1px solid red; */
+}
+
+/* .visible {
+  display: block;
+} */

@@ -36,6 +36,12 @@
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .services-section {
+    padding-inline: 1.25em;
+  }
+}
+
 /* Small screens */
 @media (min-width: 769px) and (max-width: 1180px) {
   .services-section {

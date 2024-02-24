@@ -6,6 +6,8 @@ import img2 from "@/public/assets/instagram.svg";
 import img3 from "@/public/assets/github.svg";
 // import { CiMenuBurger } from "react-icons/ci";
 
+
+
 import {
   Sheet,
   SheetFooter,
@@ -19,6 +21,8 @@ import { X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { forwardRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const socialMediaIcons = [
   {
@@ -37,7 +41,7 @@ const socialMediaIcons = [
 
 const Navbar = forwardRef((props, ref) => {
   return (
-    <Sheet>
+    <Sheet className={style.sheet}>
       <SheetTrigger className={style.nav}>
         <h1 className={style.h1}>
           <span className="sm:text-[20px]">Menu </span>
@@ -48,10 +52,9 @@ const Navbar = forwardRef((props, ref) => {
       <SheetContent className={style.sheetContent}>
         <SheetHeader className={style.sheetHeader}>
           <SheetTitle className={style.sheetTitle}>Menu</SheetTitle>
-          {/* <SheetClose className={style.sheetClose}><X /> </SheetClose> */}
         </SheetHeader>
-        <SheetDescription className={style.sheetDesc}>
-          <ul>
+        {/* <SheetDescription > */}
+          <ul id="sheetDescription" className={style.sheetDesc}>
             <li>
               <Link href="#home">Home</Link>
             </li>
@@ -77,7 +80,7 @@ const Navbar = forwardRef((props, ref) => {
               <Link href="#contact">Contact</Link>
             </li>
           </ul>
-        </SheetDescription>
+        {/* </SheetDescription> */}
         <SheetFooter className={style.sheetFooter}>
           <div>
             Developed by{" "}
