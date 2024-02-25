@@ -31,6 +31,7 @@
   height: 270px;
   min-width: 150px;
   max-width: 100%;
+  background-size: contain;
   object-fit: contain;
 }
 
@@ -89,7 +90,7 @@
   .carousel-img {
     height: 270px;
     min-width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 
   .carousel-btn {
@@ -115,7 +116,7 @@
   .carousel-img {
     height: 270px;
     min-width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 }
 
@@ -148,7 +149,7 @@
   .carousel-img {
     height: 270px;
     min-width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 }
 
@@ -171,7 +172,7 @@
   .carousel-img {
     height: 270px;
     min-width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 }
 
@@ -192,7 +193,7 @@
   .carousel-img {
     height: 270px;
     min-width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 }
 
