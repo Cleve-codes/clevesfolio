@@ -12,7 +12,7 @@ import Image2 from "@/public/assets/landing.png";
 import Image3 from "@/public/assets/seo.png";
 import Image4 from "@/public/assets/expense.png";
 import Image5 from "@/public/assets/minimalist.png";
-import Image6 from "@/public/assets/geritch.jpeg";
+import Image6 from "@/public/assets/geritch.png";
 import CarouselImg from "@/components/ui/carouselImg";
 import "./Projects.css";
 import Link from "next/link";
