@@ -12,6 +12,7 @@ import Image2 from "@/public/assets/landing.png";
 import Image3 from "@/public/assets/seo.png";
 import Image4 from "@/public/assets/expense.png";
 import Image5 from "@/public/assets/minimalist.png";
+import Image6 from "@/public/assets/gericht.jpeg";
 import CarouselImg from "@/components/ui/carouselImg";
 import "./Projects.css";
 import Link from "next/link";
@@ -41,13 +42,19 @@ const projects = [
     title: "Expense Tracker App",
     tech: "React, Redux, Tailwind",
     img: Image4,
-    url: 'https://react-expense-tracker12.netlify.app/'
+    url: 'https://react-expense-tracker-9b90o0viy-cleve-codes.vercel.app/'
   },
   {
     title: "Minimalist Portofolio",
     tech: "NextJS, TypeScript, TailwindCSS",
     img: Image5,
     url: "https://jeffsfolio.netlify.app"
+  },
+  {
+    title: "Restaurant Landing Page",
+    tech: "ReactJS, TailwindCSS",
+    img: Image6,
+    url: "https://simple-react-landing-page.vercel.app/"
   }
 ]
 
