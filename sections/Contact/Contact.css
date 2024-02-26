@@ -148,11 +148,11 @@
   }
 }
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .contact-section {
     padding-inline: 9em;
   }
-}
+} */
 
 /* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
@@ -219,11 +219,18 @@
 }
 
 
-/* @media (max-width: 1280px) {
+@media (max-width: 1280px) and (max-width: 1400px) {
   .contact-section {
-    padding-inline-start: 2em;
+    padding-inline-start: 7em;
   }
-} */
+}
+
+@media (min-width: 1401px) {
+  .contact-section {
+    padding-inline-start: 10em;
+    max-width: 90%;
+  }
+}
 
 @media (max-width: 600px) {
   .flexdiv {

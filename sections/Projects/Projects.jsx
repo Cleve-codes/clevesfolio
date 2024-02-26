@@ -5,58 +5,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 import React from "react";
-import Image1 from "@/public/assets/store.jpg";
-import Image2 from "@/public/assets/landing.png";
-import Image3 from "@/public/assets/seo.png";
-import Image4 from "@/public/assets/expense.png";
-import Image5 from "@/public/assets/minimalist.png";
-import Image6 from "@/public/assets/geritch.png";
 import CarouselImg from "@/components/ui/carouselImg";
 import "./Projects.css";
 import Link from "next/link";
 
-const Images = [Image1, Image2, Image3, Image4, Image5];
-
-const projects = [
-  {
-    title: 'Pendeza Online Store',
-    tech: 'NextJS, TypeScript, Stripe',
-    img: Image1,
-    url: 'https://github.com/Cleve-codes/Pendeza-Digital-Store'
-  },
-  {
-    title: 'Pendeza Landing Page',
-    tech: 'React, TailwindCSS, GSAP',
-    img: Image2,
-    url: "https://wibe-studio-seven.vercel.app/",
-  },
-  {
-    title: "SM Digital Agency",
-    tech: "React, TailwindCSS",
-    img: Image3,
-    url: 'https://sms-seo.netlify.app/'
-  },
-  {
-    title: "Expense Tracker App",
-    tech: "React, Redux, Tailwind",
-    img: Image4,
-    url: 'https://react-expense-tracker-9b90o0viy-cleve-codes.vercel.app/'
-  },
-  {
-    title: "Minimalist Portofolio",
-    tech: "NextJS, TypeScript, TailwindCSS",
-    img: Image5,
-    url: "https://jeffsfolio.netlify.app"
-  },
-  {
-    title: "Restaurant Landing Page",
-    tech: "ReactJS, TailwindCSS",
-    img: Image6,
-    url: "https://simple-react-landing-page.vercel.app/"
-  }
-]
+import { projects } from "@/constants/data";
 
 const Projects = () => {
   return (

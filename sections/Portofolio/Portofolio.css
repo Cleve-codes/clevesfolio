@@ -140,13 +140,12 @@
 
 @media (min-width: 1400px) {
   .portofolio-section {
-    padding-inline: 7em;
+    padding-inline: 10em;
     min-height: 30vh;
   }
 
   .skills {
     max-width: 90%;
-    /* border: 1px solid red; */
   }
 
   .skill-desc {
@@ -156,7 +155,6 @@
   }
 
   .skill-desc .p {
-    /* font-size: 1em; */
     font-size: 1.25em;
   }
 }

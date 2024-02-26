@@ -11,11 +11,9 @@ import mask from "@/public/assets/mask.svg";
 import { useEffect, useState } from "react";
 
 import "./Right.css";
-import { useRef } from "react";
 import { forwardRef } from "react";
 
 import personalImg from "@/public/assets/asset 20.jpg";
-import SplitType from "split-type";
 
 import { TypeAnimation } from 'react-type-animation';
 

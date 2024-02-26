@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* border: 1px solid red; */
 }
 
 .carousel-item {
@@ -120,16 +121,15 @@
   }
 }
 
-@media (min-width: 1180px) {
+/* @media (min-width: 1180px) {
   .projects-section {
     padding-inline: 2em;
   }
 
   .projects-carousel {
-    /* border: 1px solid red; */
     overflow-x: hidden
   }
-}
+} */
 
 /* laptops and small screes */
 @media (min-width: 769px) and (max-width: 1179px) {
@@ -178,16 +178,18 @@
 
 @media (min-width: 1401px) {
   .projects-section {
-    padding-inline: 7em;
+    padding-inline-start: 10em;
   }
 
   .projects-carousel {
+    /* border: 1px solid red; */
     overflow-x: hidden;
   }
 
   .carousel-item {
     display: flex;
     flex-basis: 33.333333%;
+    gap: 1em;
   }
 
   .carousel-img {

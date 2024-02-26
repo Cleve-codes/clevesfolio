@@ -89,12 +89,13 @@
 /* X Large screens */
 @media (min-width: 1401px) {
   .services-section {
-    padding-inline: 8em;
+    padding-inline: 10em;
     margin-top: 14em;
+    margin-bottom: 10em;
   }
 
   .services-header .h1 {
-    font-size: 4em;
+    font-size: 3em;
     margin-top: .875em;
   }
 

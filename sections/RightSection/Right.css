@@ -16,6 +16,10 @@
   height: 100%;
 }
 
+.brace {
+  color: #44993b;
+}
+
 .right-image {
   position: absolute;
   top: 8%;

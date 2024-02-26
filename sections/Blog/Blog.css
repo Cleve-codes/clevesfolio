@@ -105,8 +105,9 @@
 /* Desktops */
 @media (min-width: 1280px) {
   .blog-section {
-    margin-inline: 8em;
-    max-width: 100%;
+    margin-inline: 10em;
+    /* max-width: 100%;
+    width: 800px; */
   }
 
   .blog {
@@ -115,7 +116,6 @@
 
   .blog-image {
     min-height: 270px;
-    /* border: 1px solid red; */
   }
 
 }
@@ -139,7 +139,7 @@
 @media screen and (min-width: 768px) {
   .blog {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.95em;
+    gap: 2em;
   }
 }
 /*

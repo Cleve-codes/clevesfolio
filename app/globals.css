@@ -65,83 +65,7 @@
   }
 }
 
-body {
-  background-color: #1d1b17;
-}
 
-
-/* Cursor */
-/* .cursor {
-  width: 30px;
-  height: 30px;
-  border: 3px solid #888888;
-  border-radius: 50%;
-  position: absolute;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-  pointer-events: none;
-  z-index: 1000;
-} */
-
-/* .cursor::after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  position: fixed;
-  position: absolute;
-  border: 3px solid #888888;
-  border-radius: 50%;
-  background-color: #888888;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-.brace {
-  color: #44993b;
-
-
-}
-
-@keyframes cursorAnim {
-  from {
-      transform: scale(1);
-  }
-  to {
-      transform: scale(.7);
-  }
-}
-
-@keyframes cursorAnim2 {
-  from {
-      transform: scale(1);
-  }
-  to {
-      transform: scale(.4);
-  }
-}
-
-@keyframes cursorAnim3 {
-  0% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(3);
-  }
-  100% {
-      transform: scale(1);
-      opacity: 0;
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -159,9 +83,6 @@ body {
 /* Main Page */
 .main-page {
   display: flex;
-  /* flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between; */
 }
 
 
@@ -316,7 +237,7 @@ body {
 
 
 /* Services Section */
-.services-section {
+/* .services-section {
   min-height: 100vh;
   margin-top: 19em;
 }
@@ -327,7 +248,7 @@ body {
 
 .services-cards {
   margin-top: 2em;
-}
+} */
 
 .input-contact {
   background-color: inherit;
@@ -337,7 +258,6 @@ body {
   padding-left: .5em;
   min-width: 100%;
   margin-bottom: 2em;
-  /* margin-bottom: 1em; */
 }
 
 

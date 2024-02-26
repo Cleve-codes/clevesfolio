@@ -2,20 +2,8 @@ import ServicesCard from '@/components/ui/ServicesCard';
 import React from 'react';
 import './Services.css';
 
-const servicesData = [
-  {
-    service: 'Web Development',
-    description: 'Sculpting immersive FrontEnd experiences with a palette of cutting-edge technologies, bringing your digital dreams to life.',
-  },
-  {
-    service: 'UI/UX Design',
-    description: 'Infusing passion into pixels, I design UI/UX that dances between aesthetics and intuition, turning concepts into visual masterpieces.',
-  },
-  {
-    service: 'SEO/Digital Marketing',
-    description: 'Ignite your online presence! With SEO and Digital Marketing wizardry, I craft strategies that propel you into the spotlight, ensuring your story captivates the digital realm.',
-  },
-];
+import { servicesData } from '@/constants/data';
+
 
 const Services = () => {
   return (

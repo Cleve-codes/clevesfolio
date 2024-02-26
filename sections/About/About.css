@@ -315,7 +315,7 @@
 /* Larger screens */
 @media (min-width: 1400px) {
   .about-section {
-    margin-inline: 8em;
+    margin-inline: 10em;
     max-width: 80%;
   }
 
