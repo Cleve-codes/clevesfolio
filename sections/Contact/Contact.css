@@ -123,8 +123,9 @@
 /* Mobile Devices */
 @media (min-width: 320px) and (max-width: 480px) {
   .contact-section {
-    margin-inline: .875em;
     max-width: 100%;
+    /* border: 1px solid red; */
+    padding-inline: 1em;
   }
 
   .contact-header .h1 {
@@ -219,15 +220,17 @@
 }
 
 
-@media (max-width: 1280px) and (max-width: 1400px) {
+@media (min-width: 1280px) and (max-width: 1400px) {
   .contact-section {
-    padding-inline-start: 7em;
+    padding-inline: 7em;
+    max-width: 100%;
+    /* border: 1px solid red; */
   }
 }
 
 @media (min-width: 1401px) {
   .contact-section {
-    padding-inline-start: 10em;
+    padding-inline: 10em;
     max-width: 90%;
   }
 }

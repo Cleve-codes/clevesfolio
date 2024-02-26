@@ -6,6 +6,7 @@ import ProjectsImage3 from "@/public/assets/seo.png";
 import ProjectsImage4 from "@/public/assets/expense.png";
 import ProjectsImage5 from "@/public/assets/minimalist.png";
 import ProjectsImage6 from "@/public/assets/geritch.png";
+
 /* Blog Section */
 import blogimg1 from '@/public/assets/seo.jpg'
 import blogimg2 from '@/public/assets/vim.png'
@@ -221,11 +222,6 @@ const testimonials = [
 ];
 
 /* Blog Section */
-// import blogimg1 from '@/public/assets/seo.jpg'
-// import blogimg2 from '@/public/assets/vim.png'
-// import blogimg3 from '@/public/assets/hydration.jpg'
-// import blogimg4 from '@/public/assets/react.png'
-
 const blogs = [
   {
     title: "The Ultimate Guide to SEO",

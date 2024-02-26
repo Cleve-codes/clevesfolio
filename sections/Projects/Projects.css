@@ -60,7 +60,7 @@
   .btn-prev {
     position: absolute;
     top: 18%;
-    left: 84%;
+    left: 82%;
     transform: translateY(-50%);
   }
 
@@ -89,14 +89,15 @@
   }
 
   .carousel-img {
-    height: 270px;
-    min-width: 100%;
-    /* object-fit: cover; */
+    min-height: 270px;
+    min-width: 100px;
+    max-width: 100%;
+    object-fit: cover;
   }
 
-  .carousel-btn {
+  /* .carousel-btn {
     display: none;
-  }
+  } */
 }
 
 /* Tablets */
