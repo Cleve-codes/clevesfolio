@@ -211,12 +211,12 @@ const testimonials = [
   },
   {
     text: '"Cleve is a creative genius! Their UI/UX designs are not just visually stunning but also incredibly user-friendly. A pleasure to work with."',
-    name: "Michael Oliver",
+    name: "Michael Wafula",
     job: "Graphic Designer",
   },
   {
     text: '"Incredible SEO and Digital Marketing expertise! Cleve knows how to boost online visibility and drive results. Highly satisfied with the outcomes."',
-    name: "Wendy Williams",
+    name: "Wendy Achieng",
     job: "Marketing Specialist",
   },
 ];
