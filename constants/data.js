@@ -133,7 +133,7 @@ const education = [
     school: "MURANG'A UNIVERSITY OF TECHNOLOGY",
     date: '2021 - Today',
     degree: 'BSc. Computer Science',
-    description: 'Pursuing Bsc. Computer Science at Murang\'a University of Technology since 2021, I specialize in web development and design. Beyond the code, my passion extends to machine learning, AI, and a future interest in Cyber Security.'
+    description: 'Pursuing a BSc. in Computer Science at Murang\'a University of Technology since 2021, I am currently in my final semester and set to complete my studies by April. I specialize in web development and design, with a strong passion for machine learning, AI, and an emerging interest in cybersecurity.'
   },
   {
     school: "SELF TAUGHT",
