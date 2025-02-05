@@ -109,16 +109,16 @@ const tabHeaders = [
 
 const experience = [
   {
+    company: 'STATSSPEAK Limited Kenya',
+    jobTitle: 'Frontend Developer - Intern',
+    description: 'I worked working at Statsspeak Limited as a Frontend Developer where I was responsible for the development of the company\'s website and also the company\'s mobile app',
+    date: '2024 Jul - 2024 Dec'
+  },
+  {
     company: 'PENDEZA ONLINE STORE',
     jobTitle: 'Frontend Developer',
     description: 'I worked working at Pendeza Online Store as the Lead Frontend Developer where I was responsible for the development of the company\'s website and also the company\'s mobile app',
     date: '2023 Nov - 2024 Jan'
-  },
-  {
-    company: 'SMS DIGITAL',
-    date: '2023 Jul - Sep',
-    description: 'I was a part of the working at SMS Digital where I worked as a web developer on various projects and also did some of the SEO as part of my job description',
-    jobTitle:"Web Developer",
   },
   {
     company: 'NETSCALING TECHNOLOGIES',

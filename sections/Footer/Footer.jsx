@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='footer-text'>
-        <p>Copyright &copy; 2024. All rights reserved.</p>
+        <p>Copyright &copy; 2025. All rights reserved.</p>
         <div>
           Developed by{" "}
           <span>

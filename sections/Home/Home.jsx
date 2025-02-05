@@ -26,7 +26,7 @@ const Home = () => {
               {/* <Separator className="h-10 text-white font-white" /> */}
 
               <div className="mt-[2.5em]" id="home-title" >
-                <h1 className="h1" >FrontEnd Developer</h1>
+                <h1 className="h1" >Software Developer</h1>
                 {/* <Separator orientation="horizontal" /> */}
                 <div className="separator"></div>
 
