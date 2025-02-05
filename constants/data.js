@@ -171,6 +171,10 @@ const skills = [
     percentage: 85,
   },
   {
+    skill: 'Node/Express',
+    percentage: 90,
+  },
+  {
     skill: 'VERSION CONTROL (GIT)',
     percentage: 90,
   }
