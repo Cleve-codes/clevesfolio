@@ -111,7 +111,7 @@ const experience = [
   {
     company: 'STATSSPEAK Limited Kenya',
     jobTitle: 'Frontend Developer - Intern',
-    description: 'I worked working at Statsspeak Limited as a Frontend Developer where I was responsible for the development of the company\'s website and also the company\'s mobile app',
+    description: 'I worked as a Frontend Developer Intern at STATSSPEAK Limited Kenya, where I was responsible for developing and enhancing the company\'s website and other software products. My role involved implementing responsive designs, optimizing user interfaces, and ensuring a seamless user experience across various platforms.',
     date: '2024 Jul - 2024 Dec'
   },
   {
