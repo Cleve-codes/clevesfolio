@@ -62,7 +62,7 @@ const projects = [
     title: 'Advanced AI Resume Builder - SaaS',
     tech: 'Nextjs, Postgresql, OpenAI API',
     img: ProjectsImage2,
-    url: "https://github.com/cleve-codes/AI-resume-Builder",
+    url: "https://ai-resume-builder-blue.vercel.app/",
   },
   {
     title: "Diabetes Prediction App - Machine Learning",
