@@ -51,9 +51,8 @@ const Portofolio = () => {
         <Tabs defaultValue="experience" className="tab">
           <TabsList className="tablist">
             {tabHeaders.map((tab, index) => (
-              <>
+              <React.Fragment key={index}>
                 <TabsTrigger
-                  key={index}
                   ref={tabRefs[tab.value]}
                   value={tab.value}
                   onClick={() => setActiveTab(tab.value)}
@@ -67,7 +66,7 @@ const Portofolio = () => {
                   </span>
                 </TabsTrigger>
                 {index < tabHeaders.length - 1 && <HorizontalSeparator />}
-              </>
+              </React.Fragment>
             ))}
           </TabsList>
           <TabsContent value="experience" className="tab-content">

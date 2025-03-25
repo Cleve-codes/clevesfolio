@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import React from "react";
 import CarouselImg from "@/components/ui/carouselImg";
+import ViewMoreCard from "@/components/ui/ViewMoreCard";
 import "./Projects.css";
 import Link from "next/link";
 
@@ -48,22 +49,24 @@ const Projects = () => {
               <div className="separator"></div>
             </div>
           </div>
-          <div className="">
-            {/* <Carousel
-
-            > */}
+          <div className="carousel-wrapper">
             <div className="carousel-content">
-              <CarouselContent>
+              <CarouselContent className="carousel-inner-content">
                 {projects.map((project, index) => (
                   <CarouselItem key={index} className="carousel-item">
-                    <Link href={project.url} target="_blank" >
-                    <CarouselImg img={project.img} tech={project.tech} title={project.title} />
-                    </Link>
+                    {project.isViewMore ? (
+                      <Link href={project.url} target="_blank" style={{ width: '100%', display: 'block' }}>
+                        <ViewMoreCard url={project.url} />
+                      </Link>
+                    ) : (
+                      <Link href={project.url} target="_blank" style={{ width: '100%', display: 'block' }}>
+                        <CarouselImg img={project.img} tech={project.tech} title={project.title} />
+                      </Link>
+                    )}
                   </CarouselItem>
                 ))}
               </CarouselContent>
             </div>
-            {/* </Carousel> */}
           </div>
         </div>
       </Carousel>

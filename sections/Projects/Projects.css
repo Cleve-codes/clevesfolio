@@ -2,6 +2,9 @@
 /* .projects-section {
   margin-top: 0;
 } */
+.projects-section {
+  overflow: visible !important;
+}
 
 /* Projects Carousel */
 /* Carousel */
@@ -12,6 +15,19 @@
   flex-direction: row;
   justify-content: space-between;
   /* border: 1px solid red; */
+  overflow: visible !important; /* Ensure hover effects aren't clipped */
+}
+
+/* New wrapper for carousel with padding */
+.carousel-wrapper {
+  padding: 15px 0;
+  margin-top: 3em;
+  overflow: visible; /* Ensure hover effects are visible */
+}
+
+.carousel-inner-content {
+  padding: 15px 0;
+  overflow: visible !important; /* Force overflow to be visible */
 }
 
 .carousel-item {
@@ -20,12 +36,15 @@
   flex-shrink: 0;
   gap: 1em;
   margin-right: 1em;
+  padding: 12px 6px; /* Increased vertical padding */
+  overflow: visible; /* Ensure the hover effects are visible outside the element */
 }
 
 .carousel-content {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5em;
+  padding-top: 10px;
+  overflow: visible; /* Ensure hover effects are visible */
 }
 
 .carousel-img {
@@ -36,6 +55,91 @@
   object-fit: contain;
 }
 
+/* View More Card Styles */
+@keyframes subtle-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(85, 85, 85, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(85, 85, 85, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(85, 85, 85, 0);
+  }
+}
+
+.view-more-card {
+  height: 270px;
+  width: 100%;
+  min-width: 100%;
+  border: 2px dashed #555;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  background-color: rgba(30, 30, 30, 0.4);
+  flex: 1;
+  animation: subtle-pulse 2s infinite;
+  transform-origin: center center; /* Ensure transform happens from center */
+  position: relative; /* Added for z-index to work */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.view-more-card:hover {
+  border-color: #888;
+  transform: scale(1.03); /* Use scale instead of translateY to avoid truncation */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(40, 40, 40, 0.6);
+  animation: none;
+  z-index: 10; /* Ensure hover state appears above other elements */
+}
+
+.view-more-content {
+  text-align: center;
+  padding: 1.5rem;
+  color: #dddddd;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-icon {
+  font-size: 4rem;
+  margin-bottom: 1.2rem;
+  color: #dddddd;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.view-more-card:hover .github-icon {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+.view-more-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #dddddd;
+  transition: color 0.3s ease;
+}
+
+.view-more-text {
+  color: #888888;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.view-more-card:hover .view-more-title {
+  color: #ffffff;
+}
+
+.view-more-card:hover .view-more-text {
+  color: #aaaaaa;
+}
 
 .portofolio-header {
   display: flex;
@@ -54,8 +158,8 @@
   .projects-section {
     min-height: 70vh;
     padding-inline: 1em;
+    overflow: visible !important;
   }
-
 
   .btn-prev {
     position: absolute;
@@ -78,7 +182,7 @@
   }
 
   .projects-carousel {
-    overflow-x: hidden;
+    overflow: visible !important;
   }
 
   .carousel-item {
@@ -95,6 +199,11 @@
     object-fit: cover;
   }
 
+  .view-more-card {
+    min-width: 100%;
+    width: 100%;
+  }
+
   /* .carousel-btn {
     display: none;
   } */
@@ -104,10 +213,11 @@
 @media (min-width: 481px) and (max-width: 768px) {
   .projects-section {
     padding-inline: 1em;
+    overflow: visible !important;
   }
 
   .projects-carousel {
-    overflow-x: hidden;
+    overflow: visible !important;
   }
 
   .carousel-item {
@@ -119,6 +229,11 @@
     height: 270px;
     min-width: 100%;
     /* object-fit: cover; */
+  }
+
+  .view-more-card {
+    min-width: 100%;
+    width: 100%;
   }
 }
 
@@ -136,10 +251,11 @@
 @media (min-width: 769px) and (max-width: 1179px) {
   .projects-section {
     padding-inline: 1em;
+    overflow: visible !important;
   }
 
   .projects-carousel {
-    overflow-x: hidden;
+    overflow: visible !important;
   }
 
   .carousel-item {
@@ -151,6 +267,11 @@
     height: 270px;
     min-width: 100%;
     /* object-fit: cover; */
+  }
+
+  .view-more-card {
+    min-width: 100%;
+    width: 100%;
   }
 }
 
@@ -159,10 +280,11 @@
   .projects-section {
     padding-inline: 2em;
     margin-top: 10%;
+    overflow: visible !important;
   }
 
   .projects-carousel {
-    overflow-x: hidden;
+    overflow: visible !important;
   }
 
   .carousel-item {
@@ -174,6 +296,11 @@
     height: 270px;
     min-width: 100%;
     /* object-fit: cover; */
+  }
+
+  .view-more-card {
+    min-width: 100%;
+    width: 100%;
   }
 }
 
@@ -200,3 +327,8 @@
     object-fit: cover;
   }
   }
+
+/* Add some margin to CarouselContent to allow for the hover effect */
+[data-orientation="horizontal"].carousel-content {
+  padding: 10px 0;
+}

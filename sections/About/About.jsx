@@ -75,7 +75,13 @@ const About = () => {
 
             {/* CV */}
             <div className="cv" onClick={handleDownloadClick} >
-                <Image alt="download" src='/assets/asset 22.svg' width={60} height={60} />
+                <Image 
+                  alt="download" 
+                  src='/assets/asset 22.svg' 
+                  width={60} 
+                  height={60} 
+                  style={{ width: 'auto', height: 'auto' }} 
+                />
                 <p>DOWNLOAD CV</p>
             </div>
 

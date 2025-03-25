@@ -1,11 +1,12 @@
 /* Images */
 /* Projects Section */
-import ProjectsImage1 from "@/public/assets/store.jpg";
-import ProjectsImage2 from "@/public/assets/landing.png";
-import ProjectsImage3 from "@/public/assets/seo.png";
-import ProjectsImage4 from "@/public/assets/expense.png";
-import ProjectsImage5 from "@/public/assets/minimalist.png";
-import ProjectsImage6 from "@/public/assets/geritch.png";
+import ProjectsImage1 from "@/public/assets/my-daktari.png";
+import ProjectsImage2 from "@/public/assets/resume-ai.png";
+import ProjectsImage3 from "@/public/assets/Diabetes.png";
+import ProjectsImage4 from "@/public/assets/ecom.png";
+import ProjectsImage5 from "@/public/assets/pendeza.png";
+// Import for GitHub view more card
+import { FaGithub } from "react-icons/fa";
 
 /* Blog Section */
 import blogimg1 from '@/public/assets/seo.jpg'
@@ -52,40 +53,42 @@ const credentials = [
 /* Projects Section */
 const projects = [
   {
-    title: 'Pendeza Online Store',
-    tech: 'NextJS, TypeScript, Stripe',
+    title: 'My Daktari - Doctor Booking Platform',
+    tech: 'React, Nodejs, MongoDB, Stripe',
     img: ProjectsImage1,
-    url: 'https://github.com/Cleve-codes/Pendeza-Digital-Store'
+    url: 'https://my-daktari.vercel.app/'
   },
   {
-    title: 'Pendeza Landing Page',
-    tech: 'React, TailwindCSS, GSAP',
+    title: 'Advanced AI Resume Builder - SaaS',
+    tech: 'Nextjs, Postgresql, OpenAI API',
     img: ProjectsImage2,
-    url: "https://wibe-studio-seven.vercel.app/",
+    url: "https://github.com/cleve-codes/AI-resume-Builder",
   },
   {
-    title: "SM Digital Agency",
-    tech: "React, TailwindCSS",
+    title: "Diabetes Prediction App - Machine Learning",
+    tech: "React, TailwindCSS, Flask",
     img: ProjectsImage3,
-    url: 'https://sms-seo.netlify.app/'
+    url: 'https://diabetes-prediction-seven.vercel.app/'
   },
   {
-    title: "Expense Tracker App",
-    tech: "React, Redux, Tailwind",
+    title: "Ecommerce API with Microservices",
+    tech: "Node, Express, Postgres, Redis, Docker",
     img: ProjectsImage4,
-    url: 'https://react-expense-tracker-9b90o0viy-cleve-codes.vercel.app/'
+    url: "https://github.com/cleve-codes/pwd-store"
   },
   {
-    title: "Minimalist Portofolio",
-    tech: "NextJS, TypeScript, TailwindCSS",
+    title: "Pendeza Digital Store - Landing Page",
+    tech: "React, TailwindCSS, GSAP",
     img: ProjectsImage5,
-    url: "https://jeffsfolio.netlify.app"
+    url: "https://wibe-studio-seven.vercel.app/"
   },
+  // New "View More Projects" card with GitHub link
   {
-    title: "Restaurant Landing Page",
-    tech: "ReactJS, TailwindCSS",
-    img: ProjectsImage6,
-    url: "https://simple-react-landing-page.vercel.app/"
+    title: "View More Projects",
+    tech: "Check out my GitHub",
+    isViewMore: true, // Special flag to identify this as the "View More" card
+    url: "https://github.com/cleve-codes",
+    icon: FaGithub,
   }
 ]
 

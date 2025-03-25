@@ -33,23 +33,22 @@
   min-height: 180px;
   color: #dddddd;
   margin-bottom: 1em;
-  /* overflow: hidden; */
-  /* border-left: .325em solid transparent; Set a transparent left border */
+  overflow: visible;
 }
 
 .testimonial-text{
   font-size: 2em;
   color: #888888;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  overflow: visible;
+  white-space: normal;
+  text-overflow: clip;
 }
 
 .testimonial-detail h1,
 .testimonial-detail h3 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 .testimonial-detail h1 {
@@ -63,36 +62,60 @@
   color: #888888;
 }
 
+.testimonials-card .p {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.testimonials-content {
+  width: 100%;
+  overflow: visible;
+  padding: 0.5rem;
+}
+
+.testimonials-content p {
+  white-space: normal !important; 
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  max-width: 100%;
+}
+
 /* Responsive */
 @media (min-width: 320px) and (max-width: 480px) {
-
   .testimonials-carousel {
     /* border: 1px solid red; */
-    min-width:90%;
+    min-width: 90%;
+    overflow: visible;
   }
 
   .testimonials-carousel-text {
     max-width: 90%;
     white-space: normal;
+    overflow: visible;
     /* border: 1px solid red; */
   }
-
 
   .testimonials-card {
     margin-top: 2em;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
+    overflow: visible;
   }
 
   .testimonials-card .p {
     /* border: 1px solid red; */
-    width: fit-content;
-    font-size: 12px;
+    width: 100%;
+    font-size: 14px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .testimonials-carousel-item {
-    width: 50%;
+    width: 100%;
+    padding: 0 10px;
   }
 
   .testimonial-btn-next {
@@ -114,28 +137,34 @@
 @media (min-width:481px) and (max-width: 768px) {
   .testimonials-carousel {
     min-width: 90%;
+    overflow: visible;
   }
 
   .testimonials-carousel-text {
     max-width: 90%;
     white-space: normal;
+    overflow: visible;
   }
 
   .testimonials-card {
     margin-top: 2em;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
+    overflow: visible;
   }
 
   .testimonials-card .p {
-    /* border: 1px solid red; */
-    width: fit-content;
-    font-size: 1.25em;
+    width: 100%;
+    font-size: 1.1em;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .testimonials-carousel-item {
-    width: 50%;
+    width: 80%;
+    padding: 0 10px;
   }
 
   .testimonial-btn-next {
@@ -151,36 +180,40 @@
     left: 6%;
     transform: translateY(-50%);
   }
-
-
 }
 
-/*  */
+/* Medium screens */
 @media (min-width: 769px) and (max-width: 1039px) {
   .testimonials-carousel {
     min-width: 90%;
+    overflow: visible;
   }
 
   .testimonials-carousel-text {
     max-width: 90%;
     white-space: normal;
+    overflow: visible;
   }
 
   .testimonials-card {
     margin-top: 2em;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
+    overflow: visible;
   }
 
   .testimonials-card .p {
-    /* border: 1px solid red; */
-    width: fit-content;
+    width: 100%;
     font-size: 1.25em;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .testimonials-carousel-item {
-    width: 50%;
+    width: 80%;
+    padding: 0 10px;
   }
 
   .testimonial-btn-next {
@@ -202,28 +235,34 @@
 @media (min-width: 1040px) and (max-width: 1400px) {
   .testimonials-carousel {
     min-width: 90%;
+    overflow: visible;
   }
 
   .testimonials-carousel-text {
     max-width: 90%;
     white-space: normal;
+    overflow: visible;
   }
 
   .testimonials-card {
     margin-top: 2em;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
+    overflow: visible;
   }
 
   .testimonials-card .p {
-    /* border: 1px solid red; */
-    width: fit-content;
+    width: 100%;
     font-size: 1.25em;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .testimonials-carousel-item {
-    width: 50%;
+    width: 33.333%;
+    padding: 0 15px;
   }
 
   .testimonial-btn-next {
@@ -290,3 +329,15 @@
     font-size: 1em;
   }
 } */
+
+/* Fix for all screen sizes */
+@media (max-width: 1400px) {
+  .testimonials-carousel-text {
+    max-width: 100%;
+  }
+  
+  .testimonials-content p {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+}

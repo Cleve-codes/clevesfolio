@@ -10,7 +10,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import ExperiencesCard from "@/components/ui/Card";
 import TestimonialsCard from "@/components/ui/TestimonialsCard";
 
 export function Testimonials() {
@@ -30,14 +29,14 @@ export function Testimonials() {
             <CarouselNext usage="testimonials" />
           </div>
           <div className="testimonials-carousel-text" >
-            <CarouselContent>
-              {Array.from({ length: 5 }).map((_, index) => (
+            <CarouselContent className="testimonials-content">
+              {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} usage="testimonials" className="testimonials-carousel-item" >
                   <div className="testimonials-content">
                     <TestimonialsCard
-                      text={testimonials[index].text}
-                      name={testimonials[index].name}
-                      job={testimonials[index].job}
+                      text={testimonial.text}
+                      name={testimonial.name}
+                      job={testimonial.job}
                     />
                   </div>
                 </CarouselItem>
