@@ -33,6 +33,8 @@
   min-height: 180px;
   color: #dddddd;
   margin-bottom: 1em;
+  padding-inline: 1em;;
+  /* margin-right: 1em; */
   overflow: visible;
 }
 

@@ -21,14 +21,15 @@ const credentials = [
     title: "Name",
     value: "Cleve Momanyi",
   },
-  {
-    title: "BIRTHDAY",
-    value: "1st April 2003",
-  },
-  {
-    title: "AGE",
-    value: "21 years",
-  },
+  // {
+  //   title: "BIRTHDAY",
+  //   value: "1st April 2003",
+  // },
+  // {
+  //   title: "AGE",
+  //   value: "21 years",
+  // },
+
   {
     title: "ADRESS",
     value: "Nairobi, KENYA",
@@ -48,6 +49,11 @@ const credentials = [
     value: "clevecodes",
     href:"https://github.com/cleve-codes/"
   },
+  {
+    title: "LINKEDIN",
+    value: "Cleve Momanyi",
+    href:"https://www.linkedin.com/in/cleve-momanyi/"
+  }
 ]
 
 /* Projects Section */
@@ -136,7 +142,7 @@ const education = [
     school: "MURANG'A UNIVERSITY OF TECHNOLOGY",
     date: '2021 - Today',
     degree: 'BSc. Computer Science',
-    description: 'Pursuing a BSc. in Computer Science at Murang\'a University of Technology since 2021, I am currently in my final semester and set to complete my studies by April. I specialize in web development and design, with a strong passion for machine learning, AI, and an emerging interest in cybersecurity.'
+    description: 'Pursuing a BSc. in Computer Science at Murang\'a University of Technology since 2021, I am currently in my final semester and set to complete my studies by this Summer. I specialize in web development and design, with a strong passion for machine learning, AI, and an emerging interest in cybersecurity.'
   },
   {
     school: "SELF TAUGHT",
@@ -202,30 +208,35 @@ const servicesData = [
 /* Testimonials Section */
 const testimonials = [
   {
-    text: '"Working with Cleve was an absolute delight. Their creativity and technical expertise transformed our project into a masterpiece. Highly recommended!"',
+    text: '"Cleve is a true gem in the world of web development! His attention to detail and innovative approach to design is unmatched. Highly recommend!"',
     name: "Jeffers Abaga",
     job: "Startup Founder",
   },
   {
-    text: '"Exceptional work! Cleve brings a unique blend of innovation and precision to every project. A true professional in the field."',
-    name: "Maureen Wambui",
+    text: '"Working with Cleve was a game-changer for our project. His expertise in UI/UX design transformed our vision into a stunning reality. Highly recommend!"',
+    name: "Olafemi Oladimeji",
     job: "UX Designer",
   },
   {
-    text: '"Wagwan! Cleve\'s FrontEnd skills are unparalleled. They not only meet but exceed expectations. Looking forward to future collaborations."',
-    name: "Sarah Kinyua",
+    text: '"Cleve is a coding wizard! His ability to solve complex problems and deliver high-quality code is impressive. A valuable asset to any team!"',
+    name: "Abdikadir Hassan",
     job: "Software Engineer",
   },
   {
-    text: '"Cleve is a creative genius! Their UI/UX designs are not just visually stunning but also incredibly user-friendly. A pleasure to work with."',
-    name: "Michael Wafula",
+    text: '"Cleve is a talented developer with a keen eye for design. He transformed our website into a visually stunning and user-friendly platform. Highly recommend!"',
+    name: "Ankit Sharma",
     job: "Graphic Designer",
   },
   {
-    text: '"Incredible SEO and Digital Marketing expertise! Cleve knows how to boost online visibility and drive results. Highly satisfied with the outcomes."',
-    name: "Wendy Achieng",
-    job: "Marketing Specialist",
+    text: '"Cleve is a true professional! His dedication to delivering high-quality work and his ability to meet tight deadlines is commendable. A pleasure to work with!"',
+    name: "Martha Wanjiru",
+    job: "Project Manager",
   },
+  {
+    text: '"Cleve is an exceptional developer! His creativity and problem-solving skills are top-notch. He brought our project to life with his innovative ideas!"',
+    name: "John Charles",
+    job: "Entrepreneur",
+  }
 ];
 
 /* Blog Section */
