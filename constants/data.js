@@ -139,16 +139,16 @@ const experience = [
 
 const education = [
   {
-    school: "MURANG'A UNIVERSITY OF TECHNOLOGY",
-    date: '2021 - Today',
-    degree: 'BSc. Computer Science',
-    description: 'Pursuing a BSc. in Computer Science at Murang\'a University of Technology since 2021, I am currently in my final semester and set to complete my studies by this Summer. I specialize in web development and design, with a strong passion for machine learning, AI, and an emerging interest in cybersecurity.'
+    school: "African Leadership Experience - ALX",
+    date: 'May 2025 - Present',
+    degree: 'AWS Cloud Computing',
+    description: 'Currently enrolled in the AWS Cloud Computing program at ALX, I am dedicated to mastering the art of cloud computing. This program equips me with the skills to design, deploy, and manage cloud-based solutions, ensuring optimal performance and security for various applications.'
   },
   {
-    school: "SELF TAUGHT",
-    date: '2020 - Today',
-    degree: 'Web Development and Design',
-    description: 'Pioneer of my own coding odyssey since 2020, I\'ve been crafting the digital realm through self-taught web development and design. Every line of code tells a story, and each project is a canvas where creativity meets functionality, my journey unfolds in the ever-evolving landscape of web development, where innovation knows no bounds.'
+    school: "MURANG'A UNIVERSITY OF TECHNOLOGY",
+    date: 'Sep 2021 - Apr 2025',
+    degree: 'BSc. Computer Science',
+    description: "Recently finished my BSc. Computer Science degree at Murang'a University of Technology, where I honed my skills in programming, software development, and computer systems. The program provided a solid foundation in theoretical and practical aspects of computer science."
   },
   {
     school: 'THE MACHAKOS SCHOOL',
