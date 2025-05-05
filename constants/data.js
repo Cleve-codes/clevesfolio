@@ -118,6 +118,12 @@ const tabHeaders = [
 
 const experience = [
   {
+    company: 'Swap Space Limited',
+    jobTitle: 'Backend Developer - Intern',
+    description: 'I worked as a Backend Developer Intern at Swap Space Limited, where I was responsible for developing and maintaining the company\'s backend systems. My role involved working with Node.js, Express.js, and MongoDB to build RESTful APIs and ensure the smooth functioning of the backend infrastructure.',
+    date: '2025 Mar - Present'
+  },
+  {
     company: 'STATSSPEAK Limited Kenya',
     jobTitle: 'Frontend Developer - Intern',
     description: 'I worked as a Frontend Developer Intern at STATSSPEAK Limited Kenya, where I was responsible for developing and enhancing the company\'s website and other software products. My role involved implementing responsive designs, optimizing user interfaces, and ensuring a seamless user experience across various platforms.',
@@ -129,12 +135,6 @@ const experience = [
     description: 'I worked working at Pendeza Online Store as the Lead Frontend Developer where I was responsible for the development of the company\'s website and also the company\'s mobile app',
     date: '2023 Nov - 2024 Jan'
   },
-  {
-    company: 'NETSCALING TECHNOLOGIES',
-    date: '2023 Apr - Oct',
-    jobTitle: 'Web Developer - Intern',
-    description: 'Interned at NTD for 3 months where I worked on various projects and also learned a lot about web development and design and also got to work with a lot of experienced'
-  }
 ]
 
 const education = [
