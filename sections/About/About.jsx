@@ -7,20 +7,42 @@ import { credentials } from '@/constants/data'
 
 const About = () => {
 
-  const handleDownloadClick = () => {
-    const link = document.createElement('a');
+  const handleDownloadClick = async () => {
+    try {
+      // URL encode the filename to handle spaces
+      const fileName = 'Cleve_Momanyi _CV.pdf';
+      const encodedFileName = encodeURIComponent(fileName);
+      
+      // First, let's try to fetch the file to make sure it exists
+      const response = await fetch(`/assets/${encodedFileName}`);
+      
+      if (!response.ok) {
+        console.error('File not found');
+        alert('CV file not found. Please contact the administrator.');
+        return;
+      }
 
-    link.href = './assets/Cleve Momanyi.pdf';
-    link.download = 'Cleve_Momanyi_CV.pdf';
-
-    // Append the link to the document
-    document.body.appendChild(link);
-
-    // Trigger a click on the link to initiate the download
-    link.click();
-
-    // Remove the link from the document to clean up
-    document.body.removeChild(link);
+      // Create blob from response
+      const blob = await response.blob();
+      
+      // Create download link
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      
+      link.href = url;
+      link.download = 'Cleve_Momanyi_CV.pdf';
+      
+      // Append to body, click, and remove
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Clean up the blob URL
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Download failed:', error);
+      alert('Download failed. Please try again.');
+    }
   };
 
   return (
