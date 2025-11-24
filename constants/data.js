@@ -132,7 +132,7 @@ const experience = [
   {
     company: 'Durrafx',
     jobTitle: "Software Engineer",
-    description: "I worked as a Software Engineer intern at Durrafx, where I contributed to the development and maintenance of software solutions. My responsibilities included designing scalable architectures, implementing features using modern technologies, and collaborating with cross-functional teams to deliver high-quality products that met business objectives.",
+    description: "I worked as a Software Engineer at Durrafx, where I contributed to the development and maintenance of software solutions. My responsibilities included designing scalable architectures, implementing features using modern technologies, and collaborating with cross-functional teams to deliver high-quality products that met business objectives.",
     date: "2025 Oct",
   },
   {
