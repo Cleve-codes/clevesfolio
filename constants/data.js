@@ -59,6 +59,12 @@ const credentials = [
 /* Projects Section */
 const projects = [
   {
+    title: 'Nyumbani Greens - Organi greens Ecommerce',
+    tech: 'React, Nodejs, Postgresql, Paystack',
+    img: ProjectsImage1,
+    url: 'https://nyumbanigreens.com'
+  },
+  {
     title: 'My Daktari - Doctor Booking Platform',
     tech: 'React, Nodejs, MongoDB, Stripe',
     img: ProjectsImage1,
@@ -119,6 +125,12 @@ const tabHeaders = [
 const experience = [
   {
     company: 'Swap Space Limited',
+    jobTitle: 'Fullstack Developer - Contract',
+    description: 'Currently working as a fullstack Developer at Swap Space Limited, where I am responsible for developing and maintaining the company\'s backend systems. My role involved working with Node.js, Express.js, and MongoDB to build RESTful APIs and ensure the smooth functioning of the backend infrastructure.',
+    date: '2025 Oct - Present'
+  },
+  {
+    company: 'Swap Space Limited',
     jobTitle: 'Backend Developer - Intern',
     description: 'I worked as a Backend Developer Intern at Swap Space Limited, where I was responsible for developing and maintaining the company\'s backend systems. My role involved working with Node.js, Express.js, and MongoDB to build RESTful APIs and ensure the smooth functioning of the backend infrastructure.',
     date: '2025 Mar - Present'
@@ -128,13 +140,7 @@ const experience = [
     jobTitle: 'Frontend Developer - Intern',
     description: 'I worked as a Frontend Developer Intern at STATSSPEAK Limited Kenya, where I was responsible for developing and enhancing the company\'s website and other software products. My role involved implementing responsive designs, optimizing user interfaces, and ensuring a seamless user experience across various platforms.',
     date: '2024 Jul - 2024 Dec'
-  },
-  {
-    company: 'PENDEZA ONLINE STORE',
-    jobTitle: 'Frontend Developer',
-    description: 'I worked working at Pendeza Online Store as the Lead Frontend Developer where I was responsible for the development of the company\'s website and also the company\'s mobile app',
-    date: '2023 Nov - 2024 Jan'
-  },
+  }
 ]
 
 const education = [
