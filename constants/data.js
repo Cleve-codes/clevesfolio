@@ -5,6 +5,7 @@ import ProjectsImage2 from "@/public/assets/resume-ai.png";
 import ProjectsImage3 from "@/public/assets/Diabetes.png";
 import ProjectsImage4 from "@/public/assets/ecom.png";
 import ProjectsImage5 from "@/public/assets/pendeza.png";
+import ProjectsImage6 from '@/public/assets/nyumbs.png';
 // Import for GitHub view more card
 import { FaGithub } from "react-icons/fa";
 
@@ -61,7 +62,7 @@ const projects = [
   {
     title: 'Nyumbani Greens - Organi greens Ecommerce',
     tech: 'React, Nodejs, Postgresql, Paystack',
-    img: ProjectsImage1,
+    img: ProjectsImage6,
     url: 'https://nyumbanigreens.com'
   },
   {
