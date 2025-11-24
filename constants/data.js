@@ -127,7 +127,13 @@ const experience = [
     company: 'Swap Space Limited',
     jobTitle: 'Fullstack Developer - Contract',
     description: 'Currently working as a fullstack Developer at Swap Space Limited, where I am responsible for developing and maintaining the company\'s backend systems. My role involved working with Node.js, Express.js, and MongoDB to build RESTful APIs and ensure the smooth functioning of the backend infrastructure.',
-    date: '2025 Oct - Present'
+    date: '2025 Nov - Present'
+  },
+  {
+    company: 'Durrafx',
+    jobTitle: "Software Engineer",
+    description: "I worked as a Software Engineer intern at Durrafx, where I contributed to the development and maintenance of software solutions. My responsibilities included designing scalable architectures, implementing features using modern technologies, and collaborating with cross-functional teams to deliver high-quality products that met business objectives.",
+    date: "2025 Oct",
   },
   {
     company: 'Swap Space Limited',
